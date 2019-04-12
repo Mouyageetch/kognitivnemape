@@ -234,7 +234,6 @@
     <Resource Include="Images\lopta004.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="click.wav" />
     <Resource Include="Sounds\click.wav" />
     <Resource Include="Images\next.png" />
     <Resource Include="Images\upitnik.png" />

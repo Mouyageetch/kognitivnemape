@@ -65,7 +65,7 @@ namespace Mape001
                     if (image.Visibility == Visibility.Visible)
                         visible = true;
                 }
-
+                // AKO SU SVI NEVIDLJIVI
                 if (!visible)
                     success.Visibility = Visibility.Visible;
             }
