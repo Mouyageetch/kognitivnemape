@@ -95,6 +95,9 @@
     <Compile Include="Window_003.xaml.cs">
       <DependentUpon>Window_003.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window_004.xaml.cs">
+      <DependentUpon>Window_004.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -116,6 +119,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window_003.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_004.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -240,6 +247,13 @@
     <Resource Include="Images\previous.png" />
     <Resource Include="Images\ispravno.png" />
     <Resource Include="favicon.ico" />
+    <Resource Include="Images\VALJAK3.png" />
+    <Resource Include="Images\Kupa001.png" />
+    <Resource Include="Images\kocka2_stranica_00000.png" />
+    <Resource Include="Images\Kupa001Glow_00000.png" />
+    <Resource Include="Images\kvadarGlow_00000.png" />
+    <Resource Include="Images\piramida3Glow_00000.png" />
+    <Resource Include="Images\VALJAK3GLOW_00000.png" />
     <Content Include="Sounds\Click_Soft_00.mp3" />
   </ItemGroup>
   <ItemGroup>

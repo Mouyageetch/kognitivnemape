@@ -36,7 +36,7 @@
         
         <Image HorizontalAlignment="Left" Margin="80,195,0,0" VerticalAlignment="Top" Source="Images/djevojcica_bure_1.tif" Height="315" Width="495"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="290" Margin="150,-15.962,0,0" VerticalAlignment="Top" Width="345" Source="Images/speech001.png" Stretch="Fill"/>
-        <TextBlock x:Name="textBlock" Margin="200,90,792,520.924" FontSize="24"><Run Text="Ove igračke imaju oblik "/><LineBreak/><Run Text="nekih geometrijskih tijela."/></TextBlock>
+        <TextBlock x:Name="textBlock" Margin="198,94,761,516.924" FontSize="21"><Run Text="OVE IGRAČKE IMAJU OBLIK "/><LineBreak/><Run Text="NEKIH GEOMETRIJSKIH TIJELA."/></TextBlock>
         <Image Cursor="Hand" HorizontalAlignment="Left" Height="130" Margin="150,510,0,0" VerticalAlignment="Top" Width="70" Source="Images/VALJAK.tif" MouseEnter="Image_MouseEnter">
             <Image.Effect>
                 <DropShadowEffect Color="#FF8DC8FF" BlurRadius="20" RenderingBias="Quality" ShadowDepth="0"/>
@@ -56,8 +56,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="280.31,640,0,0" TextWrapping="Wrap" Text="LOPTA" VerticalAlignment="Top" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="415.5,640,0,0" TextWrapping="Wrap" Text="KUPA" VerticalAlignment="Top" FontSize="20"/>
         <Image HorizontalAlignment="Left" Margin="635,74,-50,0" VerticalAlignment="Top" Source="Images/djevojcica_sir.tif" Height="435" Width="687"/>
-        <TextBlock HorizontalAlignment="Left" Height="155" Margin="770,269,0,0" TextWrapping="Wrap" Text="I ove namirnice, također, imaju oblik nekih geometrijskih tijela." VerticalAlignment="Top" Width="190" FontSize="20" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Height="80" Margin="845,414,0,0" TextWrapping="Wrap" Text="Da. To su: kocka, kvadar i piramida." VerticalAlignment="Top" Width="145" FontSize="20" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="155" Margin="770,259,0,0" TextWrapping="Wrap" Text="I OVE NAMIRNICE, TAKOĐER, IMAJU OBLIK NEKIH GEOMETRIJSKIH TIJELA." VerticalAlignment="Top" Width="190" FontSize="20" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="80" Margin="823.026,425,0,0" TextWrapping="Wrap" Text="DA. TO SU: KOCKA, KVADAR i PIRAMIDA." VerticalAlignment="Top" Width="211.5" FontSize="20" TextAlignment="Center"/>
         <Image Cursor="Hand" HorizontalAlignment="Left" Height="97.4" Margin="767,542.6,0,0" VerticalAlignment="Top" Width="103" Source="Images/kocka.tif">
             <Image.Effect>
                 <DropShadowEffect Color="#FF8DC8FF" BlurRadius="20" RenderingBias="Quality" ShadowDepth="0"/>
@@ -77,6 +77,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="949.983,649.4,0,0" TextWrapping="Wrap" Text="KVADAR" VerticalAlignment="Top" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="1118.893,649.4,0,0" TextWrapping="Wrap" Text="PIRAMIDA" VerticalAlignment="Top" FontSize="20"/>
         <Image HorizontalAlignment="Left" Height="260" Margin="480,30,0,0" VerticalAlignment="Top" Width="245" Source="Images/speech001.png" Stretch="Fill"/>
-        <TextBlock HorizontalAlignment="Left" Height="155" Margin="516,117.038,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" FontSize="20" TextAlignment="Center"><Run Text="U pravu si."/><LineBreak/><Run Text="To su valjak, lopta"/><LineBreak/><Run Text="i kupa."/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="97.962" Margin="516,117.038,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" FontSize="20" TextAlignment="Center"><Run Text="U PRAVU SI."/><LineBreak/><Run Text="TO SU VALJAK,"/><LineBreak/><Run Text="LOPTA I KUPA"/></TextBlock>
     </Grid>
 </Window>

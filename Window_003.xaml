@@ -13,7 +13,7 @@
         <Grid Width="1274">
             <DockPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Background="AliceBlue">
                 <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
-                <TextBlock x:Name="banner" VerticalAlignment="Center"  Width="1047" Text="Stavi geometrijska tijela na odgovarajuće mjesto" FontSize="36" TextAlignment="Center"></TextBlock>
+                <TextBlock x:Name="banner" VerticalAlignment="Center"  Width="1047" Text="POVUCI TIJELA NA ISPRAVNA MJESTA" FontSize="36" TextAlignment="Center"></TextBlock>
                 <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
             </DockPanel>
         </Grid>
