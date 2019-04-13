@@ -98,6 +98,9 @@
     <Compile Include="Window_004.xaml.cs">
       <DependentUpon>Window_004.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window_005.xaml.cs">
+      <DependentUpon>Window_005.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -123,6 +126,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window_004.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_005.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -254,6 +261,18 @@
     <Resource Include="Images\kvadarGlow_00000.png" />
     <Resource Include="Images\piramida3Glow_00000.png" />
     <Resource Include="Images\VALJAK3GLOW_00000.png" />
+    <Resource Include="Images\kocka2Brid_00000.png" />
+    <Resource Include="Images\Kupa001Brid_00000.png" />
+    <Resource Include="Images\kvadarBrid_00000.png" />
+    <Resource Include="Images\piramida3Brid_00000.png" />
+    <Resource Include="Images\VALJAK3Brid_00000.png" />
+    <Resource Include="Images\kupaBijela001.png" />
+    <Resource Include="Images\kvadarBijeli001.png" />
+    <Resource Include="Images\kvadratBijeli001.png" />
+    <Resource Include="Images\loptaBijela001.png" />
+    <Resource Include="Images\valjakBijeli001.png" />
+    <Resource Include="Images\Bubble001.png" />
+    <Resource Include="Images\povrsi.PNG" />
     <Content Include="Sounds\Click_Soft_00.mp3" />
   </ItemGroup>
   <ItemGroup>

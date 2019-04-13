@@ -47,12 +47,26 @@ namespace Mape001
         {
             TextBlock textBlock = sender as TextBlock;
 
-            if(textBlock.Text.ElementAt(0) == '1')
+            switch (textBlock.Text.ElementAt(0))
             {
-                Window_001 window_001 = new Window_001();
-                window_001.Show();
-                this.Close();
+                case '1':
+                    Window_001 window_001 = new Window_001();
+                    window_001.Show();
+                    this.Close();
+                    break;
+                case '2':
+                    Window_004 window_004 = new Window_004();
+                    window_004.Show();
+                    this.Close();
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+
             }
+
         }
     }
 }
+

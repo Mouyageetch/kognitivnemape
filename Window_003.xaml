@@ -34,7 +34,7 @@
             <Image Cursor="Hand" Width="120" Height="120" Source="Images/kocka004.jpg" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
             <Image Cursor="Hand" Width="120" Height="120" Source="Images/lopta004.jpg" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
             <Image Cursor="Hand" Width="120" Height="120" Source="Images/lopta002.jpg" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
-            <Image Cursor="Hand" Width="120" Height="120" Source="Images/kvadar002.jpg" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
+            <Image Cursor="Hand" Width="120" Height="120" Source="Images/kvadar002.jpg" VerticalAlignment="Top" HorizontalAlignment="Center" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
             <Image Cursor="Hand" Width="120" Height="120" Source="Images/kocka003.jpg" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
         </WrapPanel>
 
@@ -230,7 +230,7 @@
 
         <Grid x:Name="success" Width="1280" Height="150"  Background="#FF4E87CB" Visibility="Hidden">
             <StackPanel VerticalAlignment="Center" Width="Auto" Height="Auto">
-                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="72" Foreground="GhostWhite" Text="Ispravan odgovor! Nastavi dalje."></TextBlock>
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="72" Foreground="GhostWhite" Text="ISPRAVAN ODGOVOR!"></TextBlock>
             </StackPanel>
         </Grid>
 
