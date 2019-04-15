@@ -11,18 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.IO;
 
 namespace Mape001
 {
     /// <summary>
-    /// Interaction logic for Window_003.xaml
+    /// Interaction logic for Window_003a.xaml
     /// </summary>
-    public partial class Window_003 : Window
+    public partial class Window_003a : Window
     {
         Image dragSource = null;
 
-        public Window_003()
+        public Window_003a()
         {
             InitializeComponent();
         }
@@ -30,19 +29,20 @@ namespace Mape001
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Image img = sender as Image;
-            dragSource = (Image) e.Source;
+            dragSource = (Image)e.Source;
             DragDrop.DoDragDrop(img, img.Source.ToString(), DragDropEffects.Move);
 
         }
 
-        private void Lopta001_Drop(object sender, DragEventArgs e)
+
+        private void Valjak001_Drop(object sender, DragEventArgs e)
         {
             Image img = sender as Image;
             string src = (string)e.Data.GetData(typeof(string));
             string fileName = System.IO.Path.GetFileName(src);
 
-            if (fileName.StartsWith(img.Name.Remove(img.Name.Length - 3))) 
-            { 
+            if (fileName.StartsWith(img.Name.Remove(img.Name.Length - 3)))
+            {
                 // PREUZMI SOURCE SLIKU
                 ImageSourceConverter converter = new ImageSourceConverter();
                 img.Source = (ImageSource)converter.ConvertFromString(src);
@@ -69,24 +69,21 @@ namespace Mape001
                 if (!visible)
                     success.Visibility = Visibility.Visible;
             }
+
         }
 
         private void NextWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Window_003a window_003a = new Window_003a();
-            window_003a.Show();
+            Window_004 window_004 = new Window_004();
+            window_004.Show();
             this.Close();
         }
 
         private void PreviousWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Window_002 window_002 = new Window_002();
-            window_002.Show();
+            Window_003 window_003 = new Window_003();
+            window_003.Show();
             this.Close();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
         }
     }
 }

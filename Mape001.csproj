@@ -95,11 +95,20 @@
     <Compile Include="Window_003.xaml.cs">
       <DependentUpon>Window_003.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window_003a.xaml.cs">
+      <DependentUpon>Window_003a.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Window_004.xaml.cs">
       <DependentUpon>Window_004.xaml</DependentUpon>
     </Compile>
     <Compile Include="Window_005.xaml.cs">
       <DependentUpon>Window_005.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window_006.xaml.cs">
+      <DependentUpon>Window_006.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window_007.xaml.cs">
+      <DependentUpon>Window_007.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -125,11 +134,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Window_003a.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Window_004.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window_005.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_006.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_007.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -273,6 +294,30 @@
     <Resource Include="Images\valjakBijeli001.png" />
     <Resource Include="Images\Bubble001.png" />
     <Resource Include="Images\povrsi.PNG" />
+    <Resource Include="Images\kupa001.jpg" />
+    <Resource Include="Images\kupa002.jpg" />
+    <Resource Include="Images\piramida002.jpg" />
+    <Resource Include="Images\piramida003.png" />
+    <Resource Include="Images\valjak001.jpg" />
+    <Resource Include="Images\valjak002.jpg" />
+    <Resource Include="Images\valjak003.png" />
+    <Resource Include="Images\Linija kao\bubble001.png" />
+    <Resource Include="Images\Linija kao\bubble002.png" />
+    <Resource Include="Images\Linija kao\bubble003.png" />
+    <Resource Include="Images\Linija kao\bubble004.png" />
+    <Resource Include="Images\Linija kao\bubble005.png" />
+    <Resource Include="Images\Linija kao\bubble006.png" />
+    <Resource Include="Images\Linija kao\line001.png" />
+    <Resource Include="Images\Linija kao\line002.png" />
+    <Resource Include="Images\Linija kao\line003.png" />
+    <Resource Include="Images\Linija kao\line004.png" />
+    <Resource Include="Images\Linija kao\line005.png" />
+    <Resource Include="Images\Linija kao\line006.png" />
+    <Resource Include="Images\Linija kao\line007.png" />
+    <Resource Include="Images\Linija kao\line008.png" />
+    <Resource Include="Images\Linija kao\line009.png" />
+    <Resource Include="Images\Linija kao\line010.png" />
+    <Resource Include="Images\Linija kao\line011.png" />
     <Content Include="Sounds\Click_Soft_00.mp3" />
   </ItemGroup>
   <ItemGroup>

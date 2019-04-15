@@ -1,0 +1,85 @@
+﻿<Window x:Class="Mape001.Window_006"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape001"
+        mc:Ignorable="d"
+        Title="Geometrijski oblici i likovi" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize" >
+    <Grid>
+
+        <Grid Width="1274">
+            <DockPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"/>
+                <TextBlock x:Name="banner" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center"/>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"/>
+            </DockPanel>
+        </Grid>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Background="AliceBlue" HorizontalAlignment="Center" Margin="0,82,0,0" TextWrapping="Wrap" Text="LINIJA (CRTA) KAO GRANICA POVRŠI" VerticalAlignment="Top" FontSize="20"/>
+            <Image Grid.Column="0" Margin="0,-80,0,0" Source="Images/djevojcica_djecak_plaza.tif" Height="235" Width="424.667"/>
+            <Image Grid.Column="0" Source="Images/Linija kao/bubble001.png" Margin="63,45,89.667,374"/>
+            <TextBlock HorizontalAlignment="Left" Height="48" Margin="80,137,0,0" TextWrapping="Wrap" Text="POVRŠI SU GRANICE IZMEĐU PREDMETA I OKOLINE." VerticalAlignment="Top" Width="232" FontSize="16" TextAlignment="Center"/>
+            <Image Grid.Column="0" Source="Images/Linija kao/bubble002.png" Margin="128,229,24.667,190"/>
+            <TextBlock HorizontalAlignment="Left" Height="70" Margin="161,379,0,0" TextWrapping="Wrap" Text="JA SAM LINIJOM OGRANIČIO POVRŠ NA PIJESKU." VerticalAlignment="Top" Width="190" FontSize="16" TextAlignment="Center"/>
+
+            <TextBlock Grid.Column="0" Background="AliceBlue" HorizontalAlignment="Center" Margin="10,459,10,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="404.667" TextAlignment="Center"><Run Text="LINIJ"/><Run Text="E"/><Run Text=" KAO GRANIC"/><Run Text="E"/><Run Text=" POVRŠI"/><Run Text=" MOGU BITI RAZLIČITE."/></TextBlock>
+            <Image HorizontalAlignment="Left" Height="110" Margin="20,540,0,0" VerticalAlignment="Top" Width="115" Source="Images/Linija kao/line001.png"/>
+            <Image HorizontalAlignment="Left" Height="110" Margin="150,560,0,0" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line002.png"/>
+            <Image HorizontalAlignment="Left" Height="110" Margin="275.075,550,0,0" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line003.png"/>
+
+
+
+
+
+            <TextBlock Grid.Column="1" Background="AliceBlue" HorizontalAlignment="Center" Margin="50.591,28,50.591,0" TextWrapping="Wrap" Text="RAVNE I ZAKRIVLJENE LINIJE (CRTE)" VerticalAlignment="Top" FontSize="20"/>
+            <Image Grid.Column="1" Margin="0,-80,0,0" Source="Images/djecaci_guma.tif" Height="235" Width="424.667"/>
+            <Image Grid.Column="1" Source="Images/Linija kao/bubble003.png" Margin="150,82,52.332,482"/>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="48" Margin="165,101,0,0" TextWrapping="Wrap" Text="MOJA VIJAČA JE ZAKRIVLJENA" VerticalAlignment="Top" Width="190" FontSize="16" TextAlignment="Center"/>
+            <Image Grid.Column="1" Source="Images/Linija kao/bubble004.png" Margin="181.741,245,52.332,390"/>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="227.568,247.669,0,0" TextWrapping="Wrap" Text="A NAŠA JE PRAVA" VerticalAlignment="Top" TextAlignment="Center" Height="21.5"/>
+
+            <TextBlock Grid.Column="1" Background="AliceBlue" HorizontalAlignment="Center" Margin="10,430.5,9.999,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="404.667" TextAlignment="Center"><Run Text="LINIJE MOGU BITI PRAVE I ZAKRIVLJENE. "/><LineBreak/><Run Text="ZAKRIVLJENE LINIJE MOGU BITI: OTVORENE I ZATVORENE"/></TextBlock>
+            <Image Grid.Column="1" HorizontalAlignment="Center" Margin="0,538.333,0,0" VerticalAlignment="Top" Width="255.075" Source="Images/Linija kao/line004.png"/>
+            <Image Grid.Column="1" HorizontalAlignment="Left" Margin="159.28,569,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line005.png" Width="195.72"/>
+            <Image Grid.Column="1" HorizontalAlignment="Left" Height="110" Margin="40.333,560,0,0" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line006.png"/>
+            <Image Grid.Column="1" HorizontalAlignment="Left" Height="157" Margin="144.333,186,0,0" VerticalAlignment="Top" Width="70.333" Source="Images/lastika_djevojcica.tif" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Grid.Column="1" HorizontalAlignment="Left" Height="76.37" Margin="240.87,604.63,0,0" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line007.png"/>
+
+
+
+
+
+
+            <TextBlock Grid.Column="2" Background="AliceBlue" HorizontalAlignment="Center" Margin="50.591,82,50.591,0" TextWrapping="Wrap" Text="IZLOMLJENA LINIJA (CRTA)" VerticalAlignment="Top" FontSize="20"/>
+            <Image Grid.Column="2" Margin="0,-80,0,0" Source="Images/djevojcica_put_stepenice.tif" Height="235" Width="424.667"/>
+            <Image Grid.Column="2" Source="Images/Linija kao/bubble005.png" Margin="132.666,115,69.667,482"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="48" Margin="149.084,126.733,0,0" TextWrapping="Wrap" Text="NACRTALA SAM CESTU PRAVOM LINIJOM." VerticalAlignment="Top" Width="190" FontSize="14" TextAlignment="Center"/>
+            <Image Grid.Column="2" Source="Images/Linija kao/bubble006.png" Margin="181.741,187,0,412"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="230.101,193,0,0" TextWrapping="Wrap" Text="A JA STEPENICE IZLOMLJENOM LINIJOM." VerticalAlignment="Top" FontSize="14" TextAlignment="Center"/>
+
+            <TextBlock Grid.Column="2" Background="AliceBlue" HorizontalAlignment="Center" Margin="10,430.5,9.999,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="404.667" TextAlignment="Center" Text="IZLOMLJENE LINIJE MOGU BITI: OTVORENE I ZATVORENE."/>
+            <Image Grid.Column="2" HorizontalAlignment="Center" Margin="30.667,515,254,0" VerticalAlignment="Top" Source="Images/Linija kao/line008.png" Height="88.63" Width="140"/>
+            <Image Grid.Column="2" HorizontalAlignment="Left" Margin="230.101,504.703,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line009.png" Width="160.72" Height="65.297"/>
+            <Image Grid.Column="2" HorizontalAlignment="Left" Height="110" Margin="51.667,608.63,0,-27.63" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line010.png"/>
+            <Image Grid.Column="2" HorizontalAlignment="Left" Height="110" Margin="256,590,0,-9" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line011.png"/>
+
+        </Grid>
+    </Grid>
+</Window>

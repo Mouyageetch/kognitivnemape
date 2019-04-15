@@ -12,27 +12,47 @@
         <Storyboard x:Key="tijelaFade">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image4">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image5">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image7">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image8">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image9">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image10">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="tijelaGlow" AutoReverse="True" RepeatBehavior="Forever">
@@ -301,11 +321,11 @@
                     </TransformGroup>
                 </ed:LineArrow.RenderTransform>
             </ed:LineArrow>
-            <Image Grid.Column="1" HorizontalAlignment="Left" Margin="98,85,0,0" VerticalAlignment="Top" Width="200" Source="Images/kvadarBijeli001.png" Height="102.749"/>
-            <Image Grid.Column="1" HorizontalAlignment="Left" Margin="358,85,0,0" VerticalAlignment="Top" Width="245" Source="Images/valjakBijeli001.png" Height="120.05"/>
-            <Image Grid.Column="1" HorizontalAlignment="Left" Margin="33,232.251,0,0" VerticalAlignment="Top" Width="145" Source="Images/kvadratBijeli001.png" Grid.RowSpan="2" Height="133.541"/>
-            <Image Grid.Column="1" HorizontalAlignment="Left" Margin="492,240.792,0,0" VerticalAlignment="Top" Width="135" Source="Images/kupaBijela001.png" Height="125" Grid.RowSpan="2"/>
-            <Image Grid.Column="1" HorizontalAlignment="Left" Margin="268,230,0,0" VerticalAlignment="Top" Width="135" Source="Images/loptaBijela001.png" Height="125" Grid.Row="1"/>
+            <Image x:Name="image7" Grid.Column="1" HorizontalAlignment="Left" Margin="98,85,0,0" VerticalAlignment="Top" Width="200" Source="Images/kvadarBijeli001.png" Height="102.749"/>
+            <Image x:Name="image8" Grid.Column="1" HorizontalAlignment="Left" Margin="358,85,0,0" VerticalAlignment="Top" Width="245" Source="Images/valjakBijeli001.png" Height="120.05"/>
+            <Image x:Name="image6" Grid.Column="1" HorizontalAlignment="Left" Margin="33,232.251,0,0" VerticalAlignment="Top" Width="145" Source="Images/kvadratBijeli001.png" Grid.RowSpan="2" Height="133.541"/>
+            <Image x:Name="image9" Grid.Column="1" HorizontalAlignment="Left" Margin="492,240.792,0,0" VerticalAlignment="Top" Width="135" Source="Images/kupaBijela001.png" Height="125" Grid.RowSpan="2"/>
+            <Image x:Name="image10" Grid.Column="1" HorizontalAlignment="Left" Margin="268,230,0,0" VerticalAlignment="Top" Width="135" Source="Images/loptaBijela001.png" Height="125" Grid.Row="1"/>
             <ed:LineArrow x:Name="ravneLine003" Grid.Column="1" Fill="Red" HorizontalAlignment="Left" Height="154.991" Margin="298,114.983,0,0" Stroke="#FF219BC9" VerticalAlignment="Top" Width="0.152" RenderTransformOrigin="0,0" Grid.RowSpan="2" Visibility="Hidden">
                 <ed:LineArrow.RenderTransform>
                     <TransformGroup>

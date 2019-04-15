@@ -15,26 +15,26 @@ using System.Windows.Shapes;
 namespace Mape001
 {
     /// <summary>
-    /// Interaction logic for Window_004.xaml
+    /// Interaction logic for Window_006.xaml
     /// </summary>
-    public partial class Window_004 : Window
+    public partial class Window_006 : Window
     {
-        public Window_004()
+        public Window_006()
         {
             InitializeComponent();
         }
 
         private void PreviousWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Window_003a window_003a = new Window_003a();
-            window_003a.Show();
+            Window_005 window_005 = new Window_005();
+            window_005.Show();
             this.Close();
         }
 
         private void NextWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Window_005 window_005 = new Window_005();
-            window_005.Show();
+            Window_007 window_007 = new Window_007();
+            window_007.Show();
             this.Close();
         }
     }

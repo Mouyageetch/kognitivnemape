@@ -47,7 +47,7 @@ namespace Mape001
         {
             TextBlock textBlock = sender as TextBlock;
 
-            switch (textBlock.Text.ElementAt(0))
+            switch (textBlock.Name.ElementAt(2))
             {
                 case '1':
                     Window_001 window_001 = new Window_001();
@@ -60,6 +60,9 @@ namespace Mape001
                     this.Close();
                     break;
                 case '3':
+                    Window_006 window_006 = new Window_006();
+                    window_006.Show();
+                    this.Close();
                     break;
                 case '4':
                     break;
