@@ -8,6 +8,23 @@
         mc:Ignorable="d"
         Title="Geometrijski oblici i likovi" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
         Icon="Images/favicon-32x32.png" ResizeMode="NoResize" Loaded="Window_Loaded" >
+    <Window.Resources>
+        <Storyboard x:Key="handAnimation" AutoReverse="True" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="hand">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.7"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="hand">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.7"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource handAnimation}"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid>
         <ed:LineArrow x:Name="izlOtvLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="736.083,463.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="88.917" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
             <ed:LineArrow.RenderTransform>
@@ -148,8 +165,19 @@
                 <TextBlock x:Name="banner" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center"/>
                 <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"/>
             </DockPanel>
-            <Image x:Name="randomImage" HorizontalAlignment="Left" Height="205" Margin="1015,218,0,0" VerticalAlignment="Top" Width="225.5" MouseLeftButtonDown="RandomImage_MouseLeftButtonDown"/>
+
         </Grid>
+        <Image x:Name="randomImage" HorizontalAlignment="Left" Height="205" Margin="1015,218,0,0" VerticalAlignment="Top" Width="225.5" MouseLeftButtonDown="RandomImage_MouseLeftButtonDown"/>
+            <Image x:Name="hand" HorizontalAlignment="Left" Height="136.925" Margin="1155,128.075,0,0" VerticalAlignment="Top" Width="110.208" MouseLeftButtonDown="RandomImage_MouseLeftButtonDown" Source="Images/hand.png" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="223.106"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
 
         <TextBlock x:Name="linije" Cursor="Hand" FontSize="24" Text="LINIJE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="0" Width="210" Height="35"/>
         <TextBlock x:Name="prave" Cursor="Hand" FontSize="24" Text="PRAVE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="350.5,329.538,835.5,329.538" Width="88" Height="35"/>

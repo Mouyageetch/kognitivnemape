@@ -113,6 +113,12 @@
     <Compile Include="Window_008.xaml.cs">
       <DependentUpon>Window_008.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window_009.xaml.cs">
+      <DependentUpon>Window_009.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window_010.xaml.cs">
+      <DependentUpon>Window_010.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -158,6 +164,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window_008.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_009.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_010.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -335,6 +349,29 @@
     <Resource Include="Images\Linija kao\test\zakOtv002.png" />
     <Resource Include="Images\Linija kao\test\zakZatv001.png" />
     <Resource Include="Images\Linija kao\test\zakZatv002.png" />
+    <Resource Include="Images\Granice\krug001.png" />
+    <Resource Include="Images\Granice\kvadrat001.png" />
+    <Resource Include="Images\Granice\pravougaonik001.png" />
+    <Resource Include="Images\Granice\tabla.png" />
+    <Resource Include="Images\Granice\trougao001.png" />
+    <Resource Include="Images\Granice\bocnaStranaPiramide001.png" />
+    <Resource Include="Images\Granice\bocnaStranaPiramide002.png" />
+    <Resource Include="Images\Granice\bocnaStranaPiramide003.png" />
+    <Resource Include="Images\Granice\bocnaStranaPiramideLines.png" />
+    <Resource Include="Images\Granice\ravnaPovrsValjka001.png" />
+    <Resource Include="Images\Granice\ravnaPovrsValjka002.png" />
+    <Resource Include="Images\Granice\ravnaPovrsValjka003.png" />
+    <Resource Include="Images\Granice\ravnaPovrsValjkaLines.png" />
+    <Resource Include="Images\Granice\stranaKocke001.png" />
+    <Resource Include="Images\Granice\stranaKocke002.png" />
+    <Resource Include="Images\Granice\stranaKocke003.png" />
+    <Resource Include="Images\Granice\stranaKockeLines.png" />
+    <Resource Include="Images\Granice\stranaKvadrata001.png" />
+    <Resource Include="Images\Granice\stranaKvadrata002.png" />
+    <Resource Include="Images\Granice\stranaKvadrata003.png" />
+    <Resource Include="Images\Granice\stranaKvadrataLines.png" />
+    <Resource Include="Images\hand.png" />
+    <Resource Include="Images\home.png" />
     <Content Include="Sounds\Click_Soft_00.mp3" />
   </ItemGroup>
   <ItemGroup>

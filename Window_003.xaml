@@ -8,6 +8,21 @@
         mc:Ignorable="d"
         Title="Geometrijski oblici i likovi" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
         Icon="Images/favicon-32x32.png" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Storyboard x:Key="handAnimation" AutoReverse="True" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="hand">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="hand">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource handAnimation}"/>
+        </EventTrigger>
+    </Window.Triggers>
 
     <Grid>
         <Grid Width="1274">
@@ -17,7 +32,7 @@
                 <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
             </DockPanel>
         </Grid>
-        
+
         <TextBlock Cursor="Hand" FontSize="24" Text="PREDMETI OBLIKA" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="535,328.538,527,328.538" Width="210" />
         <TextBlock x:Name="kocke" Cursor="Hand"  FontSize="24" Margin="600.058,432.538,587,224.538" Text="KOCKE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Width="84.942"/>
         <TextBlock x:Name="lopte" Cursor="Hand"  FontSize="24" Margin="833.643,272.538,347,384.538" Text="LOPTE" HorizontalAlignment="Center" VerticalAlignment="Center" Width="91.357" Background="#FFC2EADD" TextAlignment="Center"/>
@@ -233,6 +248,16 @@
                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="72" Foreground="GhostWhite" Text="ISPRAVAN ODGOVOR!"></TextBlock>
             </StackPanel>
         </Grid>
+        <Image x:Name="hand" HorizontalAlignment="Left" Height="120" Margin="490,90,0,0" VerticalAlignment="Top" Width="120" Source="Images/hand.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-97.747"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
 
     </Grid>
 </Window>

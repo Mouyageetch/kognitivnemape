@@ -9,7 +9,7 @@
         Title="Geometrijski oblici i likovi" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
         Icon="Images/favicon-32x32.png" ResizeMode="NoResize" >
     <Grid>
-        <ed:LineArrow x:Name="izlOtvLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="736.083,463.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="88.917" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="izlOtvLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="736.083,463.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="88.917" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -19,7 +19,7 @@
                 </TransformGroup>
             </ed:LineArrow.RenderTransform>
         </ed:LineArrow>
-        <ed:LineArrow x:Name="izlOtvLine002" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="677.857,463.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="147.143" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="izlOtvLine002" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="677.857,463.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="147.143" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -31,7 +31,7 @@
         </ed:LineArrow>
 
 
-        <ed:LineArrow x:Name="izlZatvLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="283.407,465.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="177.63" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="izlZatvLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="283.407,465.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="177.63" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -41,7 +41,7 @@
                 </TransformGroup>
             </ed:LineArrow.RenderTransform>
         </ed:LineArrow>
-        <ed:LineArrow x:Name="izlZatvLine002" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="392.731,465.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="68.306" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="izlZatvLine002" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="392.731,465.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="68.306" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -51,7 +51,7 @@
                 </TransformGroup>
             </ed:LineArrow.RenderTransform>
         </ed:LineArrow>
-        <ed:LineArrow x:Name="izlZatvLine003" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="348.617,465.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="112.42" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="izlZatvLine003" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="348.617,465.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="112.42" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -61,7 +61,7 @@
                 </TransformGroup>
             </ed:LineArrow.RenderTransform>
         </ed:LineArrow>
-        <ed:LineArrow x:Name="zakOtvLine002" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="268.561,220,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="186.439" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="zakOtvLine002" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="268.561,220,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="186.439" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -71,7 +71,7 @@
                 </TransformGroup>
             </ed:LineArrow.RenderTransform>
         </ed:LineArrow>
-        <ed:LineArrow x:Name="zakOtvLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="406.576,220,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="48.424" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="zakOtvLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="406.576,220,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="48.424" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -81,7 +81,7 @@
                 </TransformGroup>
             </ed:LineArrow.RenderTransform>
         </ed:LineArrow>
-        <ed:LineArrow x:Name="zakZatvLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="735.963,219.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="94.037" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="zakZatvLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="735.963,219.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="94.037" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -91,7 +91,7 @@
                 </TransformGroup>
             </ed:LineArrow.RenderTransform>
         </ed:LineArrow>
-        <ed:LineArrow x:Name="zakZatvLine002" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="691.034,219.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="138.966" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="zakZatvLine002" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="691.034,219.5,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="138.966" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -101,8 +101,8 @@
                 </TransformGroup>
             </ed:LineArrow.RenderTransform>
         </ed:LineArrow>
-        <ed:LineArrow x:Name="linijeLine005" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="440,345,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="110" FlowDirection="RightToLeft" RenderTransformOrigin="1,0"/>
-        <ed:LineArrow x:Name="linijeLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="410.256,337.435,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="207.664" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="linijeLine005" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="440,345,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="110" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden"/>
+        <ed:LineArrow x:Name="linijeLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="410.256,337.435,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="207.664" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -112,7 +112,7 @@
                 </TransformGroup>
             </ed:LineArrow.RenderTransform>
         </ed:LineArrow>
-        <ed:LineArrow x:Name="linijeLine002" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="443.588,341.295,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="217.08" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="linijeLine002" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="443.588,341.295,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="217.08" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -122,7 +122,7 @@
                 </TransformGroup>
             </ed:LineArrow.RenderTransform>
         </ed:LineArrow>
-        <ed:LineArrow x:Name="linijeLine003" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="444.355,348.822,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="209.037" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="linijeLine003" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="444.355,348.822,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="209.037" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -132,7 +132,7 @@
                 </TransformGroup>
             </ed:LineArrow.RenderTransform>
         </ed:LineArrow>
-        <ed:LineArrow x:Name="linijeLine004" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="391.749,343.143,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="217.372" FlowDirection="RightToLeft" RenderTransformOrigin="1,0">
+        <ed:LineArrow x:Name="linijeLine004" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="391.749,343.143,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="217.372" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden">
             <ed:LineArrow.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -151,17 +151,17 @@
         </Grid>
 
         <TextBlock x:Name="linije" Cursor="Hand" FontSize="24" Text="LINIJE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="0" Width="210" MouseLeftButtonDown="Linije_MouseLeftButtonDown" Height="35"/>
-        <TextBlock x:Name="prave" Cursor="Hand" FontSize="24" Text="PRAVE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="350.5,329.538,835.5,329.538" Width="88" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Height="35"/>
-        <TextBlock x:Name="zakOtv" Cursor="Hand" FontSize="24" Text="ZAKRIVLJENE OTVORENE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="0,0,352,217" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Width="300" Height="35"/>
-        <TextBlock x:Name="zakZatv" Cursor="Hand" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="677.5,220,296.5,437" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Width="300" Height="34"><Run Text="ZAKRIVLJENE "/><Run Text="ZATVORENE"/></TextBlock>
-        <TextBlock x:Name="izlZatv" Cursor="Hand" FontSize="24" Text="IZLOMLJENE ZATVORENE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="317.86,439.019,655.39,216.981" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Width="300.75" Height="35"/>
-        <TextBlock x:Name="izlOtv" Cursor="Hand" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="677.5,439.019,296.5,216.981" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Text="IZLOMLJENE OTVORENE" Width="300" Height="35"/>
-        <Image x:Name="zakOtv002" HorizontalAlignment="Left" Margin="60,135,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line005.png" Height="34.737" Width="230"/>
-        <Image x:Name="zakOtv001" HorizontalAlignment="Left" Margin="395,50,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line006.png" Height="130" Width="115"/>
-        <Image x:Name="zakZatv001" HorizontalAlignment="Left" Margin="650,80,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line002.png" Height="130" Width="115"/>
-        <Image x:Name="zakZatv002" HorizontalAlignment="Left" Margin="950,50,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line001.png" Height="130" Width="115"/>
-        <ed:LineArrow x:Name="praveLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="255,345,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="90" FlowDirection="RightToLeft" RenderTransformOrigin="1,0"/>
-        <Image x:Name="prave001" HorizontalAlignment="Left" Margin="23,352.763,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line004.png" Height="34.737" Width="230" RenderTransformOrigin="0.5,0.5">
+        <TextBlock x:Name="prave" Cursor="Hand" FontSize="24" Text="PRAVE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="350.5,329.538,835.5,329.538" Width="88" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Height="35" Visibility="Hidden"/>
+        <TextBlock x:Name="zakOtv" Cursor="Hand" FontSize="24" Text="ZAKRIVLJENE OTVORENE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="0,0,352,217" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Width="300" Height="35" Visibility="Hidden"/>
+        <TextBlock x:Name="zakZatv" Cursor="Hand" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="677.5,220,296.5,437" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Width="300" Height="34" Visibility="Hidden"><Run Text="ZAKRIVLJENE "/><Run Text="ZATVORENE"/></TextBlock>
+        <TextBlock x:Name="izlZatv" Cursor="Hand" FontSize="24" Text="IZLOMLJENE ZATVORENE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="317.86,439.019,655.39,216.981" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Width="300.75" Height="35" Visibility="Hidden"/>
+        <TextBlock x:Name="izlOtv" Cursor="Hand" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="677.5,439.019,296.5,216.981" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Text="IZLOMLJENE OTVORENE" Width="300" Height="35" Visibility="Hidden"/>
+        <Image x:Name="zakOtv002" HorizontalAlignment="Left" Margin="60,135,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line005.png" Height="34.737" Width="230" Visibility="Hidden"/>
+        <Image x:Name="zakOtv001" HorizontalAlignment="Left" Margin="395,50,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line006.png" Height="130" Width="115" Visibility="Hidden"/>
+        <Image x:Name="zakZatv001" HorizontalAlignment="Left" Margin="650,80,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line002.png" Height="130" Width="115" Visibility="Hidden"/>
+        <Image x:Name="zakZatv002" HorizontalAlignment="Left" Margin="950,50,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line001.png" Height="130" Width="115" Visibility="Hidden"/>
+        <ed:LineArrow x:Name="praveLine001" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="255,345,0,0" Stroke="#FF4AC19B" VerticalAlignment="Top" Width="90" FlowDirection="RightToLeft" RenderTransformOrigin="1,0" Visibility="Hidden"/>
+        <Image x:Name="prave001" HorizontalAlignment="Left" Margin="23,352.763,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line004.png" Height="34.737" Width="230" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -171,7 +171,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="izlZatv001" HorizontalAlignment="Left" Margin="109.778,509.79,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line010.png" Height="125.21" Width="165.222" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="izlZatv001" HorizontalAlignment="Left" Margin="109.778,509.79,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line010.png" Height="125.21" Width="165.222" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -181,7 +181,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="izlZatv002" HorizontalAlignment="Left" Margin="325,545,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line011.png" Height="125.21" Width="165.222" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="izlZatv002" HorizontalAlignment="Left" Margin="325,545,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line011.png" Height="125.21" Width="165.222" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -191,7 +191,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="izlZatv003" HorizontalAlignment="Left" Margin="514.778,544.79,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line003.png" Height="125.21" Width="165.222" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="izlZatv003" HorizontalAlignment="Left" Margin="514.778,544.79,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line003.png" Height="125.21" Width="165.222" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -201,7 +201,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="izlOtv001" HorizontalAlignment="Left" Margin="685,544.79,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line008.png" Height="125.21" Width="165.222" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="izlOtv001" HorizontalAlignment="Left" Margin="685,544.79,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line008.png" Height="125.21" Width="165.222" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -211,7 +211,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="izlOtv002" HorizontalAlignment="Left" Margin="919.778,549.79,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line009.png" Height="125.21" Width="165.222" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="izlOtv002" HorizontalAlignment="Left" Margin="919.778,549.79,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line009.png" Height="125.21" Width="165.222" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

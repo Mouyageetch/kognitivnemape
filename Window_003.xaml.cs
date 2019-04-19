@@ -145,6 +145,8 @@ namespace Mape001
                  */
                 if (!visible)
                     success.Visibility = Visibility.Visible;
+
+                hand.Visibility = Visibility.Hidden;
             }
         }
 

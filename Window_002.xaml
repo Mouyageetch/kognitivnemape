@@ -18,10 +18,25 @@
                 </EventTrigger>
             </Style.Triggers>
         </Style>
+        <Storyboard x:Key="handAnimation" AutoReverse="True" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="hand">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.6"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.8"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="hand">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.6"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.8"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource handAnimation}"/>
+        </EventTrigger>
+    </Window.Triggers>
 
     <Grid>
-        
+
         <TextBlock Cursor="Hand" FontSize="24" Text="PREDMETI OBLIKA" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="535,328.538,527,328.538" Width="210" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
         <TextBlock x:Name="kocke" Cursor="Hand"  FontSize="24" Margin="600.058,432.538,587,224.538" Text="KOCKE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Width="84.942" MouseLeftButtonDown="Kocke_MouseLeftButtonDown" Visibility="Hidden"/>
         <TextBlock x:Name="valjka" Cursor="Hand"  FontSize="24" Margin="580,223.5,577,431.5" Text="VALJKA" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" Width="115" Height="34" TextAlignment="Center" Visibility="Hidden" MouseLeftButtonDown="Valjka_MouseLeftButtonDown"/>
@@ -316,6 +331,16 @@
                 <TextBlock VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center"></TextBlock>
                 <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
             </StackPanel>
+            <Image x:Name="hand" HorizontalAlignment="Left" Height="120" Margin="600,356.5,0,0" VerticalAlignment="Top" Width="120" Source="Images/hand.png" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
         </Grid>
 
     </Grid>

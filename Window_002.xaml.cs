@@ -178,6 +178,7 @@ namespace Mape001
                 line.Visibility = (line.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
             }
 
+            hand.Visibility = Visibility.Hidden;
 
         }
     }

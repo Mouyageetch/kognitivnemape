@@ -129,6 +129,8 @@ namespace Mape001
                 if (randomImage.Source == null)
                     success.Visibility = Visibility.Visible;
 
+                hand.Visibility = Visibility.Hidden;
+
 
             }
         }
@@ -144,6 +146,9 @@ namespace Mape001
         private void NextWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
+            Window_009 window_009 = new Window_009();
+            window_009.Show();
+            this.Close();
         }
 
         private void RandomImage_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
