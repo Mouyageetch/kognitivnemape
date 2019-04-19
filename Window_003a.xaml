@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:Mape001"
         mc:Ignorable="d"
         Title="Geometrijski oblici i likovi" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
-        Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
 
 

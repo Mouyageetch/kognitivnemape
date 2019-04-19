@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,6 +20,7 @@ namespace Mape001
     /// </summary>
     public partial class Window_003a : Window
     {
+        SoundPlayer soundPlayer;
         Image dragSource = null;
 
         public Window_003a()
@@ -67,7 +69,11 @@ namespace Mape001
                 }
                 // AKO SU SVI NEVIDLJIVI
                 if (!visible)
+                {
                     success.Visibility = Visibility.Visible;
+                    soundPlayer = new SoundPlayer(Properties.Resources.successUke);
+                    soundPlayer.Play();
+                }
             }
 
         }
@@ -84,6 +90,12 @@ namespace Mape001
             Window_003 window_003 = new Window_003();
             window_003.Show();
             this.Close();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            soundPlayer = new SoundPlayer(Properties.Resources.povuciTijela);
+            soundPlayer.Play();
         }
     }
 }

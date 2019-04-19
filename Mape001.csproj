@@ -257,6 +257,7 @@
     <Resource Include="Images\VALJAK.jpg" />
     <Resource Include="Images\Valjak.png" />
     <Resource Include="Images\VALJAK.tif" />
+    <None Include="Voice\valjak.mp3" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\BosanskaKnjiga.png" />
@@ -290,6 +291,42 @@
     <Resource Include="Images\lopta004.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Voice\nekaPovrsi.wav" />
+    <None Include="Voice\povrsiGranice.wav" />
+    <None Include="Voice\nekaGeom.wav" />
+    <None Include="Voice\oveIgracke.wav" />
+    <None Include="Sounds\successUke.wav" />
+    <None Include="Voice\stranaKocke.wav" />
+    <None Include="Voice\stranaKvadrata.wav" />
+    <None Include="Voice\ravnaPovrsValjka.wav" />
+    <None Include="Voice\bocnaStranaPiramide.wav" />
+    <None Include="Voice\linije.wav" />
+    <None Include="Voice\zakrivljeneZatvorene.wav" />
+    <None Include="Voice\zakrivljeneOtvorene.wav" />
+    <None Include="Voice\praveLinije.wav" />
+    <None Include="Voice\izlomljeneZatvorene.wav" />
+    <None Include="Voice\izlomljeneOtvorene.wav" />
+    <None Include="Voice\povuciLiniju.wav" />
+    <None Include="Voice\strana.wav" />
+    <None Include="Voice\brid.wav" />
+    <None Include="Voice\vrh.wav" />
+    <None Include="Voice\povrsi.wav" />
+    <None Include="Voice\ravnePovrsi.wav" />
+    <None Include="Voice\zakrivljenePovrsi.wav" />
+    <None Include="Voice\povuciTijela.wav" />
+    <None Include="Voice\predmetiOblika.wav" />
+    <None Include="Voice\predmetiOblikaValjka.wav" />
+    <None Include="Voice\predmetiOblikaKupe.wav" />
+    <None Include="Voice\predmetiOblikaPiramide.wav" />
+    <None Include="Voice\predmetiOblikaKocke.wav" />
+    <None Include="Voice\predmetiOblikaKvadra.wav" />
+    <None Include="Voice\predmetiOblikaLopte.wav" />
+    <None Include="Voice\piramida.wav" />
+    <None Include="Voice\lopta.wav" />
+    <None Include="Voice\kvadar.wav" />
+    <None Include="Voice\kupa.wav" />
+    <None Include="Voice\kocka.wav" />
+    <None Include="Voice\valjak.wav" />
     <Resource Include="Sounds\click.wav" />
     <Resource Include="Images\next.png" />
     <Resource Include="Images\upitnik.png" />

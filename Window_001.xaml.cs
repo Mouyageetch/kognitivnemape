@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,6 +20,7 @@ namespace Mape001
     /// </summary>
     public partial class Window_001 : Window
     {
+        SoundPlayer soundPlayer;
         public Window_001()
         {
             InitializeComponent();
@@ -44,6 +46,57 @@ namespace Mape001
             Window_002 window_002 = new Window_002();
             window_002.Show();
             this.Close();
+        }
+
+        private void Valjak_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            //System.IO.Stream stream = Properties.Resources.ResourceManager.
+            //soundPlayer = new SoundPlayer(@"/Mape001;component/Sounds/click.wav");
+            //soundPlayer.Play();
+            soundPlayer = new SoundPlayer(Properties.Resources.valjak);
+            soundPlayer.Play();
+            
+        }
+
+        private void Lopta_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            soundPlayer = new SoundPlayer(Properties.Resources.lopta);
+            soundPlayer.Play();
+        }
+
+        private void Kupa_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+            soundPlayer = new SoundPlayer(Properties.Resources.kupa);
+            soundPlayer.Play();
+        }
+
+        private void Kocka_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+            soundPlayer = new SoundPlayer(Properties.Resources.kocka);
+            soundPlayer.Play();
+        }
+
+        private void Kvadar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+            soundPlayer = new SoundPlayer(Properties.Resources.kvadar);
+            soundPlayer.Play();
+        }
+
+        private void Piramida_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+            soundPlayer = new SoundPlayer(Properties.Resources.piramida);
+            soundPlayer.Play();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            soundPlayer = new SoundPlayer(Properties.Resources.oveIgracke);
+            soundPlayer.Play();
         }
     }
 }

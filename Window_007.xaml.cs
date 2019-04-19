@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,9 +25,12 @@ namespace Mape001
         List<LineArrow> lines;
         List<Image> images;
 
+        SoundPlayer soundPlayer;
         public Window_007()
         {
             InitializeComponent();
+            soundPlayer = new SoundPlayer();
+            soundPlayer.Stop();
 
             tbs = new List<TextBlock>
             {
@@ -55,7 +59,33 @@ namespace Mape001
 
         private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+
             TextBlock tb = sender as TextBlock;
+            switch (tb.Name)
+            {
+                case "prave":
+                    soundPlayer = new SoundPlayer(Properties.Resources.praveLinije);
+                    soundPlayer.Play();
+                    break;
+                case "zakZatv":
+                    soundPlayer = new SoundPlayer(Properties.Resources.zakrivljeneZatvorene);
+                    soundPlayer.Play();
+                    break;
+                case "zakOtv":
+                    soundPlayer = new SoundPlayer(Properties.Resources.zakrivljeneOtvorene);
+                    soundPlayer.Play();
+                    break;
+                case "izlZatv":
+                    soundPlayer = new SoundPlayer(Properties.Resources.izlomljeneZatvorene);
+                    soundPlayer.Play();
+                    break;
+                case "izlOtv":
+                    soundPlayer = new SoundPlayer(Properties.Resources.izlomljeneOtvorene);
+                    soundPlayer.Play();
+                    break;
+
+
+            }
 
             foreach (var line in lines)
             {
@@ -74,6 +104,8 @@ namespace Mape001
 
         private void Linije_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            soundPlayer = new SoundPlayer(Properties.Resources.linije);
+            soundPlayer.Play();
             TextBlock tb = sender as TextBlock;
 
             foreach (var line in lines)

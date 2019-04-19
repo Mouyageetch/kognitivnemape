@@ -11,13 +11,6 @@
 
 
     <Window.Resources>
-        <Style TargetType="TextBlock">
-            <Style.Triggers>
-                <EventTrigger RoutedEvent="MouseLeftButtonDown">
-                    <SoundPlayerAction Source="/Mape001;component/Sounds/click.wav" />
-                </EventTrigger>
-            </Style.Triggers>
-        </Style>
         <Storyboard x:Key="handAnimation" AutoReverse="True" RepeatBehavior="Forever">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="hand">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0.6"/>

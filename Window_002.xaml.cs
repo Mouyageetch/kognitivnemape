@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,6 +22,7 @@ namespace Mape001
     /// </summary>
     public partial class Window_002 : Window
     {
+        SoundPlayer soundPlayer;
         LineArrow[] lineArrows0, valjakLines, kupaLines, kvadarLines, loptaLines, kockaLines, piramidaLines;
         List<LineArrow[]> allLines;
         Image[] valjakImages, kupaImages, kvadarImages, loptaImages, kockaImages, piramidaImages;
@@ -47,6 +49,8 @@ namespace Mape001
         public Window_002()
         {
             InitializeComponent();
+            soundPlayer = new SoundPlayer();
+            soundPlayer.Stop();
             textBlocks = new TextBlock[] { kupe, kvadra, lopte, kocke, piramide, valjka };
             lineArrows0 = new LineArrow[] { line01, line02, line03, line04, line05, line06 };
 
@@ -74,6 +78,8 @@ namespace Mape001
 
         private void Piramide_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            soundPlayer = new SoundPlayer(Properties.Resources.predmetiOblikaPiramide);
+            soundPlayer.Play();
             foreach (var line in piramidaLines)
             {
                 line.Visibility = (line.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
@@ -89,6 +95,8 @@ namespace Mape001
 
         private void Kupe_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            soundPlayer = new SoundPlayer(Properties.Resources.predmetiOblikaKupe);
+            soundPlayer.Play();
             foreach (var line in kupaLines)
             {
                 line.Visibility = (line.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
@@ -101,6 +109,8 @@ namespace Mape001
 
         private void Valjka_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            soundPlayer = new SoundPlayer(Properties.Resources.predmetiOblikaValjka);
+            soundPlayer.Play();
             foreach (var line in valjakLines)
             {
                 line.Visibility = (line.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
@@ -113,6 +123,8 @@ namespace Mape001
 
         private void Kocke_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            soundPlayer = new SoundPlayer(Properties.Resources.predmetiOblikaKocke);
+            soundPlayer.Play();
             foreach (var line in kockaLines)
             {
                 line.Visibility = (line.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
@@ -125,6 +137,8 @@ namespace Mape001
 
         private void Lopte_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            soundPlayer = new SoundPlayer(Properties.Resources.predmetiOblikaLopte);
+            soundPlayer.Play();
             foreach (var line in loptaLines)
             {
                 line.Visibility = (line.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
@@ -137,6 +151,8 @@ namespace Mape001
 
         private void Kvadra_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            soundPlayer = new SoundPlayer(Properties.Resources.predmetiOblikaKvadra);
+            soundPlayer.Play();
             foreach (var line in kvadarLines)
             {
                 line.Visibility = (line.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
@@ -149,7 +165,8 @@ namespace Mape001
 
         private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            soundPlayer = new SoundPlayer(Properties.Resources.predmetiOblika);
+            soundPlayer.Play();
 
             foreach (var lineArray in allLines)
             {

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,10 +23,13 @@ namespace Mape001
     {
         List<LineArrow> lines01, lines02, lines03;
         List<Image> glows;
+        SoundPlayer soundPlayer;
 
         public Window_005()
         {
             InitializeComponent();
+            soundPlayer = new SoundPlayer();
+            soundPlayer.Stop();
 
             lines01 = new List<LineArrow> {
                 stranaLine001, stranaLine002, stranaLine003, stranaLine004, stranaLine005,
@@ -57,6 +61,23 @@ namespace Mape001
         {
             TextBlock tb = sender as TextBlock;
 
+            switch (tb.Name)
+            {
+                case "strana":
+                    soundPlayer = new SoundPlayer(Properties.Resources.strana);
+                    soundPlayer.Play();
+                    break;
+                case "vrh":
+                    soundPlayer = new SoundPlayer(Properties.Resources.vrh);
+                    soundPlayer.Play();
+                    break;
+                case "brid":
+                    soundPlayer = new SoundPlayer(Properties.Resources.brid);
+                    soundPlayer.Play();
+                    break;
+
+            }
+
             // Pokazi linije cije ime pocinje tekstom pritisnutog TextBlocka
             foreach (var line in lines01)
             {
@@ -80,6 +101,23 @@ namespace Mape001
         private void Povrsi_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             TextBlock tb = sender as TextBlock;
+
+            switch (tb.Name)
+            {
+                case "povrsi":
+                    soundPlayer = new SoundPlayer(Properties.Resources.povrsi);
+                    soundPlayer.Play();
+                    break;
+                case "zakrivljene":
+                    soundPlayer = new SoundPlayer(Properties.Resources.zakrivljenePovrsi);
+                    soundPlayer.Play();
+                    break;
+                case "ravne":
+                    soundPlayer = new SoundPlayer(Properties.Resources.ravnePovrsi);
+                    soundPlayer.Play();
+                    break;
+
+            }
 
             if (tb.Name == "povrsi")
             {
@@ -107,8 +145,8 @@ namespace Mape001
 
         private void PreviousWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Window_003a window_003a = new Window_003a();
-            window_003a.Show();
+            Window_004 window_004 = new Window_004();
+            window_004.Show();
             this.Close();
         }
 

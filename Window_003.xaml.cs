@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
+using System.Media;
 
 namespace Mape001
 {
@@ -25,7 +26,7 @@ namespace Mape001
          * To nam treba da je sakrijemo iz ponudjenih slika za povlacenje
          * ako je korisnik odvuce na ispravno mjesto.
          */
-
+        SoundPlayer soundPlayer;
         Image dragSource = null;
 
         public Window_003()
@@ -144,7 +145,11 @@ namespace Mape001
                  * "ISPRAVAN ODGOVOR" :
                  */
                 if (!visible)
+                {
                     success.Visibility = Visibility.Visible;
+                    soundPlayer = new SoundPlayer(Properties.Resources.successUke);
+                    soundPlayer.Play();
+                }
 
                 hand.Visibility = Visibility.Hidden;
             }
@@ -166,6 +171,8 @@ namespace Mape001
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            soundPlayer = new SoundPlayer(Properties.Resources.povuciTijela);
+            soundPlayer.Play();
         }
     }
 }

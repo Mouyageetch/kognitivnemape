@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,6 +22,7 @@ namespace Mape001
     {
         ImageSourceConverter imageSourceConverter;
         List<string> possibleImages;
+        SoundPlayer soundPlayer;
 
         public void setRandomImage()
         {
@@ -57,6 +59,8 @@ namespace Mape001
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             setRandomImage();
+            soundPlayer = new SoundPlayer(Properties.Resources.povuciLiniju);
+            soundPlayer.Play();
         }
 
         private void image_Drop(object sender, DragEventArgs e)
@@ -127,7 +131,11 @@ namespace Mape001
                 setRandomImage();
                 
                 if (randomImage.Source == null)
+                {
                     success.Visibility = Visibility.Visible;
+                    soundPlayer = new SoundPlayer(Properties.Resources.successUke);
+                    soundPlayer.Play();
+                }
 
                 hand.Visibility = Visibility.Hidden;
 

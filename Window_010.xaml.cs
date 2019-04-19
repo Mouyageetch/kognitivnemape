@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,6 +21,7 @@ namespace Mape001
     public partial class Window_010 : Window
     {
         List<Image> stranaKockeObjects, stranaKvadrataObjects, bocnaStranaPiramideObjects, ravnaPovrsValjkaObjects;
+        SoundPlayer soundPlayer;
 
         private void PreviousWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -38,6 +40,8 @@ namespace Mape001
         public Window_010()
         {
             InitializeComponent();
+            soundPlayer = new SoundPlayer();
+            soundPlayer.Stop();
 
             stranaKockeObjects = new List<Image>
             {
@@ -68,24 +72,32 @@ namespace Mape001
             switch (tb.Name)
             {
                 case "stranaKocke":
+                    soundPlayer = new SoundPlayer(Properties.Resources.stranaKocke);
+                    soundPlayer.Play();
                     foreach (var image in stranaKockeObjects)
                     {
                         image.Visibility = image.Visibility == Visibility.Visible ? Visibility.Hidden : Visibility.Visible;
                     }
                     break;
                 case "stranaKvadrata":
+                    soundPlayer = new SoundPlayer(Properties.Resources.stranaKvadrata);
+                    soundPlayer.Play();
                     foreach (var image in stranaKvadrataObjects)
                     {
                         image.Visibility = image.Visibility == Visibility.Visible ? Visibility.Hidden : Visibility.Visible;
                     }
                     break;
                 case "bocnaStranaPiramide":
+                    soundPlayer = new SoundPlayer(Properties.Resources.bocnaStranaPiramide);
+                    soundPlayer.Play();
                     foreach (var image in bocnaStranaPiramideObjects)
                     {
                         image.Visibility = image.Visibility == Visibility.Visible ? Visibility.Hidden : Visibility.Visible;
                     }
                     break;
                 case "ravnaPovrsValjka":
+                    soundPlayer = new SoundPlayer(Properties.Resources.ravnaPovrsValjka);
+                    soundPlayer.Play();
                     foreach (var image in ravnaPovrsValjkaObjects)
                     {
                         image.Visibility = image.Visibility == Visibility.Visible ? Visibility.Hidden : Visibility.Visible;
