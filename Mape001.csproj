@@ -110,6 +110,9 @@
     <Compile Include="Window_007.xaml.cs">
       <DependentUpon>Window_007.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window_008.xaml.cs">
+      <DependentUpon>Window_008.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -151,6 +154,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window_007.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_008.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -318,6 +325,16 @@
     <Resource Include="Images\Linija kao\line009.png" />
     <Resource Include="Images\Linija kao\line010.png" />
     <Resource Include="Images\Linija kao\line011.png" />
+    <Resource Include="Images\Linija kao\test\izlOtv001.png" />
+    <Resource Include="Images\Linija kao\test\izlOtv002.png" />
+    <Resource Include="Images\Linija kao\test\izlZatv001.png" />
+    <Resource Include="Images\Linija kao\test\izlZatv002.png" />
+    <Resource Include="Images\Linija kao\test\izlZatv003.png" />
+    <Resource Include="Images\Linija kao\test\prave001.png" />
+    <Resource Include="Images\Linija kao\test\zakOtv001.png" />
+    <Resource Include="Images\Linija kao\test\zakOtv002.png" />
+    <Resource Include="Images\Linija kao\test\zakZatv001.png" />
+    <Resource Include="Images\Linija kao\test\zakZatv002.png" />
     <Content Include="Sounds\Click_Soft_00.mp3" />
   </ItemGroup>
   <ItemGroup>
