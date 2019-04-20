@@ -6,7 +6,181 @@
         xmlns:local="clr-namespace:Mape001"
         mc:Ignorable="d"
         Title="Geometrijski oblici i likovi" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
-        Icon="Images/favicon-32x32.png" ResizeMode="NoResize" >
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize" Loaded="Window_Loaded" >
+    <Window.Resources>
+        <Storyboard x:Key="Storyboard1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.995"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.1" Value="0.995"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.3" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.3" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.7" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:21" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:21.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:23.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image7">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:26.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:26.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image8">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:27.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:28.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:27.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:28.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock7">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:32" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:33.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image9">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:34.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:37" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image10">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:34.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:37" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image11">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:34.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:37" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image12">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:23.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image13">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:34.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:37" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock8">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:39.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:40.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image14">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:40.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:42.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image15">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:42.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:43" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock9">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:42.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:43" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image16">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:44.8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:45.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock10">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:44.8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:45.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock11">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:48.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:49" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image17">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:49.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:50.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image18">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:49.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:50.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image19">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:49.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:50.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image20">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:49.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:50.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid>
 
         <Grid Width="1274">
@@ -23,34 +197,34 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Background="AliceBlue" HorizontalAlignment="Center" Margin="0,82,0,0" TextWrapping="Wrap" Text="LINIJA (CRTA) KAO GRANICA POVRŠI" VerticalAlignment="Top" FontSize="20"/>
-            <Image Grid.Column="0" Margin="0,-80,0,0" Source="Images/djevojcica_djecak_plaza.tif" Height="235" Width="424.667"/>
-            <Image Grid.Column="0" Source="Images/Linija kao/bubble001.png" Margin="63,45,89.667,374"/>
-            <TextBlock HorizontalAlignment="Left" Height="48" Margin="80,137,0,0" TextWrapping="Wrap" Text="POVRŠI SU GRANICE IZMEĐU PREDMETA I OKOLINE." VerticalAlignment="Top" Width="232" FontSize="16" TextAlignment="Center"/>
-            <Image Grid.Column="0" Source="Images/Linija kao/bubble002.png" Margin="128,229,24.667,190"/>
-            <TextBlock HorizontalAlignment="Left" Height="70" Margin="161,379,0,0" TextWrapping="Wrap" Text="JA SAM LINIJOM OGRANIČIO POVRŠ NA PIJESKU." VerticalAlignment="Top" Width="190" FontSize="16" TextAlignment="Center"/>
+            <TextBlock x:Name="textBlock" Grid.Column="0" Background="AliceBlue" HorizontalAlignment="Center" Margin="0,82,0,0" TextWrapping="Wrap" Text="LINIJA (CRTA) KAO GRANICA POVRŠI" VerticalAlignment="Top" FontSize="20"/>
+            <Image x:Name="image" Grid.Column="0" Margin="0,-80,0,0" Source="Images/djevojcica_djecak_plaza.tif" Height="235" Width="424.667"/>
+            <Image x:Name="image1" Grid.Column="0" Source="Images/Linija kao/bubble001.png" Margin="63,45,89.667,374"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="48" Margin="80,137,0,0" TextWrapping="Wrap" Text="POVRŠI SU GRANICE IZMEĐU PREDMETA I OKOLINE." VerticalAlignment="Top" Width="232" FontSize="16" TextAlignment="Center"/>
+            <Image x:Name="image2" Grid.Column="0" Source="Images/Linija kao/bubble002.png" Margin="128,229,24.667,190"/>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="70" Margin="161,379,0,0" TextWrapping="Wrap" Text="JA SAM LINIJOM OGRANIČIO POVRŠ NA PIJESKU." VerticalAlignment="Top" Width="190" FontSize="16" TextAlignment="Center"/>
 
-            <TextBlock Grid.Column="0" Background="AliceBlue" HorizontalAlignment="Center" Margin="10,459,10,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="404.667" TextAlignment="Center"><Run Text="LINIJ"/><Run Text="E"/><Run Text=" KAO GRANIC"/><Run Text="E"/><Run Text=" POVRŠI"/><Run Text=" MOGU BITI RAZLIČITE."/></TextBlock>
-            <Image HorizontalAlignment="Left" Height="110" Margin="20,540,0,0" VerticalAlignment="Top" Width="115" Source="Images/Linija kao/line001.png"/>
-            <Image HorizontalAlignment="Left" Height="110" Margin="150,560,0,0" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line002.png"/>
-            <Image HorizontalAlignment="Left" Height="110" Margin="275.075,550,0,0" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line003.png"/>
-
-
+            <TextBlock x:Name="textBlock3" Grid.Column="0" Background="AliceBlue" HorizontalAlignment="Center" Margin="10,459,10,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="404.667" TextAlignment="Center"><Run Text="LINIJ"/><Run Text="E"/><Run Text=" KAO GRANIC"/><Run Text="E"/><Run Text=" POVRŠI"/><Run Text=" MOGU BITI RAZLIČITE."/></TextBlock>
+            <Image x:Name="image3" HorizontalAlignment="Left" Height="110" Margin="20,540,0,0" VerticalAlignment="Top" Width="115" Source="Images/Linija kao/line001.png"/>
+            <Image x:Name="image4" HorizontalAlignment="Left" Height="110" Margin="150,560,0,0" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line002.png"/>
+            <Image x:Name="image5" HorizontalAlignment="Left" Height="110" Margin="275.075,550,0,0" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line003.png"/>
 
 
 
-            <TextBlock Grid.Column="1" Background="AliceBlue" HorizontalAlignment="Center" Margin="50.591,28,50.591,0" TextWrapping="Wrap" Text="RAVNE I ZAKRIVLJENE LINIJE (CRTE)" VerticalAlignment="Top" FontSize="20"/>
-            <Image Grid.Column="1" Margin="0,-80,0,0" Source="Images/djecaci_guma.tif" Height="235" Width="424.667"/>
-            <Image Grid.Column="1" Source="Images/Linija kao/bubble003.png" Margin="150,82,52.332,482"/>
-            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="48" Margin="165,101,0,0" TextWrapping="Wrap" Text="MOJA VIJAČA JE ZAKRIVLJENA" VerticalAlignment="Top" Width="190" FontSize="16" TextAlignment="Center"/>
-            <Image Grid.Column="1" Source="Images/Linija kao/bubble004.png" Margin="181.741,245,52.332,390"/>
-            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="227.568,247.669,0,0" TextWrapping="Wrap" Text="A NAŠA JE PRAVA" VerticalAlignment="Top" TextAlignment="Center" Height="21.5"/>
 
-            <TextBlock Grid.Column="1" Background="AliceBlue" HorizontalAlignment="Center" Margin="10,430.5,9.999,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="404.667" TextAlignment="Center"><Run Text="LINIJE MOGU BITI PRAVE I ZAKRIVLJENE. "/><LineBreak/><Run Text="ZAKRIVLJENE LINIJE MOGU BITI: OTVORENE I ZATVORENE"/></TextBlock>
-            <Image Grid.Column="1" HorizontalAlignment="Center" Margin="0,538.333,0,0" VerticalAlignment="Top" Width="255.075" Source="Images/Linija kao/line004.png"/>
-            <Image Grid.Column="1" HorizontalAlignment="Left" Margin="159.28,569,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line005.png" Width="195.72"/>
-            <Image Grid.Column="1" HorizontalAlignment="Left" Height="110" Margin="40.333,560,0,0" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line006.png"/>
-            <Image Grid.Column="1" HorizontalAlignment="Left" Height="157" Margin="144.333,186,0,0" VerticalAlignment="Top" Width="70.333" Source="Images/lastika_djevojcica.tif" RenderTransformOrigin="0.5,0.5">
+
+            <TextBlock x:Name="textBlock4" Grid.Column="1" Background="AliceBlue" HorizontalAlignment="Center" Margin="50.591,28,50.591,0" TextWrapping="Wrap" Text="RAVNE I ZAKRIVLJENE LINIJE (CRTE)" VerticalAlignment="Top" FontSize="20"/>
+            <Image x:Name="image6" Grid.Column="1" Margin="0,-80,0,0" Source="Images/djecaci_guma.tif" Height="235" Width="424.667"/>
+            <Image x:Name="image7" Grid.Column="1" Source="Images/Linija kao/bubble003.png" Margin="150,82,52.332,482"/>
+            <TextBlock x:Name="textBlock5" Grid.Column="1" HorizontalAlignment="Left" Height="48" Margin="165,101,0,0" TextWrapping="Wrap" Text="MOJA VIJAČA JE ZAKRIVLJENA" VerticalAlignment="Top" Width="190" FontSize="16" TextAlignment="Center"/>
+            <Image x:Name="image8" Grid.Column="1" Source="Images/Linija kao/bubble004.png" Margin="181.741,245,52.332,390"/>
+            <TextBlock x:Name="textBlock6" Grid.Column="1" HorizontalAlignment="Left" Margin="227.568,247.669,0,0" TextWrapping="Wrap" Text="A NAŠA JE PRAVA" VerticalAlignment="Top" TextAlignment="Center" Height="21.5"/>
+
+            <TextBlock x:Name="textBlock7" Grid.Column="1" Background="AliceBlue" HorizontalAlignment="Center" Margin="10,430.5,9.999,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="404.667" TextAlignment="Center"><Run Text="LINIJE MOGU BITI PRAVE I ZAKRIVLJENE. "/><LineBreak/><Run Text="ZAKRIVLJENE LINIJE MOGU BITI: OTVORENE I ZATVORENE"/></TextBlock>
+            <Image x:Name="image9" Grid.Column="1" HorizontalAlignment="Center" Margin="0,538.333,0,0" VerticalAlignment="Top" Width="255.075" Source="Images/Linija kao/line004.png"/>
+            <Image x:Name="image10" Grid.Column="1" HorizontalAlignment="Left" Margin="159.28,569,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line005.png" Width="195.72"/>
+            <Image x:Name="image11" Grid.Column="1" HorizontalAlignment="Left" Height="110" Margin="40.333,560,0,0" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line006.png"/>
+            <Image x:Name="image12" Grid.Column="1" HorizontalAlignment="Left" Height="157" Margin="144.333,186,0,0" VerticalAlignment="Top" Width="70.333" Source="Images/lastika_djevojcica.tif" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleY="1" ScaleX="-1"/>
@@ -60,25 +234,25 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <Image Grid.Column="1" HorizontalAlignment="Left" Height="76.37" Margin="240.87,604.63,0,0" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line007.png"/>
+            <Image x:Name="image13" Grid.Column="1" HorizontalAlignment="Left" Height="76.37" Margin="240.87,604.63,0,0" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line007.png"/>
 
 
 
 
 
 
-            <TextBlock Grid.Column="2" Background="AliceBlue" HorizontalAlignment="Center" Margin="50.591,82,50.591,0" TextWrapping="Wrap" Text="IZLOMLJENA LINIJA (CRTA)" VerticalAlignment="Top" FontSize="20"/>
-            <Image Grid.Column="2" Margin="0,-80,0,0" Source="Images/djevojcica_put_stepenice.tif" Height="235" Width="424.667"/>
-            <Image Grid.Column="2" Source="Images/Linija kao/bubble005.png" Margin="132.666,115,69.667,482"/>
-            <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="48" Margin="149.084,126.733,0,0" TextWrapping="Wrap" Text="NACRTALA SAM CESTU PRAVOM LINIJOM." VerticalAlignment="Top" Width="190" FontSize="14" TextAlignment="Center"/>
-            <Image Grid.Column="2" Source="Images/Linija kao/bubble006.png" Margin="181.741,187,0,412"/>
-            <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="230.101,193,0,0" TextWrapping="Wrap" Text="A JA STEPENICE IZLOMLJENOM LINIJOM." VerticalAlignment="Top" FontSize="14" TextAlignment="Center"/>
+            <TextBlock x:Name="textBlock8" Grid.Column="2" Background="AliceBlue" HorizontalAlignment="Center" Margin="50.591,82,50.591,0" TextWrapping="Wrap" Text="IZLOMLJENA LINIJA (CRTA)" VerticalAlignment="Top" FontSize="20"/>
+            <Image x:Name="image14" Grid.Column="2" Margin="0,-80,0,0" Source="Images/djevojcica_put_stepenice.tif" Height="235" Width="424.667"/>
+            <Image x:Name="image15" Grid.Column="2" Source="Images/Linija kao/bubble005.png" Margin="132.666,115,69.667,482"/>
+            <TextBlock x:Name="textBlock9" Grid.Column="2" HorizontalAlignment="Left" Height="48" Margin="149.084,126.733,0,0" TextWrapping="Wrap" Text="NACRTALA SAM CESTU PRAVOM LINIJOM." VerticalAlignment="Top" Width="190" FontSize="14" TextAlignment="Center"/>
+            <Image x:Name="image16" Grid.Column="2" Source="Images/Linija kao/bubble006.png" Margin="181.741,187,0,412"/>
+            <TextBlock x:Name="textBlock10" Grid.Column="2" HorizontalAlignment="Left" Margin="230.101,193,0,0" TextWrapping="Wrap" Text="A JA STEPENICE IZLOMLJENOM LINIJOM." VerticalAlignment="Top" FontSize="14" TextAlignment="Center"/>
 
-            <TextBlock Grid.Column="2" Background="AliceBlue" HorizontalAlignment="Center" Margin="10,430.5,9.999,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="404.667" TextAlignment="Center" Text="IZLOMLJENE LINIJE MOGU BITI: OTVORENE I ZATVORENE."/>
-            <Image Grid.Column="2" HorizontalAlignment="Center" Margin="30.667,515,254,0" VerticalAlignment="Top" Source="Images/Linija kao/line008.png" Height="88.63" Width="140"/>
-            <Image Grid.Column="2" HorizontalAlignment="Left" Margin="230.101,504.703,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line009.png" Width="160.72" Height="65.297"/>
-            <Image Grid.Column="2" HorizontalAlignment="Left" Height="110" Margin="51.667,608.63,0,-27.63" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line010.png"/>
-            <Image Grid.Column="2" HorizontalAlignment="Left" Height="110" Margin="256,590,0,-9" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line011.png"/>
+            <TextBlock x:Name="textBlock11" Grid.Column="2" Background="AliceBlue" HorizontalAlignment="Center" Margin="10,430.5,9.999,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="404.667" TextAlignment="Center" Text="IZLOMLJENE LINIJE MOGU BITI: OTVORENE I ZATVORENE."/>
+            <Image x:Name="image17" Grid.Column="2" HorizontalAlignment="Center" Margin="30.667,515,254,0" VerticalAlignment="Top" Source="Images/Linija kao/line008.png" Height="88.63" Width="140"/>
+            <Image x:Name="image18" Grid.Column="2" HorizontalAlignment="Left" Margin="230.101,504.703,0,0" VerticalAlignment="Top" Source="Images/Linija kao/line009.png" Width="160.72" Height="65.297"/>
+            <Image x:Name="image19" Grid.Column="2" HorizontalAlignment="Left" Height="110" Margin="51.667,608.63,0,-27.63" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line010.png"/>
+            <Image x:Name="image20" Grid.Column="2" HorizontalAlignment="Left" Height="110" Margin="256,590,0,-9" VerticalAlignment="Top" Width="99" Source="Images/Linija kao/line011.png"/>
 
         </Grid>
     </Grid>

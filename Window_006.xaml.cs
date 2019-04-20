@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,6 +20,7 @@ namespace Mape001
     /// </summary>
     public partial class Window_006 : Window
     {
+        SoundPlayer soundPlayer;
         public Window_006()
         {
             InitializeComponent();
@@ -36,6 +38,12 @@ namespace Mape001
             Window_007 window_007 = new Window_007();
             window_007.Show();
             this.Close();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            soundPlayer = new SoundPlayer(Properties.Resources.linijailicrta);
+            soundPlayer.Play();
         }
     }
 }

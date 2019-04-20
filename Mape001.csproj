@@ -291,6 +291,8 @@
     <Resource Include="Images\lopta004.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Voice\granice.wav" />
+    <None Include="Voice\linijailicrta.wav" />
     <None Include="Voice\nekaPovrsi.wav" />
     <None Include="Voice\povrsiGranice.wav" />
     <None Include="Voice\nekaGeom.wav" />

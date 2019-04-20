@@ -81,6 +81,15 @@ namespace Mape001.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream granice {
+            get {
+                return ResourceManager.GetStream("granice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream izlomljeneOtvorene {
             get {
                 return ResourceManager.GetStream("izlomljeneOtvorene", resourceCulture);
@@ -120,6 +129,15 @@ namespace Mape001.Properties {
         internal static System.IO.UnmanagedMemoryStream kvadar {
             get {
                 return ResourceManager.GetStream("kvadar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream linijailicrta {
+            get {
+                return ResourceManager.GetStream("linijailicrta", resourceCulture);
             }
         }
         

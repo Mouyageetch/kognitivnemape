@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,6 +20,7 @@ namespace Mape001
     /// </summary>
     public partial class Window_009 : Window
     {
+        SoundPlayer soundPlayer;
         public Window_009()
         {
             InitializeComponent();
@@ -26,7 +28,8 @@ namespace Mape001
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            soundPlayer = new SoundPlayer(Properties.Resources.granice);
+            soundPlayer.Play();
         }
 
         private void PreviousWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
