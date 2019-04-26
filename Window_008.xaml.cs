@@ -34,7 +34,7 @@ namespace Mape001
                 string chosenImage = possibleImages.ElementAt(randNum);
 
                 imageSourceConverter = new ImageSourceConverter();
-                randomImage.Source = (ImageSource)imageSourceConverter.ConvertFromString("pack://application:,,,/Mape001;component/Images/Linija kao/test/" + chosenImage + ".png");
+                randomImage.Source = (ImageSource)imageSourceConverter.ConvertFromString("pack://application:,,,/Kognitivne mape;component/Images/Linija kao/test/" + chosenImage + ".png");
 
                 possibleImages.RemoveAt(randNum);
             }
