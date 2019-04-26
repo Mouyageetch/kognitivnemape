@@ -13,7 +13,7 @@
             <DockPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80">
                 <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"/>
                 <TextBlock x:Name="banner" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center"/>
-                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/home.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"/>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"/>
             </DockPanel>
 
         </Grid>
@@ -23,7 +23,7 @@
         <Image x:Name="bocnaStranaPiramideLines" HorizontalAlignment="Left" Height="167" Margin="552,408,0,0" VerticalAlignment="Top" Width="373" Source="Images/Granice/bocnaStranaPiramideLines.png" Visibility="Hidden"/>
 
 
-        <TextBlock x:Name="stranaKvadrata" Cursor="Hand" FontSize="24" Text="STRANA KVADRATA" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="0,0,295,0" MouseLeftButtonDown="Linije_MouseLeftButtonDown" Height="35" Width="250"/>
+        <TextBlock x:Name="stranaKvadrata" Cursor="Hand" FontSize="24" Text="STRANA KVADRA" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="0,0,295,0" MouseLeftButtonDown="Linije_MouseLeftButtonDown" Height="35" Width="250"/>
         <TextBlock x:Name="ravnaPovrsValjka" Cursor="Hand" FontSize="24" Text="RAVNA POVRŠ VALJKA" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="295,0,0,0" MouseLeftButtonDown="Linije_MouseLeftButtonDown" Height="35" Width="250"/>
         <TextBlock x:Name="stranaKocke" Cursor="Hand" FontSize="24" Text="STRANA KOCKE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="0,0,0,100" MouseLeftButtonDown="Linije_MouseLeftButtonDown" Height="35" Width="250"/>
         <TextBlock x:Name="bocnaStranaPiramide" Cursor="Hand" FontSize="24" Text="BOČNA STRANA PIRAMIDE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="0,100,0,0" MouseLeftButtonDown="Linije_MouseLeftButtonDown" Height="35" Width="300"/>

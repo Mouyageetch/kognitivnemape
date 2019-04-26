@@ -1,0 +1,76 @@
+﻿<Window x:Class="Mape001.Window_011"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape001"
+        mc:Ignorable="d"
+        Title="Geometrijski oblici i likovi" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize" >
+    <Grid>
+        <Grid Width="1274" Margin="0">
+            <DockPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"/>
+                <TextBlock x:Name="banner" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center"/>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/home.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"/>
+            </DockPanel>
+            <Image x:Name="randomImage" HorizontalAlignment="Left" Height="120" Margin="285,525,0,0" VerticalAlignment="Top" Width="120" MouseLeftButtonDown="RandomImage_MouseLeftButtonDown"/>
+
+        </Grid>
+        <Image x:Name="ravnaPovrsValjkaLines" HorizontalAlignment="Left" Height="320" Margin="907.25,210,0,0" VerticalAlignment="Top" Width="180.5" Source="Images/Granice/ravnaPovrsValjkaLines.png"/>
+        <Image x:Name="stranaKockeLines" HorizontalAlignment="Left" Height="143" Margin="487,130,0,0" VerticalAlignment="Top" Width="318" Source="Images/Granice/stranaKockeLines.png"/>
+        <Image x:Name="stranaKvadrataLines" HorizontalAlignment="Left" Height="345" Margin="164.5,165,0,0" VerticalAlignment="Top" Width="200" Source="Images/Granice/stranaKvadrataLines.png"/>
+        <Image x:Name="bocnaStranaPiramideLines" HorizontalAlignment="Left" Height="167" Margin="552,408,0,0" VerticalAlignment="Top" Width="373" Source="Images/Granice/bocnaStranaPiramideLines.png"/>
+
+
+        <TextBlock x:Name="stranaKvadrata" Cursor="Hand" FontSize="24" Text="STRANA KVADRA" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="0,0,295,0" Height="35" Width="250"/>
+        <TextBlock x:Name="ravnaPovrsValjka" Cursor="Hand" FontSize="24" Text="RAVNA POVRŠ VALJKA" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="295,0,0,0" Height="35" Width="250"/>
+        <TextBlock x:Name="stranaKocke" Cursor="Hand" FontSize="24" Text="STRANA KOCKE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="0,0,0,100" Height="35" Width="250"/>
+        <TextBlock x:Name="bocnaStranaPiramide" Cursor="Hand" FontSize="24" Text="BOČNA STRANA PIRAMIDE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" Margin="0,100,0,0" Height="35" Width="300"/>
+
+        <StackPanel HorizontalAlignment="Left" Height="120" Width="120" VerticalAlignment="Top" Background="#FFE2E2E2"  Margin="765,20,0,0"  Orientation="Horizontal">
+            <Image x:Name="stranaKocke003" HorizontalAlignment="Center" Height="120" VerticalAlignment="Top" Width="120" Source="Images/upitnik.png" Drop="StranaKvadrata003_Drop" AllowDrop="True"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="120" Width="120" VerticalAlignment="Top" Background="#FFE2E2E2" Margin="585,20,0,0" Orientation="Horizontal">
+            <Image x:Name="stranaKocke002" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="120" Source="Images/upitnik.png" Drop="StranaKvadrata003_Drop" AllowDrop="True"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="120" Width="120" VerticalAlignment="Top" Background="#FFE2E2E2" Margin="405,60,0,0" Orientation="Horizontal">
+            <Image x:Name="stranaKocke001" HorizontalAlignment="Center" Height="120" Width="120" Source="Images/upitnik.png" Drop="StranaKvadrata003_Drop" AllowDrop="True"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="120" Width="120" VerticalAlignment="Top" Background="#FFE2E2E2" Margin="1075,95,0,0" Orientation="Horizontal">
+            <Image x:Name="ravnaPovrsValjka001" HorizontalAlignment="Center" Height="120"  Width="120" Source="Images/upitnik.png" Drop="StranaKvadrata003_Drop" AllowDrop="True"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="120" Width="120" VerticalAlignment="Top" Background="#FFE2E2E2" Margin="1092.75,290,0,0" Orientation="Horizontal">
+            <Image x:Name="ravnaPovrsValjka002" HorizontalAlignment="Center" Height="120" Width="120" Source="Images/upitnik.png" Drop="StranaKvadrata003_Drop" AllowDrop="True"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="120" Width="120" VerticalAlignment="Top" Background="#FFE2E2E2" Margin="1100,465,0,0" Orientation="Horizontal">
+            <Image x:Name="ravnaPovrsValjka003" HorizontalAlignment="Center" Height="120" Width="120" Source="Images/upitnik.png" Drop="StranaKvadrata003_Drop" AllowDrop="True"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="120" Width="120" VerticalAlignment="Top" Background="#FFE2E2E2" Margin="907.25,535,0,0" Orientation="Horizontal">
+            <Image x:Name="bocnaStranaPiramide001" HorizontalAlignment="Center" Height="120" Width="120" Source="Images/upitnik.png" Drop="StranaKvadrata003_Drop" AllowDrop="True"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="120" Width="120" VerticalAlignment="Top" Background="#FFE2E2E2" Margin="700,571,0,0" Orientation="Horizontal">
+            <Image x:Name="bocnaStranaPiramide002" HorizontalAlignment="Center" Height="120" Width="120" Source="Images/upitnik.png" Drop="StranaKvadrata003_Drop" AllowDrop="True"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="120" Width="120" VerticalAlignment="Top" Background="#FFE2E2E2" Margin="500,535,0,0" Orientation="Horizontal">
+            <Image x:Name="bocnaStranaPiramide003" HorizontalAlignment="Center" Height="120" Width="120" Source="Images/upitnik.png" Drop="StranaKvadrata003_Drop" AllowDrop="True"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="120" Width="120" VerticalAlignment="Top" Background="#FFE2E2E2" Margin="50,515,0,0" Orientation="Horizontal">
+            <Image x:Name="stranaKvadrata001" HorizontalAlignment="Center" Height="120" Width="120" Source="Images/upitnik.png" Drop="StranaKvadrata003_Drop" AllowDrop="True"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="120" Width="120" VerticalAlignment="Top" Background="#FFE2E2E2" Margin="79.5,328,0,0" Orientation="Horizontal">
+            <Image x:Name="stranaKvadrata002" HorizontalAlignment="Center" Height="120" Width="120" Source="Images/upitnik.png" Drop="StranaKvadrata003_Drop" AllowDrop="True"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="120" Width="120" VerticalAlignment="Top" Background="#FFE2E2E2" Margin="94,95,0,0" Orientation="Horizontal">
+            <Image x:Name="stranaKvadrata003" HorizontalAlignment="Center" Height="120" Width="120" Source="Images/upitnik.png" Drop="StranaKvadrata003_Drop" AllowDrop="True"/>
+        </StackPanel>
+
+
+        <Grid x:Name="success" Width="1280" Height="150"  Background="#FF4E87CB" Visibility="Hidden">
+            <StackPanel VerticalAlignment="Center" Width="Auto" Height="Auto">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="72" Foreground="GhostWhite" Text="ISPRAVAN ODGOVOR!"></TextBlock>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>

@@ -55,8 +55,6 @@ namespace Mape001
                 izlOtv001,izlOtv002,
                 izlZatv001, izlZatv002,izlZatv003
             };
-
-            MessageBox.Show(zakOtv001.Source.ToString());
         }
 
         private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

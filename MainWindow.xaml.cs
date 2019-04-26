@@ -16,6 +16,87 @@ using System.Windows.Shapes;
 
 namespace Mape001
 {
+    class KognitivneMapeUtils
+    {
+        /// <summary>
+        ///  Selects a random image from a list and assignsit as a source.
+        /// </summary>
+        /// <param name="possibleImages">A list of .png image filenames without the extensions.</param>
+        /// <param name="sender">The image that will recieve the randomly chosen source.</param>
+        /// <param name="folderPath">Path to the folder in which the images are located.</param>
+        public static void SetRandomImage(List<string> possibleImages, Image sender, string folderPath)
+        {
+            if (possibleImages.Count > 0)
+            {
+                Random random = new Random();
+                int randNum = random.Next(possibleImages.Count);
+
+                string chosenImage = possibleImages.ElementAt(randNum);
+
+                ImageSourceConverter imageSourceConverter = new ImageSourceConverter();
+
+                try
+                {
+                    sender.Source = (ImageSource)imageSourceConverter.ConvertFromString(folderPath + chosenImage + ".png");
+
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Random image source not valid.");
+                }
+
+                possibleImages.RemoveAt(randNum);
+            }
+            else
+            {
+                sender.Source = null;
+            }
+
+        }
+
+        public static bool ImageDropCheck(object sender, DragEventArgs e)
+        {
+            string src;
+            Image img;
+            try
+            {
+                img = sender as Image;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Dropped object is not an image.");
+                return false;
+            }
+
+            try
+            {
+                src = (string)e.Data.GetData(typeof(string));
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Unable to get data");
+                return false;
+            }
+
+            string fileName = System.IO.Path.GetFileName(src);
+
+            if (fileName.StartsWith(img.Name.Remove(img.Name.Length - 3)))
+            {
+                ImageSourceConverter converter = new ImageSourceConverter();
+
+                img.Source = (ImageSource)converter.ConvertFromString(src);
+                StackPanel parent = (StackPanel)VisualTreeHelper.GetParent(img);
+                parent.ClearValue(StackPanel.BackgroundProperty);
+
+                img.AllowDrop = false;
+                return true;
+
+            }
+            return false;
+
+        }
+
+    }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
