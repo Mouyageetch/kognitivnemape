@@ -20,6 +20,7 @@ namespace Mape001
     /// </summary>
     public partial class Window_011 : Window
     {
+        // TODO Popraviti snimak (umjesto kvadrat ide kvadar)
 
         List<string> possibleImages;
         string folderPath = "pack://application:,,,/Kognitivne mape;component/Images/Granice/";

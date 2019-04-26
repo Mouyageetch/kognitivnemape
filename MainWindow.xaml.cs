@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+// TODO Zenski glas
 namespace Mape001
 {
     class KognitivneMapeUtils

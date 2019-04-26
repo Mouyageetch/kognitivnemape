@@ -20,6 +20,7 @@ namespace Mape001
     /// </summary>
     public partial class Window_006 : Window
     {
+        
         SoundPlayer soundPlayer;
         public Window_006()
         {
