@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="Geometrijski oblici i likovi" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
         Icon="Images/favicon-32x32.png" ResizeMode="NoResize" >
+    <Window.Resources>
+        <Storyboard x:Key="HandAnimation" AutoReverse="True" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="hand">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.2"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="hand">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.2"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource HandAnimation}"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid>
         <Grid Width="1274" Margin="0">
             <DockPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80">
@@ -71,6 +86,16 @@
                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="72" Foreground="GhostWhite" Text="ISPRAVAN ODGOVOR!"></TextBlock>
             </StackPanel>
         </Grid>
+        <Image x:Name="hand" HorizontalAlignment="Left" Height="105" Margin="375,440,0,0" VerticalAlignment="Top" Width="105" Source="Images/hand.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-141.055"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
 
     </Grid>
 </Window>

@@ -73,6 +73,8 @@ namespace Mape001
                     soundPlayer = new SoundPlayer(Properties.Resources.successUke);
                     soundPlayer.Play();
                 }
+
+                hand.Visibility = Visibility.Hidden;
             }
         }
     }

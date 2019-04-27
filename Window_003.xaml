@@ -11,10 +11,10 @@
     <Window.Resources>
         <Storyboard x:Key="handAnimation" AutoReverse="True" RepeatBehavior="Forever">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="hand">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.75"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="hand">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.75"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
