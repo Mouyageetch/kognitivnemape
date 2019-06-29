@@ -27,7 +27,7 @@
     <TargetCulture>bs</TargetCulture>
     <ProductName>Kognitivne Mape</ProductName>
     <PublisherName>Bosanska Kuća</PublisherName>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
