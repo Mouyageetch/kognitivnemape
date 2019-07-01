@@ -1,0 +1,242 @@
+﻿<Window x:Class="Mape002.Window_009"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape002"
+        mc:Ignorable="d"
+        Title="Skup brojeva do 100" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Grid>
+        <Grid>
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
+                <TextBlock VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">FORMIRANJE POJMOVA OSTALIH BROJEVA PRVE STOTINE</TextBlock>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
+            </StackPanel>
+
+
+            <Grid Width="450" Height="400" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="300,0,0,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".5*"></ColumnDefinition>
+                    <ColumnDefinition Width=".5*"></ColumnDefinition>
+                    <ColumnDefinition Width=".6*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="BorderThickness" Value="1"/>
+                        <Setter Property="BorderBrush" Value="#FF0B720B"/>
+                    </Style>
+
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="FontSize" Value="28"/>
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="TextAlignment" Value="Center"/>
+                    </Style>
+                </Grid.Resources>
+                <Border Background="#FFE2A539">
+                    <TextBlock Text="D" FontWeight="Bold" ></TextBlock>
+                </Border>
+
+                <Border Grid.Row="1" Background="#FFE2A539">
+                    <TextBlock Text="2"></TextBlock>
+                </Border>
+
+                <Border Grid.Row="2" Background="#FFE2A539">
+                    <TextBlock Text="2"></TextBlock>
+                </Border>
+                <Border Grid.Row="3" Background="#FFE2A539">
+                    <TextBlock Text="2"></TextBlock>
+                </Border>
+                <Border Grid.Row="4" Background="#FFE2A539">
+                    <TextBlock Text="2"></TextBlock>
+                </Border>
+                <Border Grid.Row="5" Background="#FFE2A539">
+                    <TextBlock Text="2"></TextBlock>
+                </Border>
+                <Border Grid.Row="6" Background="#FFE2A539">
+                    <TextBlock Text="2"></TextBlock>
+                </Border>
+                <Border Grid.Row="7" Background="#FFE2A539">
+                    <TextBlock Text="2"></TextBlock>
+                </Border>
+                <Border Grid.Row="8" Background="#FFE2A539">
+                    <TextBlock Text="2"></TextBlock>
+                </Border>
+                <Border Grid.Row="9" Background="#FFE2A539">
+                    <TextBlock Text="2"></TextBlock>
+                </Border>
+                <Border Grid.Row="10" Background="#FFE2A539">
+                    <TextBlock Text="3"></TextBlock>
+                </Border>
+
+
+                <Border Grid.Row="0" Grid.Column="1" Background="#FFF7DF42">
+                    <TextBlock Text="J" FontWeight="Bold"/>
+                </Border>
+                <Border Grid.Row="1" Grid.Column="1" Background="#FFF7DF42">
+                    <TextBlock Text="1"/>
+                </Border>
+                <Border Grid.Row="2" Grid.Column="1" Background="#FFF7DF42">
+                    <TextBlock Text="2"/>
+                </Border>
+                <Border Grid.Row="3" Grid.Column="1" Background="#FFF7DF42">
+                    <TextBlock Text="3"/>
+                </Border>
+                <Border Grid.Row="4" Grid.Column="1" Background="#FFF7DF42">
+                    <TextBlock Text="4"/>
+                </Border>
+                <Border Grid.Row="5" Grid.Column="1" Background="#FFF7DF42">
+                    <TextBlock Text="5"/>
+                </Border>
+                <Border Grid.Row="6" Grid.Column="1" Background="#FFF7DF42">
+                    <TextBlock Text="6"/>
+                </Border>
+                <Border Grid.Row="7" Grid.Column="1" Background="#FFF7DF42">
+                    <TextBlock Text="7"/>
+                </Border>
+                <Border Grid.Row="8" Grid.Column="1" Background="#FFF7DF42">
+                    <TextBlock Text="8"/>
+                </Border>
+                <Border Grid.Row="9" Grid.Column="1" Background="#FFF7DF42">
+                    <TextBlock Text="9"/>
+                </Border>
+                <Border Grid.Row="10" Grid.Column="1" Background="#FFF7DF42">
+                    <TextBlock Text="0"/>
+                </Border>
+
+
+                <Border Grid.Row="0" Grid.Column="2" Background="#FFCCE8B1">
+                    <TextBlock Text="BROJ" FontWeight="Bold"/>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="2" Background="#FF9CC96E">
+                    <TextBlock Text="21"/>
+                </Border>
+
+                <Border Grid.Row="2" Grid.Column="2" Background="#FFCCE8B1">
+                    <TextBlock Text="22"/>
+                </Border>
+
+                <Border Grid.Row="3" Grid.Column="2" Background="#FF9CC96E">
+                    <TextBlock Text="23"/>
+                </Border>
+
+                <Border Grid.Row="4" Grid.Column="2" Background="#FFCCE8B1">
+                    <TextBlock Text="24"/>
+                </Border>
+
+                <Border Grid.Row="5" Grid.Column="2" Background="#FF9CC96E">
+                    <TextBlock Text="25"/>
+                </Border>
+
+                <Border Grid.Row="6" Grid.Column="2" Background="#FFCCE8B1">
+                    <TextBlock Text="26"/>
+                </Border>
+
+                <Border Grid.Row="7" Grid.Column="2" Background="#FF9CC96E">
+                    <TextBlock Text="27"/>
+                </Border>
+
+                <Border Grid.Row="8" Grid.Column="2" Background="#FFCCE8B1">
+                    <TextBlock Text="28"/>
+                </Border>
+
+
+                <Border Grid.Row="9" Grid.Column="2" Background="#FF9CC96E">
+                    <TextBlock Text="29"/>
+                </Border>
+                <Border Grid.Row="10" Grid.Column="2" Background="#FFCCE8B1">
+                    <TextBlock Text="30"/>
+                </Border>
+
+
+
+                <Border Grid.Row="0" Grid.Column="3" Background="#FFCCE8B1">
+                    <TextBlock Text="ČITAMO" FontWeight="Bold"/>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="3" Background="#FF9CC96E">
+                    <TextBlock Text="DVADESET JEDAN"/>
+                </Border>
+
+                <Border Grid.Row="2" Grid.Column="3" Background="#FFCCE8B1">
+                    <TextBlock Text="DVADESET DVA"/>
+                </Border>
+
+                <Border Grid.Row="3" Grid.Column="3" Background="#FF9CC96E">
+                    <TextBlock Text="DVADESET TRI"/>
+                </Border>
+
+                <Border Grid.Row="4" Grid.Column="3" Background="#FFCCE8B1">
+                    <TextBlock Text="DVADESET ČETIRI"/>
+                </Border>
+
+                <Border Grid.Row="5" Grid.Column="3" Background="#FF9CC96E">
+                    <TextBlock Text="DVADESET PET"/>
+                </Border>
+
+                <Border Grid.Row="6" Grid.Column="3" Background="#FFCCE8B1">
+                    <TextBlock Text="DVADESET ŠEST"/>
+                </Border>
+
+                <Border Grid.Row="7" Grid.Column="3" Background="#FF9CC96E">
+                    <TextBlock Text="DVADESET SEDAM"/>
+                </Border>
+
+                <Border Grid.Row="8" Grid.Column="3" Background="#FFCCE8B1">
+                    <TextBlock Text="DVADESET OSAM"/>
+                </Border>
+
+                <Border Grid.Row="9" Grid.Column="3" Background="#FF9CC96E">
+                    <TextBlock Text="DVADESET DEVET"/>
+                </Border>
+
+                <Border Grid.Row="10" Grid.Column="3" Background="#FFCCE8B1">
+                    <TextBlock Text="TRIDESET"/>
+                </Border>
+            </Grid>
+            <Image HorizontalAlignment="Left" Height="325" Margin="24,135,0,0" VerticalAlignment="Top" Width="150" Source="Images/djevojcica.png"/>
+            <Image HorizontalAlignment="Left" Height="211" Margin="114,80,0,0" VerticalAlignment="Top" Width="600" Source="Images/bubble005.png"/>
+            <TextBlock HorizontalAlignment="Left" Height="171" Margin="249,130,0,0" TextWrapping="Wrap" Text="VIŠEKRATNICI BROJA 10 SU: 10, 20, 30, ..., 100. A ŠTA ĆEMO DOBITI AKO BROJU 20 DODAMO 1 JEDINICU?" VerticalAlignment="Top" Width="465" FontSize="24" TextAlignment="Center"/>
+            <Image HorizontalAlignment="Left" Height="115" Margin="838,78,0,0" VerticalAlignment="Top" Width="115" Source="Images/olovke_10.tif"/>
+            <Image HorizontalAlignment="Left" Height="115" Margin="972,78,0,0" VerticalAlignment="Top" Width="115" Source="Images/olovke_10.tif"/>
+            <Image HorizontalAlignment="Left" Height="87.359" Margin="1098.56,95.249,0,0" VerticalAlignment="Top" Width="87.36" Source="Images/olovka.tif" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="139.338"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock HorizontalAlignment="Left" Height="50" Margin="860,199.47,0,0" TextWrapping="Wrap" Text="20 + 1 = 21" VerticalAlignment="Top" Width="315" FontSize="32" TextAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Left" Margin="785,249.47,0,0" TextWrapping="Wrap" Text="AKO BROJU DVADESET DODAMO JEDNU JEDINICU, DOBIT ĆEMO  BROJ 21." VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"/>
+            <TextBlock HorizontalAlignment="Left" Margin="754,348,0,0" TextWrapping="Wrap" Text="22 = 2D i 2J&#x9;ILI&#x9;20+2 = 22" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"/>
+            <TextBlock HorizontalAlignment="Left" Margin="754,384.36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="3"/><Run Text=" = 2D i "/><Run Text="3"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="3"/><Run Text=" = 2"/><Run Text="3"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="754,419.723,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="4"/><Run Text=" = 2D i "/><Run Text="4"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="4"/><Run Text=" = 2"/><Run Text="4"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="754,456.083,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="5"/><Run Text=" = 2D i "/><Run Text="5"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="5"/><Run Text=" = 2"/><Run Text="5"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="754,492.4466,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="6"/><Run Text=" = 2D i "/><Run Text="6"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="6"/><Run Text=" = 2"/><Run Text="6"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="754,528.8096,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="7"/><Run Text=" = 2D i "/><Run Text="7"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="7"/><Run Text=" = 2"/><Run Text="7"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="754,564,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="8"/><Run Text=" = 2D i "/><Run Text="8"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="8"/><Run Text=" = 2"/><Run Text="8"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="754,600.3636,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="9"/><Run Text=" = 2D i "/><Run Text="9"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="9"/><Run Text=" = 2"/><Run Text="9"/></TextBlock>
+
+        </Grid>
+    </Grid>
+</Window>

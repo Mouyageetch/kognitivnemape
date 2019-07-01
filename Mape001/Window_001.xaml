@@ -1,0 +1,214 @@
+﻿<Window x:Class="Mape001.Window_001"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape001"
+        mc:Ignorable="d"
+        Title="Geometrijski oblici i likovi" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Storyboard x:Key="Storyboard1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:1.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Valjak">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.7" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Lopta">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Kupa">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Kocka">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Kvadar">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Piramida">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19.8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:20" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <BooleanAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsEnabled)" Storyboard.TargetName="Valjak">
+                <DiscreteBooleanKeyFrame KeyTime="0:0:8.7" Value="False"/>
+                <DiscreteBooleanKeyFrame KeyTime="0:0:20.2" Value="True"/>
+            </BooleanAnimationUsingKeyFrames>
+            <BooleanAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsEnabled)" Storyboard.TargetName="Lopta">
+                <DiscreteBooleanKeyFrame KeyTime="0:0:9.4" Value="False"/>
+                <DiscreteBooleanKeyFrame KeyTime="0:0:20.2" Value="True"/>
+            </BooleanAnimationUsingKeyFrames>
+            <BooleanAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsEnabled)" Storyboard.TargetName="Kupa">
+                <DiscreteBooleanKeyFrame KeyTime="0:0:10.4" Value="False"/>
+                <DiscreteBooleanKeyFrame KeyTime="0:0:20.2" Value="True"/>
+            </BooleanAnimationUsingKeyFrames>
+            <BooleanAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsEnabled)" Storyboard.TargetName="Kocka">
+                <DiscreteBooleanKeyFrame KeyTime="0:0:18.5" Value="False"/>
+                <DiscreteBooleanKeyFrame KeyTime="0:0:20.2" Value="True"/>
+            </BooleanAnimationUsingKeyFrames>
+            <BooleanAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsEnabled)" Storyboard.TargetName="Kvadar">
+                <DiscreteBooleanKeyFrame KeyTime="0:0:19.5" Value="False"/>
+                <DiscreteBooleanKeyFrame KeyTime="0:0:20.2" Value="True"/>
+            </BooleanAnimationUsingKeyFrames>
+            <BooleanAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsEnabled)" Storyboard.TargetName="Piramida">
+                <DiscreteBooleanKeyFrame KeyTime="0:0:20" Value="False"/>
+                <DiscreteBooleanKeyFrame KeyTime="0:0:20.2" Value="True"/>
+            </BooleanAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock4">
+                <EasingDoubleKeyFrame KeyTime="0:0:8.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.7" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock5">
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock6">
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock7">
+                <EasingDoubleKeyFrame KeyTime="0:0:18.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock8">
+                <EasingDoubleKeyFrame KeyTime="0:0:19.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock9">
+                <EasingDoubleKeyFrame KeyTime="0:0:19.8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:20" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="GlowAnimation" AutoReverse="True" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Opacity)" Storyboard.TargetName="Valjak">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Opacity)" Storyboard.TargetName="Lopta">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Opacity)" Storyboard.TargetName="Kupa">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Opacity)" Storyboard.TargetName="Kocka">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Opacity)" Storyboard.TargetName="Kvadar">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Opacity)" Storyboard.TargetName="Piramida">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+            <BeginStoryboard Storyboard="{StaticResource GlowAnimation}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+
+        <Grid Width="1274">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
+                <TextBlock VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center"></TextBlock>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
+            </StackPanel>
+        </Grid>
+
+        <Image HorizontalAlignment="Left" Margin="80,195,0,0" VerticalAlignment="Top" Source="Images/djevojcica_bure_1.tif" Height="315" Width="495"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="290" Margin="150,-15.962,0,0" VerticalAlignment="Top" Width="345" Source="Images/speech001.png" Stretch="Fill"/>
+        <TextBlock x:Name="textBlock" Margin="198,94,761,516.924" FontSize="21"><Run Text="OVE IGRAČKE IMAJU OBLIK "/><LineBreak/><Run Text="NEKIH GEOMETRIJSKIH TIJELA."/></TextBlock>
+        <Image x:Name="Valjak" Cursor="Hand" HorizontalAlignment="Left" Height="130" Margin="150,510,0,0" VerticalAlignment="Top" Width="70" Source="Images/VALJAK.tif" MouseEnter="Image_MouseEnter" MouseLeftButtonDown="Valjak_MouseLeftButtonDown" IsEnabled="False">
+            <Image.Effect>
+                <DropShadowEffect Color="#FF8DC8FF" BlurRadius="20" RenderingBias="Quality" ShadowDepth="0"/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Lopta" Cursor="Hand"  HorizontalAlignment="Left" Height="130" Margin="258,522,0,0" VerticalAlignment="Top" Width="100" Source="Images/LOPTA_1.tif" MouseLeftButtonDown="Lopta_MouseLeftButtonDown" IsEnabled="False">
+            <Image.Effect>
+                <DropShadowEffect BlurRadius="20" Color="#FF8DC8FF" ShadowDepth="0"/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Kupa" Cursor="Hand"  HorizontalAlignment="Left" Height="130" Margin="389.5,504,0,0" VerticalAlignment="Top" Width="95" Source="Images/kupa_BELO obojeno.tif" MouseLeftButtonDown="Kupa_MouseLeftButtonDown" IsEnabled="False">
+            <Image.Effect>
+                <DropShadowEffect BlurRadius="20" Color="#FF8DC8FF" ShadowDepth="0"/>
+            </Image.Effect>
+        </Image>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="153,640,0,0" TextWrapping="Wrap" Text="VALJAK" VerticalAlignment="Top" FontSize="20" Opacity="0"/>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="280.31,640,0,0" TextWrapping="Wrap" Text="LOPTA" VerticalAlignment="Top" FontSize="20" Opacity="0"/>
+        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="415.5,640,0,0" TextWrapping="Wrap" Text="KUPA" VerticalAlignment="Top" FontSize="20" Opacity="0"/>
+        <Image x:Name="image2" HorizontalAlignment="Left" Margin="635,74,-50,0" VerticalAlignment="Top" Source="Images/djevojcica_sir.tif" Height="435" Width="687"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="155" Margin="770,259,0,0" TextWrapping="Wrap" Text="I OVE NAMIRNICE, TAKOĐER, IMAJU OBLIK NEKIH GEOMETRIJSKIH TIJELA." VerticalAlignment="Top" Width="190" FontSize="20" TextAlignment="Center"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Height="80" Margin="823.026,425,0,0" TextWrapping="Wrap" Text="DA. TO SU: KOCKA, KVADAR i PIRAMIDA." VerticalAlignment="Top" Width="211.5" FontSize="20" TextAlignment="Center"/>
+        <Image x:Name="Kocka" Cursor="Hand" HorizontalAlignment="Left" Height="97.4" Margin="767,542.6,0,0" VerticalAlignment="Top" Width="103" Source="Images/kocka.tif" MouseLeftButtonDown="Kocka_MouseLeftButtonDown" IsEnabled="False">
+            <Image.Effect>
+                <DropShadowEffect Color="#FF8DC8FF" BlurRadius="20" RenderingBias="Quality" ShadowDepth="0"/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Kvadar" Cursor="Hand"  HorizontalAlignment="Left" Height="130" Margin="930,553.5,0,0" VerticalAlignment="Top" Width="126.5" Source="Images/kvadar.tif" MouseLeftButtonDown="Kvadar_MouseLeftButtonDown" IsEnabled="False">
+            <Image.Effect>
+                <DropShadowEffect Color="#FF8DC8FF" BlurRadius="20" RenderingBias="Quality" ShadowDepth="0"/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Piramida" Cursor="Hand"  HorizontalAlignment="Left" Height="122.9" Margin="1115,527,0,0" VerticalAlignment="Top" Width="95" Source="Images/piramida.tif" MouseLeftButtonDown="Piramida_MouseLeftButtonDown" IsEnabled="False">
+            <Image.Effect>
+                <DropShadowEffect Color="#FF8DC8FF" BlurRadius="20" RenderingBias="Quality" ShadowDepth="0"/>
+            </Image.Effect>
+        </Image>
+        <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="779,649.4,0,0" TextWrapping="Wrap" Text="KOCKA" VerticalAlignment="Top" FontSize="20" Opacity="0"/>
+        <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="949.983,649.4,0,0" TextWrapping="Wrap" Text="KVADAR" VerticalAlignment="Top" FontSize="20" Opacity="0"/>
+        <TextBlock x:Name="textBlock9" HorizontalAlignment="Left" Margin="1118.893,649.4,0,0" TextWrapping="Wrap" Text="PIRAMIDA" VerticalAlignment="Top" FontSize="20" Opacity="0"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="260" Margin="480,30,0,0" VerticalAlignment="Top" Width="245" Source="Images/speech001.png" Stretch="Fill"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="97.962" Margin="516,117.038,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" FontSize="20" TextAlignment="Center"><Run Text="U PRAVU SI."/><LineBreak/><Run Text="TO SU VALJAK,"/><LineBreak/><Run Text="LOPTA I KUPA"/></TextBlock>
+    </Grid>
+</Window>

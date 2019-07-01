@@ -1,0 +1,33 @@
+﻿<Window x:Class="Mape001.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape001"
+        mc:Ignorable="d"
+        Title="Geometrijski oblici i likovi" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Grid>
+
+
+        <Rectangle Height="400" Width="1100" Stroke="#FF3391D3" />
+        <Canvas Height="400" Width="1100">
+            <Image Source="Images/djevojcica_bure_1.tif" Width="450" Margin="2,20,0,0"></Image>
+            <TextBlock Text="GEOMETRIJSKI OBLICI I LIKOVI" FontSize="28" Canvas.Left="33" Canvas.Top="334"/>
+
+            <Rectangle Canvas.Top="20" Width="630" Height="94" Margin="450,17,0,0" Stroke="#FF2D7EC1"></Rectangle>
+            <TextBlock Canvas.Top="20" Width="630" Margin="455,20,0,0" Text="Matematika, Udžbenik za drugi razred devetogodišnje osnovne škole" FontSize="16"></TextBlock>
+            <TextBlock Canvas.Top="20" Width="630" Margin="455,42,0,0" Text="Autor: Eldina Dizdar" FontSize="16"></TextBlock>
+            <TextBlock Canvas.Top="20" Width="630" Margin="455,62,0,0" Text="Izrada softvera za kognitivnu mapu: Mirza Mujagić" FontSize="16"></TextBlock>
+            <TextBlock Canvas.Top="20" Width="630" Margin="455,84,0,0" Text="Izdavač: Bosanska Knjiga, Sarajevo" FontSize="16"></TextBlock>
+
+            <TextBlock x:Name="tb1" Cursor="Hand" Canvas.Top="144" Width="630" FontSize="20" Text="1. Predmeti oblika valjka, lopte, kupe, kocke, kvadra i piramide" Background="#FFF7F7F7" MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Canvas.Left="455"/>
+            <TextBlock x:Name="tb2" Cursor="Hand" Canvas.Top="181" Width="630" FontSize="20" Background="#FFF7F7F7" MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Text="2. Strane, bridovi (ivice) i vrhovi tijela i površi - granice predmeta, ravne i zakrivljene površi" Height="53.2" TextWrapping="Wrap" Canvas.Left="455"/>
+            <TextBlock x:Name="tb3" Cursor="Hand" Canvas.Top="244" Width="630" FontSize="20" Background="#FFF7F7F7" MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" TextWrapping="Wrap" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Canvas.Left="455"><Run Text="3. Linija (crta) kao granica površi - ravne i zakrivljene linije (crte) - "/><LineBreak/><Run Text="izlomljena linija"/></TextBlock>
+            <TextBlock x:Name="tb4" Cursor="Hand" Canvas.Top="307" Width="630" FontSize="20" Background="#FFF7F7F7" MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" TextWrapping="Wrap" Text="4. Granice pravougaonika, kvadrata, i trougla kao zatvorena izlomljena linija i granica kruga kao zatvorena zakrivljena linija" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Canvas.Left="455"/>
+
+        </Canvas>
+
+        <Image Cursor="Hand" Source="Images/BosanskaKnjiga.png" Height="100" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,20,20" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
+    </Grid>
+</Window>

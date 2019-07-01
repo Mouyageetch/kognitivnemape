@@ -1,0 +1,31 @@
+﻿<Window x:Class="Mape002.Window_002"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape002"
+        mc:Ignorable="d"
+        Title="Skup brojeva do 100" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Grid>
+        <Grid Width="1274" Margin="1,0,-1,0">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
+                <TextBlock VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center"></TextBlock>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
+            </StackPanel>
+
+            <Image HorizontalAlignment="Left" Margin="106.5,425,0,0" VerticalAlignment="Top" Source="Images/djevojcica.png" Height="266" Width="97.876"/>
+            <Image HorizontalAlignment="Left" Height="189" Margin="95.132,113,0,0" VerticalAlignment="Top" Width="1088" Source="Images/brojevnalinija.PNG"/>
+            <Image x:Name="cvrcakJedinica" HorizontalAlignment="Left" Height="146" Margin="83,-19,0,0" VerticalAlignment="Top" Width="88" Source="Images/cvrcak.tif"/>
+            <Image x:Name="cvrcakDesetica" HorizontalAlignment="Left" Height="146" Margin="586,-26,0,0" VerticalAlignment="Top" Width="88" Source="Images/cvrcak.tif"/>
+            <TextBlock HorizontalAlignment="Left" Margin="81.632,272.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center"><Run Text="BROJEVE OD "/><Run Text="0 DO 100 MO"/><Run Text="Ž"/><Run Text="EMO PRIKAZATI NA BROJEVNOJ LINIJI TAKO DA ZAPIŠEMO SAMO DESETICE."/><Run Text=" "/><Run Text="OZNAKE/LINIJE IZMEĐU DESETICA PREDSTAVLJAJU JEDINICE."/></TextBlock>
+            <Image HorizontalAlignment="Left" Margin="173.376,355,0,0" VerticalAlignment="Top" Source="Images/bubble003.png" Height="125.294" Width="450.624"/>
+            <TextBlock HorizontalAlignment="Left" Margin="248.826,370.666,0,0" TextWrapping="Wrap" Text="ZA UPOREĐIVANJE VIŠEKRATNIKA BROJA 10, KAO ŠTO SMO NAUČILI, KORISTIMO ZNAKOVE &lt;,&gt;,=" VerticalAlignment="Top" Width="325" FontSize="18" TextAlignment="Center"/>
+            <Image HorizontalAlignment="Left" Margin="383,486.294,0,-6" VerticalAlignment="Top" Source="Images/vecemanje.png"/>
+            <TextBlock HorizontalAlignment="Left" Height="89.334" Margin="672.5,373.666,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="590" FontSize="18"><Run Text="60 &gt; 30&#x9;&#x9;6D &gt; 3D&#x9;&#x9;ŠEZDESET JE VEĆE OD TRIDESET"/><LineBreak/><Run Text="30 &lt; 60&#x9;&#x9;3D &lt; 6D&#x9;&#x9;TRIDESET JE MANJE OD ŠEZDESET"/><LineBreak/><Run Text="60 = 60&#x9;&#x9;60 = 60&#x9;&#x9;ŠEZDESET JE JEDNAKO ŠEZDESET"/><LineBreak/><Run/><LineBreak/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Height="133.706" Margin="694,495.294,0,0" TextWrapping="Wrap" Text="AKO DVA BROJA IMAJU RAZLIČIT BROJ DESETICA, VEĆI JE ONAJ KOJI IMA VIŠE  DESETICA." VerticalAlignment="Top" Width="489.132" FontSize="24" TextAlignment="Center"/>
+        </Grid>
+
+    </Grid>
+</Window>

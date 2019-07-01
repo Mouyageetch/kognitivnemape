@@ -1,0 +1,424 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape001"
+        xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="Mape001.Window_005"
+        mc:Ignorable="d"
+         Title="Geometrijski oblici i likovi" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize" >
+    <Window.Resources>
+        <Storyboard x:Key="tijelaFade">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image7">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image8">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image9">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image10">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="tijelaGlow" AutoReverse="True" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="stranaGlow001">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="stranaGlow005">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="stranaGlow002">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="stranaGlow003">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="stranaGlow004">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bridGlow001">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bridGlow002">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bridGlow003">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bridGlow004">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bridGlow005">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource tijelaFade}"/>
+            <BeginStoryboard Storyboard="{StaticResource tijelaGlow}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+
+        <Grid Width="1274">
+            <DockPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"/>
+                <TextBlock x:Name="banner" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center"/>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/home.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"/>
+            </DockPanel>
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="255*"/>
+                <RowDefinition Height="436*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="150.788,70.208,150.788,325.208" Grid.Row="1">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Margin" Value="5,0,5,0"/>
+                        <Setter Property="Padding" Value="3"/>
+                    </Style>
+                </StackPanel.Resources>
+
+                <TextBlock x:Name="strana" Grid.Column="0" Cursor="Hand" FontSize="26" Text="STRANA" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
+                <TextBlock x:Name="brid" Grid.Column="0" Cursor="Hand" FontSize="26" Text="BRID (IVICA)" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
+                <TextBlock x:Name="vrh" Grid.Column="0" Cursor="Hand" FontSize="26" Text="VRH" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
+
+            </StackPanel>
+            <Image x:Name="image" HorizontalAlignment="Left" Height="125" Margin="72.5,110,0,0" VerticalAlignment="Top" Source="Images/kocka.tif" Width="127.5"/>
+            <Image x:Name="stranaGlow001" HorizontalAlignment="Left" Height="125" Margin="72.5,110,0,0" VerticalAlignment="Top" Source="Images/kocka2_stranica_00000.png" Width="127.5" Visibility="Hidden"/>
+            <Image x:Name="bridGlow001" HorizontalAlignment="Left" Height="125" Margin="72.5,110,0,0" VerticalAlignment="Top" Source="Images/kocka2Brid_00000.png" Width="127.5" Visibility="Hidden"/>
+
+            <Image x:Name="image1" HorizontalAlignment="Left" Margin="280,110,0,0" VerticalAlignment="Top" Source="Images/piramida.tif" Width="115" Height="124.999"/>
+            <Image x:Name="stranaGlow002" HorizontalAlignment="Left" Margin="280,110,0,0" VerticalAlignment="Top" Source="Images/piramida3Glow_00000.png" Width="115" Height="124.999" Visibility="Hidden"/>
+            <Image x:Name="bridGlow002" HorizontalAlignment="Left" Margin="280,110,0,0" VerticalAlignment="Top" Source="Images/piramida3Brid_00000.png" Width="115" Height="124.999" Visibility="Hidden"/>
+
+            <Image x:Name="image2" HorizontalAlignment="Left" Margin="479,110,0,0" VerticalAlignment="Top" Source="Images/lopta004.jpg" Width="126" Height="120.05"/>
+
+            <Image x:Name="image3" HorizontalAlignment="Left" Margin="48.5,182,0,0" VerticalAlignment="Top" Source="Images/VALJAK3.png" Grid.Row="1" Width="177.5" Height="87.105"/>
+            <Image x:Name="stranaGlow003" HorizontalAlignment="Left" Margin="48.5,182,0,0" VerticalAlignment="Top" Source="Images/VALJAK3GLOW_00000.png" Grid.Row="1" Width="177.5" Height="87.105" Visibility="Hidden"/>
+            <Image x:Name="bridGlow003" HorizontalAlignment="Left" Margin="48.5,182,0,0" VerticalAlignment="Top" Source="Images/VALJAK3Brid_00000.png" Grid.Row="1" Width="177.5" Height="87.105" Visibility="Hidden"/>
+
+            <Image x:Name="image4" HorizontalAlignment="Left" Margin="275.5,171.83,0,0" VerticalAlignment="Top" Source="Images/Kupa001.png" Width="130" Grid.Row="1" Height="122.775"/>
+            <Image x:Name="stranaGlow004" HorizontalAlignment="Left" Margin="275.5,171.83,0,0" VerticalAlignment="Top" Source="Images/Kupa001Glow_00000.png" Width="130" Grid.Row="1" Height="122.775" Visibility="Hidden"/>
+            <Image x:Name="bridGlow004" HorizontalAlignment="Left" Margin="275.5,171.83,0,0" VerticalAlignment="Top" Source="Images/Kupa001Brid_00000.png" Width="130" Grid.Row="1" Height="122.775" Visibility="Hidden" Opacity="0"/>
+
+            <Image x:Name="image5" HorizontalAlignment="Left" Margin="446.5,167.283,0,0" VerticalAlignment="Top" Source="Images/kvadar.tif" Width="158.5" Grid.Row="1" Height="107.822"/>
+            <Image x:Name="stranaGlow005" HorizontalAlignment="Left" Margin="446.5,167.283,0,0" VerticalAlignment="Top" Source="Images/kvadarGlow_00000.png" Width="158.5" Grid.Row="1" Height="107.822" Visibility="Hidden"/>
+            <Image x:Name="bridGlow005" HorizontalAlignment="Left" Margin="446.5,167.283,0,0" VerticalAlignment="Top" Source="Images/kvadarBrid_00000.png" Width="158.5" Grid.Row="1" Height="107.822" Visibility="Hidden"/>
+
+
+
+            <ed:LineArrow x:Name="stranaLine001" Grid.Column="0" Fill="Red" HorizontalAlignment="Left" Height="136.788" Margin="161.608,193.584,0,0" Grid.RowSpan="2" Stroke="#FFC92121" VerticalAlignment="Top" Width="0" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-213.326"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="stranaLine002" Grid.Column="0"  Fill="Red" HorizontalAlignment="Left" Height="168.23" Margin="136.041,197.512,0,0" Grid.RowSpan="2" Stroke="#FFC92121" VerticalAlignment="Top" Width="3.427" RenderTransformOrigin="-0.045,0.005" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-138.892"/>
+                        <TranslateTransform X="75.699" Y="121.454"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="stranaLine003" Grid.Column="0"  Fill="Red" HorizontalAlignment="Left" Height="121.842" Margin="152.265,237.997,0,0" Grid.RowSpan="2" Stroke="#FFC92121" VerticalAlignment="Top" Width="1.033" RenderTransformOrigin="0.038,0.007" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-356.555"/>
+                        <TranslateTransform X="51.071" Y="128.243"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="stranaLine004" Grid.Column="0"  Fill="Red" HorizontalAlignment="Left" Height="203.819" Margin="130.226,246.501,0,0" Grid.RowSpan="2" Stroke="#FFC92121" VerticalAlignment="Top" Width="1.494" RenderTransformOrigin="-0.045,0.005" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-38.156"/>
+                        <TranslateTransform X="75.699" Y="121.454"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="stranaLine005" Grid.Column="0"  Fill="Red" HorizontalAlignment="Left" Height="319.103" Margin="131.798,244.842,0,0" Grid.RowSpan="2" Stroke="#FFC92121" VerticalAlignment="Top" Width="1.494" RenderTransformOrigin="-0.045,0.005" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-67.924"/>
+                        <TranslateTransform X="75.699" Y="121.454"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="bridLine001" Fill="Red" HorizontalAlignment="Left" Height="188.075" Margin="268.291,194.579,0,0" Grid.RowSpan="2" Stroke="#FF219BC9" VerticalAlignment="Top" Width="0.202" RenderTransformOrigin="0.019,0.002" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-233.393"/>
+                        <TranslateTransform X="64.223" Y="125.759"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="bridLine003" Fill="Red" HorizontalAlignment="Left" Height="151.18" Margin="274.037,240.537,0,0" Grid.RowSpan="2" Stroke="#FF219BC9" VerticalAlignment="Top" Width="0.202" RenderTransformOrigin="0.019,0.002" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-298.823"/>
+                        <TranslateTransform X="64.223" Y="125.759"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="bridLine004" Fill="Red" HorizontalAlignment="Left" Height="77.073" Margin="275.596,241.452,0,0" Grid.RowSpan="2" Stroke="#FF219BC9" VerticalAlignment="Top" Width="0.202" RenderTransformOrigin="0.019,0.002" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-360.828"/>
+                        <TranslateTransform X="64.223" Y="125.759"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="bridLine005" Fill="Red" HorizontalAlignment="Left" Height="176.345" Margin="278.136,240.343,0,0" Grid.RowSpan="2" Stroke="#FF219BC9" VerticalAlignment="Top" Width="0.202" RenderTransformOrigin="0.019,0.002" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-431.656"/>
+                        <TranslateTransform X="64.223" Y="125.759"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="bridLine002" Fill="Red" HorizontalAlignment="Left" Height="154.77" Margin="276.208,195.36,0,0" Grid.RowSpan="2" Stroke="#FF219BC9" VerticalAlignment="Top" Width="0.202" RenderTransformOrigin="0.019,0.002" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-172.764"/>
+                        <TranslateTransform X="64.223" Y="125.759"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="vrhLine001" Fill="Red" HorizontalAlignment="Left" Height="309.275" Margin="389.709,194.818,0,0" Grid.RowSpan="2" Stroke="#FF4FC921" VerticalAlignment="Top" Width="0.202" RenderTransformOrigin="0.019,0.002" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-253.406"/>
+                        <TranslateTransform X="64.223" Y="125.759"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="vrhLine002" Fill="Red" HorizontalAlignment="Left" Height="237.75" Margin="389.786,195.081,0,0" Grid.RowSpan="2" Stroke="#FF4FC921" VerticalAlignment="Top" Width="0.202" RenderTransformOrigin="0.019,0.002" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-210.626"/>
+                        <TranslateTransform X="64.223" Y="125.759"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="vrhLine003" Fill="Red" HorizontalAlignment="Left" Height="133.953" Margin="390.022,241.011,0,0" Grid.RowSpan="2" Stroke="#FF4FC921" VerticalAlignment="Top" Width="0.202" RenderTransformOrigin="0.019,0.002" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-296.556"/>
+                        <TranslateTransform X="64.223" Y="125.759"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="vrhLine004" Fill="Red" HorizontalAlignment="Left" Height="151.926" Margin="390.096,240.986,0,0" Grid.RowSpan="2" Stroke="#FF4FC921" VerticalAlignment="Top" Width="0.202" RenderTransformOrigin="0.019,0.002" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-428.653"/>
+                        <TranslateTransform X="64.223" Y="125.759"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="povrsiLine001" Grid.Column="1" Fill="Red" HorizontalAlignment="Left" Height="30" Margin="328,40,0,0" Grid.Row="1" Stroke="#FF219BC9" VerticalAlignment="Top" Width="0" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-179.949"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="povrsiLine002" Grid.Column="1" Fill="Red" HorizontalAlignment="Left" Height="30" Margin="327.992,78.51,0,0" Grid.Row="1" Stroke="#FF219BC9" VerticalAlignment="Top" Width="0.07" RenderTransformOrigin="0.503,-0.002" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-360.291"/>
+                        <TranslateTransform X="-0.103" Y="30.12"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <Image x:Name="image7" Grid.Column="1" HorizontalAlignment="Left" Margin="98,85,0,0" VerticalAlignment="Top" Width="200" Source="Images/kvadarBijeli001.png" Height="102.749"/>
+            <Image x:Name="image8" Grid.Column="1" HorizontalAlignment="Left" Margin="358,85,0,0" VerticalAlignment="Top" Width="245" Source="Images/valjakBijeli001.png" Height="120.05"/>
+            <Image x:Name="image6" Grid.Column="1" HorizontalAlignment="Left" Margin="33,232.251,0,0" VerticalAlignment="Top" Width="145" Source="Images/kvadratBijeli001.png" Grid.RowSpan="2" Height="133.541"/>
+            <Image x:Name="image9" Grid.Column="1" HorizontalAlignment="Left" Margin="492,240.792,0,0" VerticalAlignment="Top" Width="135" Source="Images/kupaBijela001.png" Height="125" Grid.RowSpan="2"/>
+            <Image x:Name="image10" Grid.Column="1" HorizontalAlignment="Left" Margin="268,230,0,0" VerticalAlignment="Top" Width="135" Source="Images/loptaBijela001.png" Height="125" Grid.Row="1"/>
+            <ed:LineArrow x:Name="ravneLine003" Grid.Column="1" Fill="Red" HorizontalAlignment="Left" Height="154.991" Margin="298,114.983,0,0" Stroke="#FF219BC9" VerticalAlignment="Top" Width="0.152" RenderTransformOrigin="0,0" Grid.RowSpan="2" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-231.412"/>
+                        <TranslateTransform X="29.992" Y="135.014"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="ravneLine002" Grid.Column="1" Fill="Red" HorizontalAlignment="Left" Height="253.693" Margin="298,114.983,0,0" Stroke="#FF219BC9" VerticalAlignment="Top" Width="0.152" RenderTransformOrigin="0,0" Grid.RowSpan="2" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-115.282"/>
+                        <TranslateTransform X="29.992" Y="135.014"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="ravneLine004" Grid.Column="1" Fill="Red" HorizontalAlignment="Left" Height="183.112" Margin="252.848,140.367,0,0" Stroke="#FF219BC9" VerticalAlignment="Top" Width="0.152" RenderTransformOrigin="0,0" Grid.RowSpan="2" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-278.257"/>
+                        <TranslateTransform X="29.992" Y="135.014"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="ravneLine001" Grid.Column="1" Fill="Red" HorizontalAlignment="Left" Height="183.112" Margin="338,136.888,0,0" Stroke="#FF219BC9" VerticalAlignment="Top" Width="0.152" RenderTransformOrigin="0,0" Grid.RowSpan="2" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-424.686"/>
+                        <TranslateTransform X="29.992" Y="135.014"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="zakrivljeneLine001" Grid.Column="1" Fill="Red" HorizontalAlignment="Left" Height="113.008" Margin="293,46.888,0,0" Stroke="#FFE43232" VerticalAlignment="Top" Width="0.152" RenderTransformOrigin="0,0" Grid.Row="1" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-362.713"/>
+                        <TranslateTransform X="29.992" Y="135.014"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="zakrivljeneLine002" Grid.Column="1" Fill="Red" HorizontalAlignment="Left" Height="175.418" Margin="367.848,10,0,0" Stroke="#FFE43232" VerticalAlignment="Top" Width="0.152" RenderTransformOrigin="0,0" Grid.Row="1" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-484.159"/>
+                        <TranslateTransform X="29.992" Y="135.014"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+            <ed:LineArrow x:Name="zakrivljeneLine003" Grid.Column="1" Fill="Red" HorizontalAlignment="Left" Height="274.496" Margin="367.848,10,0,0" Stroke="#FFE43232" VerticalAlignment="Top" Width="0.152" RenderTransformOrigin="0,0" Grid.Row="1" Visibility="Hidden">
+                <ed:LineArrow.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-528.188"/>
+                        <TranslateTransform X="29.992" Y="135.014"/>
+                    </TransformGroup>
+                </ed:LineArrow.RenderTransform>
+            </ed:LineArrow>
+
+
+
+
+
+
+
+
+
+        </Grid>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical" Margin="805,96,150.788,98" Grid.Row="1">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Margin" Value="0,15,0,15"/>
+                    <Setter Property="Padding" Value="3"/>
+                </Style>
+            </StackPanel.Resources>
+
+            <TextBlock x:Name="ravne" Cursor="Hand" FontSize="26" Text="RAVNE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" MouseLeftButtonDown="Povrsi_MouseLeftButtonDown" Visibility="Hidden"/>
+            <TextBlock x:Name="povrsi" Cursor="Hand" FontSize="26" Text="POVRŠI" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" MouseLeftButtonDown="Povrsi_MouseLeftButtonDown"/>
+            <TextBlock x:Name="zakrivljene" Cursor="Hand" FontSize="26" Text="ZAKRIVLJENE" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFC2EADD" TextAlignment="Center" MouseLeftButtonDown="Povrsi_MouseLeftButtonDown" Visibility="Hidden"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

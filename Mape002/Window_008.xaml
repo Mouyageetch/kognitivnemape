@@ -1,0 +1,522 @@
+﻿<Window x:Class="Mape002.Window_008"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape002"
+        mc:Ignorable="d"
+        Title="Skup brojeva do 100" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Window.Resources>
+        <Storyboard x:Key="Hand" AutoReverse="True" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="hand">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-20"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-100">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-20">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="76.429">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="186.429">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.2" Value="236.429">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="hand">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-10"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-25">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-10">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-112.857">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="-22.857">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.2" Value="2.143">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="hand">
+                <EasingDoubleKeyFrame KeyTime="0" Value="45.555"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-37.083">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="45.555">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="179.828">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="315">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.2" Value="418.42">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Hand}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+
+        <Grid>
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
+                <TextBlock VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">ODUZIMANJE VIŠEKRATNIKA BROJA 10 U PRVOJ STOTINI</TextBlock>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
+            </StackPanel>
+
+            <Grid Height="500" Width="400" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,50,0,0">
+                <Grid.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="BorderBrush" Value="CornflowerBlue"></Setter>
+                        <Setter Property="BorderThickness" Value="2"></Setter>
+                    </Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="TextAlignment" Value="Center"/>
+                        <Setter Property="FontSize" Value="32"/>
+                    </Style>
+                </Grid.Resources>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Column="0" Grid.Row="0">
+                    <TextBlock x:Name="tb0" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="1">
+                    <TextBlock x:Name="tb1" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="2">
+                    <TextBlock x:Name="tb2" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="3">
+                    <TextBlock x:Name="tb3" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="4">
+                    <TextBlock x:Name="tb4" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="5">
+                    <TextBlock x:Name="tb5" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="6">
+                    <TextBlock x:Name="tb6" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="7">
+                    <TextBlock x:Name="tb7" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="8">
+                    <TextBlock x:Name="tb8" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="9">
+                    <TextBlock x:Name="tb9" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="10">
+                    <TextBlock x:Name="tb10" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="11">
+                    <TextBlock x:Name="tb11" Text="1D"/>
+                </Border>
+
+                <Border Grid.Column="1" Grid.Row="0">
+                    <TextBlock Text="+"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="1">
+                    <TextBlock  Text="+"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="2">
+                    <TextBlock  Text="+"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="3">
+                    <TextBlock  Text="+"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="4">
+                    <TextBlock  Text="+"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="5">
+                    <TextBlock  Text="+"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="6">
+                    <TextBlock  Text="+"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="7">
+                    <TextBlock  Text="+"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="8">
+                    <TextBlock  Text="+"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="9">
+                    <TextBlock  Text="+"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="10">
+                    <TextBlock  Text="+"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="11">
+                    <TextBlock  Text="+"/>
+                </Border>
+
+                <Border Grid.Column="2" Grid.Row="0">
+                    <TextBlock x:Name="tb12" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="1">
+                    <TextBlock x:Name="tb13" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="2">
+                    <TextBlock x:Name="tb14" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="3">
+                    <TextBlock x:Name="tb15" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="4">
+                    <TextBlock x:Name="tb16" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="5">
+                    <TextBlock x:Name="tb17" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="6">
+                    <TextBlock x:Name="tb18" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="7">
+                    <TextBlock x:Name="tb19" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="8">
+                    <TextBlock x:Name="tb20" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="9">
+                    <TextBlock x:Name="tb21" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="10">
+                    <TextBlock x:Name="tb22" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="11">
+                    <TextBlock x:Name="tb23" Text="1D"/>
+                </Border>
+
+
+                <Border Grid.Column="3" Grid.Row="0">
+                    <TextBlock x:Name="atb0" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="1">
+                    <TextBlock x:Name="atb1" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="2">
+                    <TextBlock x:Name="atb2" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="3">
+                    <TextBlock x:Name="atb3" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="4">
+                    <TextBlock x:Name="atb4" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="5">
+                    <TextBlock x:Name="atb5" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="6">
+                    <TextBlock x:Name="atb6" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="7">
+                    <TextBlock x:Name="atb7" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="8">
+                    <TextBlock x:Name="atb8" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="9">
+                    <TextBlock x:Name="atb9" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="10">
+                    <TextBlock x:Name="atb10" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="11">
+                    <TextBlock x:Name="atb11" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+            </Grid>
+
+
+
+
+            <Grid Height="500" Width="400" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,50,50,0">
+                <Grid.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="BorderBrush" Value="CornflowerBlue"></Setter>
+                        <Setter Property="BorderThickness" Value="2"></Setter>
+                    </Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="TextAlignment" Value="Center"/>
+                        <Setter Property="FontSize" Value="32"/>
+                    </Style>
+                </Grid.Resources>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Column="0" Grid.Row="0">
+                    <TextBlock x:Name="tb24" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="1">
+                    <TextBlock x:Name="tb25" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="2">
+                    <TextBlock x:Name="tb26" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="3">
+                    <TextBlock x:Name="tb27" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="4">
+                    <TextBlock x:Name="tb28" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="5">
+                    <TextBlock x:Name="tb29" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="6">
+                    <TextBlock x:Name="tb30" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="7">
+                    <TextBlock x:Name="tb31" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="8">
+                    <TextBlock x:Name="tb32" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="9">
+                    <TextBlock x:Name="tb33" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="10">
+                    <TextBlock x:Name="tb34" Text="1D"/>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="11">
+                    <TextBlock x:Name="tb35" Text="1D"/>
+                </Border>
+
+                <Border Grid.Column="1" Grid.Row="0">
+                    <TextBlock Text="-"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="1">
+                    <TextBlock  Text="-"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="2">
+                    <TextBlock  Text="-"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="3">
+                    <TextBlock  Text="-"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="4">
+                    <TextBlock  Text="-"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="5">
+                    <TextBlock  Text="-"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="6">
+                    <TextBlock  Text="-"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="7">
+                    <TextBlock  Text="-"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="8">
+                    <TextBlock  Text="-"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="9">
+                    <TextBlock  Text="-"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="10">
+                    <TextBlock  Text="-"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="11">
+                    <TextBlock  Text="-"/>
+                </Border>
+
+                <Border Grid.Column="2" Grid.Row="0">
+                    <TextBlock x:Name="tb36" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="1">
+                    <TextBlock x:Name="tb37" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="2">
+                    <TextBlock x:Name="tb38" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="3">
+                    <TextBlock x:Name="tb39" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="4">
+                    <TextBlock x:Name="tb40" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="5">
+                    <TextBlock x:Name="tb41" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="6">
+                    <TextBlock x:Name="tb42" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="7">
+                    <TextBlock x:Name="tb43" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="8">
+                    <TextBlock x:Name="tb44" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="9">
+                    <TextBlock x:Name="tb45" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="10">
+                    <TextBlock x:Name="tb46" Text="1D"/>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="11">
+                    <TextBlock x:Name="tb47" Text="1D"/>
+                </Border>
+
+
+                <Border Grid.Column="3" Grid.Row="0">
+                    <TextBlock x:Name="atb12" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="1">
+                    <TextBlock x:Name="atb13" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="2">
+                    <TextBlock x:Name="atb14" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="3">
+                    <TextBlock x:Name="atb15" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="4">
+                    <TextBlock x:Name="atb16" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="5">
+                    <TextBlock x:Name="atb17" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="6">
+                    <TextBlock x:Name="atb18" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="7">
+                    <TextBlock x:Name="atb19" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="8">
+                    <TextBlock x:Name="atb20" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="9">
+                    <TextBlock x:Name="atb21" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="10">
+                    <TextBlock x:Name="atb22" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+                <Border Grid.Column="3" Grid.Row="11">
+                    <TextBlock x:Name="atb23" Text="?" Width="120" Height="40" AllowDrop="True" Drop="Atb0_Drop"/>
+                </Border>
+            </Grid>
+
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,45,0,0">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Margin" Value="0,5,0,5"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <EventSetter Event="MouseLeftButtonDown" Handler="TextBlock_MouseLeftButtonDown"/>
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock Background="AliceBlue" FontSize="32" TextAlignment="Center" Width="120" Height="40" Text="10"/>
+                <TextBlock Background="AliceBlue" FontSize="32" TextAlignment="Center" Width="120" Height="40" Text="20"/>
+                <TextBlock Background="AliceBlue" FontSize="32" TextAlignment="Center" Width="120" Height="40" Text="30"/>
+                <TextBlock Background="AliceBlue" FontSize="32" TextAlignment="Center" Width="120" Height="40" Text="40"/>
+                <TextBlock Background="AliceBlue" FontSize="32" TextAlignment="Center" Width="120" Height="40" Text="50"/>
+                <TextBlock Background="AliceBlue" FontSize="32" TextAlignment="Center" Width="120" Height="40" Text="60"/>
+                <TextBlock Background="AliceBlue" FontSize="32" TextAlignment="Center" Width="120" Height="40" Text="70"/>
+                <TextBlock Background="AliceBlue" FontSize="32" TextAlignment="Center" Width="120" Height="40" Text="80"/>
+                <TextBlock Background="AliceBlue" FontSize="32" TextAlignment="Center" Width="120" Height="40" Text="90"/>
+                <TextBlock Background="AliceBlue" FontSize="32" TextAlignment="Center" Width="120" Height="40" Text="100"/>
+            </StackPanel>
+
+            <Grid x:Name="success" Width="1280" Height="150"  Background="#FF4E87CB" Visibility="Hidden">
+                <StackPanel VerticalAlignment="Center" Width="Auto" Height="Auto">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="72" Foreground="GhostWhite" Text="ISPRAVAN ODGOVOR!"></TextBlock>
+                </StackPanel>
+            </Grid>
+            <Image x:Name="hand" HorizontalAlignment="Left" Height="95" Margin="525,145,0,0" VerticalAlignment="Top" Width="85" Source="Images/hand.png" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="10">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45.556"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+        </Grid>
+    </Grid>
+</Window>
