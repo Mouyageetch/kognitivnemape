@@ -34,8 +34,8 @@ namespace Mape002
         public Window_003()
         {
             InitializeComponent();
-            soundPlayer = new SoundPlayer();
-            soundPlayer.Stop();
+            soundPlayer = new SoundPlayer(Properties.Resources.odaberiIspravanOdgovor);
+            soundPlayer.Play();
             glows = new List<Rectangle> { r1, r2, r3, r4, r5, r6 };
             r1.Visibility = Visibility.Visible;
             brojRijesenih = 0;
@@ -91,8 +91,8 @@ namespace Mape002
 
         private void PreviousWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Window_002 window_002 = new Window_002();
-            window_002.Show();
+            Window_002a window_002a = new Window_002a();
+            window_002a.Show();
             this.Close();
         }
 

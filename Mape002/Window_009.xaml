@@ -7,16 +7,114 @@
         mc:Ignorable="d"
         Title="Skup brojeva do 100" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
         Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Window.Resources>
+        <Storyboard x:Key="MainStory">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:38" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:39" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:26.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:27" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:27" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:27.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:30" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:30.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:38" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:39" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:38" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:39" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:38" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:39" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock7">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:38" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:39" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock8">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:38" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:39" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock9">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:38" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:39" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock10">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:38" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:39" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock11">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:38" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:39" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource MainStory}"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid>
         <Grid>
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
                 <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
-                <TextBlock VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">FORMIRANJE POJMOVA OSTALIH BROJEVA PRVE STOTINE</TextBlock>
+                <TextBlock x:Name="textBlock" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">FORMIRANJE POJMOVA OSTALIH BROJEVA PRVE STOTINE</TextBlock>
                 <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
             </StackPanel>
 
 
-            <Grid Width="450" Height="400" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="300,0,0,20">
+            <Grid x:Name="grid" Width="450" Height="400" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="300,0,0,20">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width=".5*"></ColumnDefinition>
                     <ColumnDefinition Width=".5*"></ColumnDefinition>
@@ -211,12 +309,12 @@
                     <TextBlock Text="TRIDESET"/>
                 </Border>
             </Grid>
-            <Image HorizontalAlignment="Left" Height="325" Margin="24,135,0,0" VerticalAlignment="Top" Width="150" Source="Images/djevojcica.png"/>
-            <Image HorizontalAlignment="Left" Height="211" Margin="114,80,0,0" VerticalAlignment="Top" Width="600" Source="Images/bubble005.png"/>
-            <TextBlock HorizontalAlignment="Left" Height="171" Margin="249,130,0,0" TextWrapping="Wrap" Text="VIŠEKRATNICI BROJA 10 SU: 10, 20, 30, ..., 100. A ŠTA ĆEMO DOBITI AKO BROJU 20 DODAMO 1 JEDINICU?" VerticalAlignment="Top" Width="465" FontSize="24" TextAlignment="Center"/>
-            <Image HorizontalAlignment="Left" Height="115" Margin="838,78,0,0" VerticalAlignment="Top" Width="115" Source="Images/olovke_10.tif"/>
-            <Image HorizontalAlignment="Left" Height="115" Margin="972,78,0,0" VerticalAlignment="Top" Width="115" Source="Images/olovke_10.tif"/>
-            <Image HorizontalAlignment="Left" Height="87.359" Margin="1098.56,95.249,0,0" VerticalAlignment="Top" Width="87.36" Source="Images/olovka.tif" RenderTransformOrigin="0.5,0.5">
+            <Image x:Name="image" HorizontalAlignment="Left" Height="325" Margin="24,135,0,0" VerticalAlignment="Top" Width="150" Source="Images/djevojcica.png"/>
+            <Image x:Name="image1" HorizontalAlignment="Left" Height="211" Margin="114,80,0,0" VerticalAlignment="Top" Width="600" Source="Images/bubble005.png"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="171" Margin="249,130,0,0" TextWrapping="Wrap" Text="VIŠEKRATNICI BROJA 10 SU: 10, 20, 30, ..., 100. A ŠTA ĆEMO DOBITI AKO BROJU 20 DODAMO 1 JEDINICU?" VerticalAlignment="Top" Width="465" FontSize="24" TextAlignment="Center"/>
+            <Image x:Name="image2" HorizontalAlignment="Left" Height="115" Margin="838,78,0,0" VerticalAlignment="Top" Width="115" Source="Images/olovke_10.tif"/>
+            <Image x:Name="image3" HorizontalAlignment="Left" Height="115" Margin="972,78,0,0" VerticalAlignment="Top" Width="115" Source="Images/olovke_10.tif"/>
+            <Image x:Name="image4" HorizontalAlignment="Left" Height="87.359" Margin="1098.56,95.249,0,0" VerticalAlignment="Top" Width="87.36" Source="Images/olovka.tif" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -226,16 +324,16 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <TextBlock HorizontalAlignment="Left" Height="50" Margin="860,199.47,0,0" TextWrapping="Wrap" Text="20 + 1 = 21" VerticalAlignment="Top" Width="315" FontSize="32" TextAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Left" Margin="785,249.47,0,0" TextWrapping="Wrap" Text="AKO BROJU DVADESET DODAMO JEDNU JEDINICU, DOBIT ĆEMO  BROJ 21." VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"/>
-            <TextBlock HorizontalAlignment="Left" Margin="754,348,0,0" TextWrapping="Wrap" Text="22 = 2D i 2J&#x9;ILI&#x9;20+2 = 22" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"/>
-            <TextBlock HorizontalAlignment="Left" Margin="754,384.36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="3"/><Run Text=" = 2D i "/><Run Text="3"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="3"/><Run Text=" = 2"/><Run Text="3"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="754,419.723,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="4"/><Run Text=" = 2D i "/><Run Text="4"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="4"/><Run Text=" = 2"/><Run Text="4"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="754,456.083,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="5"/><Run Text=" = 2D i "/><Run Text="5"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="5"/><Run Text=" = 2"/><Run Text="5"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="754,492.4466,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="6"/><Run Text=" = 2D i "/><Run Text="6"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="6"/><Run Text=" = 2"/><Run Text="6"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="754,528.8096,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="7"/><Run Text=" = 2D i "/><Run Text="7"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="7"/><Run Text=" = 2"/><Run Text="7"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="754,564,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="8"/><Run Text=" = 2D i "/><Run Text="8"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="8"/><Run Text=" = 2"/><Run Text="8"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="754,600.3636,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="9"/><Run Text=" = 2D i "/><Run Text="9"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="9"/><Run Text=" = 2"/><Run Text="9"/></TextBlock>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="50" Margin="860,199.47,0,0" TextWrapping="Wrap" Text="20 + 1 = 21" VerticalAlignment="Top" Width="315" FontSize="32" TextAlignment="Center"/>
+            <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="785,249.47,0,0" TextWrapping="Wrap" Text="AKO BROJU DVADESET DODAMO JEDNU JEDINICU, DOBIT ĆEMO  BROJ 21." VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"/>
+            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="754,348,0,0" TextWrapping="Wrap" Text="22 = 2D i 2J&#x9;ILI&#x9;20+2 = 22" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"/>
+            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="754,384.36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="3"/><Run Text=" = 2D i "/><Run Text="3"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="3"/><Run Text=" = 2"/><Run Text="3"/></TextBlock>
+            <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="754,419.723,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="4"/><Run Text=" = 2D i "/><Run Text="4"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="4"/><Run Text=" = 2"/><Run Text="4"/></TextBlock>
+            <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="754,456.083,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="5"/><Run Text=" = 2D i "/><Run Text="5"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="5"/><Run Text=" = 2"/><Run Text="5"/></TextBlock>
+            <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="754,492.4466,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="6"/><Run Text=" = 2D i "/><Run Text="6"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="6"/><Run Text=" = 2"/><Run Text="6"/></TextBlock>
+            <TextBlock x:Name="textBlock9" HorizontalAlignment="Left" Margin="754,528.8096,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="7"/><Run Text=" = 2D i "/><Run Text="7"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="7"/><Run Text=" = 2"/><Run Text="7"/></TextBlock>
+            <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="754,564,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="8"/><Run Text=" = 2D i "/><Run Text="8"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="8"/><Run Text=" = 2"/><Run Text="8"/></TextBlock>
+            <TextBlock x:Name="textBlock11" HorizontalAlignment="Left" Margin="754,600.3636,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Width="473.35"><Run Text="2"/><Run Text="9"/><Run Text=" = 2D i "/><Run Text="9"/><Run Text="J&#x9;ILI&#x9;20+"/><Run Text="9"/><Run Text=" = 2"/><Run Text="9"/></TextBlock>
 
         </Grid>
     </Grid>

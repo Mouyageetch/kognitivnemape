@@ -187,7 +187,7 @@
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="72" Foreground="GhostWhite" Text="ISPRAVAN ODGOVOR!"></TextBlock>
                 </StackPanel>
             </Grid>
-            <Image x:Name="hand" HorizontalAlignment="Left" Margin="604,341.132,0,0" VerticalAlignment="Top" Source="Images/hand.png" RenderTransformOrigin="0.5,0.5" Height="148.868" Width="114.908">
+            <Image x:Name="hand" HorizontalAlignment="Left" Margin="239,336.132,0,0" VerticalAlignment="Top" Source="Images/hand.png" RenderTransformOrigin="0.5,0.5" Height="148.868" Width="114.908">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>

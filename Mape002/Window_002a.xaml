@@ -1,0 +1,189 @@
+﻿<Window x:Class="Mape002.Window_002a"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape002"
+
+        Title="Skup brojeva do 100" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Background" Value="White"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid Width="1274" Margin="1,0,-1,0">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
+                <TextBlock VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center"></TextBlock>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
+            </StackPanel>
+
+            <Path x:Name="line001" Data="M638,316 C638,302.44444 638,288.88889 638,275.33333" Fill="IndianRed" HorizontalAlignment="Left" Height="60.668" Margin="635.541,260,0,0" Stretch="Fill" Stroke="IndianRed" StrokeThickness="3" VerticalAlignment="Top" Width="3"/>
+
+            <Path x:Name="line003" Data="M639,230 L179.11,200" Fill="IndianRed" HorizontalAlignment="Left" Height="33" Margin="178.11,199,0,0" Stretch="Fill" Stroke="IndianRed" StrokeThickness="3" VerticalAlignment="Top" Width="462.89"/>
+            <Path x:Name="line004" Data="M639,230 L179.11,200" Fill="IndianRed" HorizontalAlignment="Left" Height="102" Margin="209,130,0,0" Stretch="Fill" Stroke="IndianRed" StrokeThickness="3" VerticalAlignment="Top" Width="432"/>
+            <Path x:Name="line005" Data="M639,230 L179.11,200" Fill="IndianRed" HorizontalAlignment="Left" Height="102" Margin="389,130,0,0" Stretch="Fill" Stroke="IndianRed" StrokeThickness="3" VerticalAlignment="Top" Width="252"/>
+            <Path x:Name="line006" Data="M639,230 L179.11,200" Fill="IndianRed" HorizontalAlignment="Left" Height="102" Margin="584,130,0,0" Stretch="Fill" Stroke="IndianRed" StrokeThickness="3" VerticalAlignment="Top" Width="57"/>
+            <Path x:Name="line007" Data="M639,230 L179.11,200" Fill="IndianRed" HorizontalAlignment="Left" Height="102" Margin="641,130,0,0" Stretch="Fill" Stroke="IndianRed" StrokeThickness="3" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="line008" Data="M639,230 L179.11,200" Fill="IndianRed" HorizontalAlignment="Left" Height="102" Margin="641,130,0,0" Stretch="Fill" Stroke="IndianRed" StrokeThickness="3" VerticalAlignment="Top" Width="321" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="line009" Data="M639,230 L179.11,200" Fill="IndianRed" HorizontalAlignment="Left" Height="87" Margin="641,145,0,0" Stretch="Fill" Stroke="IndianRed" StrokeThickness="3" VerticalAlignment="Top" Width="414" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="line010" Data="M639,230 L179.11,200" Fill="IndianRed" HorizontalAlignment="Left" Height="32" Margin="641,200,0,0" Stretch="Fill" Stroke="IndianRed" StrokeThickness="3" VerticalAlignment="Top" Width="462" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <Path x:Name="line002" Data="M638,316 C638,302.44444 638,288.88889 638,275.33333" Fill="IndianRed" HorizontalAlignment="Left" Height="43.667" Margin="635.541,369.962,0,0" Stretch="Fill" Stroke="IndianRed" StrokeThickness="3" VerticalAlignment="Top" Width="3"/>
+            <Path x:Name="line011" Data="M639,230 L179.11,200" Fill="IndianRed" HorizontalAlignment="Left" Height="116.875" Margin="592,434.75,0,0" Stretch="Fill" Stroke="IndianRed" StrokeThickness="3" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="StackPanel_MouseLeftButtonDown">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Width" Value="60"/>
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="TextAlignment" Value="Center"/>
+                    </Style>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Height" Value="60"/>
+                    </Style>
+                </StackPanel.Resources>
+
+                <Border BorderThickness="2" BorderBrush="IndianRed">
+                    <TextBlock FontSize="32" Foreground="IndianRed">30</TextBlock>
+                </Border>
+
+                <Border BorderThickness="2" BorderBrush="IndianRed">
+                    <TextBlock FontSize="32" Foreground="IndianRed">100</TextBlock>
+                </Border>
+
+                <Border BorderThickness="2" BorderBrush="IndianRed">
+                    <TextBlock FontSize="32" Foreground="IndianRed">1D</TextBlock>
+                </Border>
+
+                <Border BorderThickness="2" BorderBrush="IndianRed">
+                    <TextBlock FontSize="32" Foreground="IndianRed">70</TextBlock>
+                </Border>
+
+                <Border BorderThickness="2" BorderBrush="IndianRed">
+                    <TextBlock FontSize="32" Foreground="IndianRed">8D</TextBlock>
+                </Border>
+
+                <Border BorderThickness="2" BorderBrush="IndianRed">
+                    <TextBlock FontSize="32" Foreground="IndianRed">60</TextBlock>
+                </Border>
+
+                <Border BorderThickness="2" BorderBrush="IndianRed">
+                    <TextBlock FontSize="32" Foreground="IndianRed">20</TextBlock>
+                </Border>
+
+                <Border BorderThickness="2" BorderBrush="IndianRed">
+                    <TextBlock FontSize="32" Foreground="IndianRed">4D</TextBlock>
+                </Border>
+            </StackPanel>
+
+            <Border x:Name="border001" BorderBrush="IndianRed" BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,180" MouseLeftButtonDown="Border001_MouseLeftButtonDown">
+                <TextBlock FontSize="32" Foreground="IndianRed">PRIDRUŽITI RIJEČI ZADATIM BROJEVIMA</TextBlock>
+            </Border>
+
+            <StackPanel x:Name="sp1" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,150,0,0">
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFBCE0F1">TRIDESET</TextBlock>
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFD8E3E8">3 DESETICE</TextBlock>
+            </StackPanel>
+
+            <StackPanel x:Name="sp2" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,50,0,0">
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFBCE0F1">STO</TextBlock>
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFD8E3E8">10 DESETICA</TextBlock>
+            </StackPanel>
+
+            <StackPanel x:Name="sp3" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="310,50,0,0">
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFBCE0F1">DESET</TextBlock>
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFD8E3E8">1 DESETICA</TextBlock>
+            </StackPanel>
+
+            <StackPanel x:Name="sp4" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="485,50,0,0">
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFBCE0F1">SEDAMDESET</TextBlock>
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFD8E3E8">7 DESETICA</TextBlock>
+            </StackPanel>
+
+            <StackPanel x:Name="sp5" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="690,50,0,0">
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFBCE0F1">OSAMDESET</TextBlock>
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFD8E3E8">8 DESETICA</TextBlock>
+            </StackPanel>
+
+            <StackPanel x:Name="sp6" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="880,50,0,0">
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFBCE0F1">ŠEZDESET</TextBlock>
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFD8E3E8">6 DESETICA</TextBlock>
+            </StackPanel>
+
+            <StackPanel x:Name="sp7" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1050,90,0,0">
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFBCE0F1">DVADESET</TextBlock>
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFD8E3E8">2 DESETICE</TextBlock>
+            </StackPanel>
+
+            <StackPanel x:Name="sp8" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1100,190,0,0">
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFBCE0F1">ČETRDESET</TextBlock>
+                <TextBlock FontSize="32" TextAlignment="Center" Background="#FFD8E3E8">4 DESETICE</TextBlock>
+            </StackPanel>
+
+            <Border x:Name="border002" BorderBrush="IndianRed" BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,-180" MouseLeftButtonDown="Border002_MouseLeftButtonDown">
+                <TextBlock FontSize="32" Foreground="IndianRed">PRIDRUŽITI ZADATE BROJEVE BROJEVNOJ CRTI</TextBlock>
+            </Border>
+
+            <Image x:Name="bl" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="35,511,29.89,63.62" Source="Images/brojevnalinijatest.png" Height="116.38" Width="1209.11"></Image>
+            <TextBlock x:Name="tb10" HorizontalAlignment="Left" Margin="139,572,0,0" TextWrapping="Wrap" Text="1D" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>
+            <TextBlock x:Name="tb30" HorizontalAlignment="Left" Margin="349.747,572,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>
+            <TextBlock x:Name="tb30_Copy" HorizontalAlignment="Left" Margin="239,572,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>
+            <TextBlock x:Name="tb30_Copy1" HorizontalAlignment="Left" Margin="448.247,572,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"><Run Text="4"/><Run Text="D"/></TextBlock>
+            <TextBlock x:Name="tb30_Copy2" HorizontalAlignment="Left" Margin="649.5,572,0,0" TextWrapping="Wrap" Text="60" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>
+            <TextBlock x:Name="tb30_Copy3" HorizontalAlignment="Left" Margin="754,572,0,0" TextWrapping="Wrap" Text="70" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>
+            <TextBlock x:Name="tb30_Copy4" HorizontalAlignment="Left" Margin="858.5,572,0,0" TextWrapping="Wrap" Text="8D" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>
+            <TextBlock x:Name="tb30_Copy5" HorizontalAlignment="Left" Margin="1072.5,572,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>
+
+
+
+        </Grid>
+    </Grid>
+</Window>

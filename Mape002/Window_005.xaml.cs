@@ -30,8 +30,8 @@ namespace Mape002
         public Window_005()
         {
             InitializeComponent();
-            soundPlayer = new SoundPlayer();
-            soundPlayer.Stop();
+            soundPlayer = new SoundPlayer(Properties.Resources.uporediBrojeve);
+            soundPlayer.Play();
             rijesenih = 0;
             iskoristeniRandom = new List<int>();
             random = new Random();
@@ -80,8 +80,8 @@ namespace Mape002
 
         private void NextWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Window_006 window_006 = new Window_006();
-            window_006.Show();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             this.Close();
 
         }

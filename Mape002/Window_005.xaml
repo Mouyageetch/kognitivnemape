@@ -12,7 +12,7 @@
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
                 <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
                 <TextBlock VerticalAlignment="Center"  Width="1047" FontSize="36" TextAlignment="Center" Foreground="Black" Text="UPOREDI BROJEVE SA BROJEM 4D KORISTEĆI ZNAKOVE &lt; , &gt;, =" />
-                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/home.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
             </StackPanel>
 
             <Grid Height="500" Width="500" Margin="0,50,450,0">

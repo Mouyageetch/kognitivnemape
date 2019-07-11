@@ -79,6 +79,11 @@ namespace Mape002
                     window_009.Show();
                     this.Close();
                     break;
+                case '6':
+                    Window_010 window_010 = new Window_010();
+                    window_010.Show();
+                    this.Close();
+                    break;
             }
 
         }

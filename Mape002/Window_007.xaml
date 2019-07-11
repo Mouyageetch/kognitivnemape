@@ -7,27 +7,111 @@
         mc:Ignorable="d"
         Title="Skup brojeva do 100" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
         Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Window.Resources>
+        <Storyboard x:Key="MainStory">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.4" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="0.3"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.4" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="0.3"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.4" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="0.3"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:22.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:23.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource MainStory}"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid>
 
         <Grid>
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
                 <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
-                <TextBlock VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">ODUZIMANJE VIŠEKRATNIKA BROJA 10 U PRVOJ STOTINI</TextBlock>
+                <TextBlock x:Name="textBlock" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">ODUZIMANJE VIŠEKRATNIKA BROJA 10 U PRVOJ STOTINI</TextBlock>
                 <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
             </StackPanel>
-            <Image HorizontalAlignment="Left" Height="362" Margin="416,80,0,0" VerticalAlignment="Top" Width="442" Source="Images/oduzimanje.jpg"/>
-            <Image HorizontalAlignment="Left" Height="221" Margin="858,80,0,0" VerticalAlignment="Top" Width="374" Source="Images/bubble004.png"/>
-            <TextBlock HorizontalAlignment="Left" Height="74.644" Margin="941,108.356,0,0" TextWrapping="Wrap" Text="UČITELJICA NAS JE ZAMOLILA DA DRUGARIMA ZA RAD PODIJELIMO 30 BOJICA." VerticalAlignment="Top" Width="275" FontSize="18" TextAlignment="Center"/>
-            <Image HorizontalAlignment="Left" Height="108" Margin="343,431.5,0,0" VerticalAlignment="Top" Width="116" Source="Images/olovke_10.tif"/>
-            <Image HorizontalAlignment="Left" Height="108" Margin="464,431.5,0,0" VerticalAlignment="Top" Width="116" Source="Images/olovke_10.tif"/>
-            <Image HorizontalAlignment="Left" Height="108" Margin="585,436.5,0,0" VerticalAlignment="Top" Width="116" Source="Images/olovke_10.tif"/>
-            <Image HorizontalAlignment="Left" Height="108" Margin="701,436.5,0,0" VerticalAlignment="Top" Width="116" Source="Images/olovke_10.tif" Opacity="0.2"/>
-            <Image HorizontalAlignment="Left" Height="108" Margin="822,436.5,0,0" VerticalAlignment="Top" Width="116" Source="Images/olovke_10.tif" Opacity="0.2"/>
-            <TextBlock HorizontalAlignment="Center" Margin="34,551.5,40,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Width="1200" Height="42" TextAlignment="Center"><Run Text="5"/><Run Text="D"/><Run Text="&#x9;-"/><Run Text="&#x9;3D&#x9;=&#x9;2D"/></TextBlock>
-            <TextBlock HorizontalAlignment="Center" Margin="34,599.5,40,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Width="1200" TextAlignment="Center"><Run Text="5"/><Run Text="0"/><Run Text="&#x9;-"/><Run Text="&#x9;3"/><Run Text="0"/><Run Text="&#x9;=&#x9;2"/><Run Text="0"/></TextBlock>
-            <TextBlock HorizontalAlignment="Center" Margin="363.75,640,363.75,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Text="U KUTIJAMA JE OSTALO 20 BOJICA." TextAlignment="Center" Width="1200"/>
-            <TextBlock HorizontalAlignment="Left" Height="30" Margin="525,148.002,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="35" FontSize="24"/>
-            <TextBlock HorizontalAlignment="Left" Height="30" Margin="594.001,146.332,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="35" FontSize="24"/>
+            <Image x:Name="image" HorizontalAlignment="Left" Height="362" Margin="416,80,0,0" VerticalAlignment="Top" Width="442" Source="Images/oduzimanje.jpg"/>
+            <Image x:Name="image1" HorizontalAlignment="Left" Height="221" Margin="858,80,0,0" VerticalAlignment="Top" Width="374" Source="Images/bubble004.png"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="74.644" Margin="941,108.356,0,0" TextWrapping="Wrap" Text="UČITELJICA NAS JE ZAMOLILA DA DRUGARIMA ZA RAD PODIJELIMO 30 BOJICA." VerticalAlignment="Top" Width="275" FontSize="18" TextAlignment="Center"/>
+            <Image x:Name="image2" HorizontalAlignment="Left" Height="108" Margin="343,431.5,0,0" VerticalAlignment="Top" Width="116" Source="Images/olovke_10.tif"/>
+            <Image x:Name="image3" HorizontalAlignment="Left" Height="108" Margin="464,431.5,0,0" VerticalAlignment="Top" Width="116" Source="Images/olovke_10.tif"/>
+            <Image x:Name="image4" HorizontalAlignment="Left" Height="108" Margin="585,436.5,0,0" VerticalAlignment="Top" Width="116" Source="Images/olovke_10.tif" Opacity="0.2"/>
+            <Image x:Name="image5" HorizontalAlignment="Left" Height="108" Margin="701,436.5,0,0" VerticalAlignment="Top" Width="116" Source="Images/olovke_10.tif" Opacity="0.2"/>
+            <Image x:Name="image6" HorizontalAlignment="Left" Height="108" Margin="822,436.5,0,0" VerticalAlignment="Top" Width="116" Source="Images/olovke_10.tif" Opacity="0.2"/>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Center" Margin="34,551.5,40,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Width="1200" Height="42" TextAlignment="Center"><Run Text="5"/><Run Text="D"/><Run Text="&#x9;-"/><Run Text="&#x9;3D&#x9;=&#x9;2D"/></TextBlock>
+            <TextBlock x:Name="textBlock3" HorizontalAlignment="Center" Margin="34,599.5,40,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Width="1200" TextAlignment="Center"><Run Text="5"/><Run Text="0"/><Run Text="&#x9;-"/><Run Text="&#x9;3"/><Run Text="0"/><Run Text="&#x9;=&#x9;2"/><Run Text="0"/></TextBlock>
+            <TextBlock x:Name="textBlock4" HorizontalAlignment="Center" Margin="363.75,640,363.75,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Text="U KUTIJAMA JE OSTALO 20 BOJICA." TextAlignment="Center" Width="1200"/>
+            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Height="30" Margin="525,148.002,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="35" FontSize="24"/>
+            <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Height="30" Margin="594.001,146.332,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="35" FontSize="24"/>
         </Grid>
     </Grid>
 </Window>

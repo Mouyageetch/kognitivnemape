@@ -127,4 +127,34 @@
   <data name="successUke" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Sounds\successUke.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="brojevnaLinija" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Audio\brojevnaLinija.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Formiranje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Audio\Formiranje.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="formiranjeOstalih" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Audio\formiranjeOstalih.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="odaberiIspravanOdgovor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Audio\odaberiIspravanOdgovor.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oduzimanje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Audio\oduzimanje.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pridruziZadate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Audio\pridruziZadate.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sabiranje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Audio\sabiranje.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="uporediBrojeve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Audio\uporediBrojeve.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Audio\test.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="uporedjivanje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Audio\uporedjivanje.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -24,8 +24,10 @@ namespace Mape002
         public Window_002()
         {
             InitializeComponent();
-            soundPlayer = new SoundPlayer();
-            soundPlayer.Stop();
+            soundPlayer = new SoundPlayer(Properties.Resources.brojevnaLinija);
+            soundPlayer.Play();
+
+
         }
 
         private void PreviousWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -38,8 +40,8 @@ namespace Mape002
 
         private void NextWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Window_003 window_003 = new Window_003();
-            window_003.Show();
+            Window_002a window_002a = new Window_002a();
+            window_002a.Show();
             this.Close();
         }
     }

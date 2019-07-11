@@ -31,8 +31,22 @@ namespace Mape002
         public Window_004()
         {
             InitializeComponent();
-            soundPlayer = new SoundPlayer();
-            soundPlayer.Stop();
+
+
+            b1.Background = Brushes.Transparent;
+            b2.Background = Brushes.Transparent;
+            b3.Background = Brushes.Transparent;
+            b4.Background = Brushes.Transparent;
+            b5.Background = Brushes.Transparent;
+            b6.Background = Brushes.Transparent;
+            b7.Background = Brushes.Transparent;
+            b8.Background = Brushes.Transparent;
+            b9.Background = Brushes.Transparent;
+            b10.Background = Brushes.Transparent;
+
+
+            soundPlayer = new SoundPlayer(Properties.Resources.pridruziZadate);
+            soundPlayer.Play();
             rijesenih = 0;
             iskoristeniRandom = new List<int>();
             random = new Random();
@@ -93,7 +107,7 @@ namespace Mape002
             var tb = VisualTreeHelper.GetChild(VisualTreeHelper.GetChild(border, 0), 1) as TextBlock;
             DragDrop.DoDragDrop(border, tb, DragDropEffects.Move);
 
-            hand.Opacity = 0.05;
+            hand.Opacity = 0.00;
             Grid.SetZIndex(hand, -5);
 
         }

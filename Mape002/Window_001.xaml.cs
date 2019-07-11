@@ -24,8 +24,8 @@ namespace Mape002
         public Window_001()
         {
             InitializeComponent();
-            soundPlayer = new SoundPlayer();
-            soundPlayer.Stop();
+            soundPlayer = new SoundPlayer(Properties.Resources.Formiranje);
+            soundPlayer.Play();
         }
 
         private void PreviousWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

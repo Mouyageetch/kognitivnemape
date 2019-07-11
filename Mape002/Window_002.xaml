@@ -7,24 +7,221 @@
         mc:Ignorable="d"
         Title="Skup brojeva do 100" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
         Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Window.Resources>
+        <Storyboard x:Key="MainStory">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="cvrcakJedinica">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:46.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:47" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="cvrcakDesetica">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:53" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:54" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.7" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:27.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:28.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:27.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:28.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:37.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:38.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:45.4" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:46" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:47" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:48" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:49.7" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:50" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="cvrcakJedinica">
+                <EasingThicknessKeyFrame KeyTime="0:0:47" Value="83,-19,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:50" Value="82,-19,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvrcakJedinica">
+                <EasingDoubleKeyFrame KeyTime="0:0:50" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:50.3" Value="6.6">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:50.5" Value="8.5">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:50.7" Value="8.5">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:51" Value="15.4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:51.2" Value="20"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:51.6" Value="20"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:52.1" Value="31"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:52.5" Value="31"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:53" Value="46.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvrcakJedinica">
+                <EasingDoubleKeyFrame KeyTime="0:0:50" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:50.3" Value="-17">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:50.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:50.7" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:51" Value="-23"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:51.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:51.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:51.9" Value="-19.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:52.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:52.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:52.8" Value="-20"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:53" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:53.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:54" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:58" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:58.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="cvrcakDesetica">
+                <EasingThicknessKeyFrame KeyTime="0:0:54" Value="586,-26,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:58.5" Value="587,-26,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvrcakDesetica">
+                <EasingDoubleKeyFrame KeyTime="0:0:58.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:58.8" Value="60.03"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:59" Value="100.05"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:59.3" Value="100.05"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:59.6" Value="151.076"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:59.8" Value="202.101"/>
+                <EasingDoubleKeyFrame KeyTime="0:1:0.1" Value="202.101"/>
+                <EasingDoubleKeyFrame KeyTime="0:1:0.6" Value="302.151"/>
+                <EasingDoubleKeyFrame KeyTime="0:1:0.9" Value="302.151"/>
+                <EasingDoubleKeyFrame KeyTime="0:1:1.2" Value="363.382"/>
+                <EasingDoubleKeyFrame KeyTime="0:1:1.4" Value="404.202"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvrcakDesetica">
+                <EasingDoubleKeyFrame KeyTime="0:0:58.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:58.8" Value="-40.687"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:59" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:59.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:59.6" Value="-30.015"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:59.8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:1:0.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:1:0.4" Value="-30.682"/>
+                <EasingDoubleKeyFrame KeyTime="0:1:0.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:1:0.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:1:1.2" Value="-28.014"/>
+                <EasingDoubleKeyFrame KeyTime="0:1:1.4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource MainStory}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
+    </Window.Triggers>
     <Grid>
         <Grid Width="1274" Margin="1,0,-1,0">
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
                 <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
-                <TextBlock VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center"></TextBlock>
+                <TextBlock x:Name="textBlock4" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center" TextWrapping="Wrap">BROJEVNA LINIJA (CRTA) I UPOREĐIVANJE VIŠEKRATNIKA BROJA 10 U PRVOJ STOTINI</TextBlock>
                 <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
             </StackPanel>
 
-            <Image HorizontalAlignment="Left" Margin="106.5,425,0,0" VerticalAlignment="Top" Source="Images/djevojcica.png" Height="266" Width="97.876"/>
-            <Image HorizontalAlignment="Left" Height="189" Margin="95.132,113,0,0" VerticalAlignment="Top" Width="1088" Source="Images/brojevnalinija.PNG"/>
-            <Image x:Name="cvrcakJedinica" HorizontalAlignment="Left" Height="146" Margin="83,-19,0,0" VerticalAlignment="Top" Width="88" Source="Images/cvrcak.tif"/>
-            <Image x:Name="cvrcakDesetica" HorizontalAlignment="Left" Height="146" Margin="586,-26,0,0" VerticalAlignment="Top" Width="88" Source="Images/cvrcak.tif"/>
-            <TextBlock HorizontalAlignment="Left" Margin="81.632,272.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center"><Run Text="BROJEVE OD "/><Run Text="0 DO 100 MO"/><Run Text="Ž"/><Run Text="EMO PRIKAZATI NA BROJEVNOJ LINIJI TAKO DA ZAPIŠEMO SAMO DESETICE."/><Run Text=" "/><Run Text="OZNAKE/LINIJE IZMEĐU DESETICA PREDSTAVLJAJU JEDINICE."/></TextBlock>
-            <Image HorizontalAlignment="Left" Margin="173.376,355,0,0" VerticalAlignment="Top" Source="Images/bubble003.png" Height="125.294" Width="450.624"/>
-            <TextBlock HorizontalAlignment="Left" Margin="248.826,370.666,0,0" TextWrapping="Wrap" Text="ZA UPOREĐIVANJE VIŠEKRATNIKA BROJA 10, KAO ŠTO SMO NAUČILI, KORISTIMO ZNAKOVE &lt;,&gt;,=" VerticalAlignment="Top" Width="325" FontSize="18" TextAlignment="Center"/>
-            <Image HorizontalAlignment="Left" Margin="383,486.294,0,-6" VerticalAlignment="Top" Source="Images/vecemanje.png"/>
-            <TextBlock HorizontalAlignment="Left" Height="89.334" Margin="672.5,373.666,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="590" FontSize="18"><Run Text="60 &gt; 30&#x9;&#x9;6D &gt; 3D&#x9;&#x9;ŠEZDESET JE VEĆE OD TRIDESET"/><LineBreak/><Run Text="30 &lt; 60&#x9;&#x9;3D &lt; 6D&#x9;&#x9;TRIDESET JE MANJE OD ŠEZDESET"/><LineBreak/><Run Text="60 = 60&#x9;&#x9;60 = 60&#x9;&#x9;ŠEZDESET JE JEDNAKO ŠEZDESET"/><LineBreak/><Run/><LineBreak/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Height="133.706" Margin="694,495.294,0,0" TextWrapping="Wrap" Text="AKO DVA BROJA IMAJU RAZLIČIT BROJ DESETICA, VEĆI JE ONAJ KOJI IMA VIŠE  DESETICA." VerticalAlignment="Top" Width="489.132" FontSize="24" TextAlignment="Center"/>
+            <Image x:Name="image" HorizontalAlignment="Left" Margin="106.5,425,0,0" VerticalAlignment="Top" Source="Images/djevojcica.png" Height="266" Width="97.876"/>
+            <Image x:Name="image1" HorizontalAlignment="Left" Height="189" Margin="95.132,113,0,0" VerticalAlignment="Top" Width="1088" Source="Images/brojevnalinija.PNG"/>
+            <Image x:Name="cvrcakJedinica" HorizontalAlignment="Left" Height="146" Margin="83,-19,0,0" VerticalAlignment="Top" Width="88" Source="Images/cvrcak.tif" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="cvrcakDesetica" HorizontalAlignment="Left" Height="146" Margin="586,-26,0,0" VerticalAlignment="Top" Width="88" Source="Images/cvrcak.tif" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="81.632,272.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center"><Run Text="BROJEVE OD "/><Run Text="0 DO 100 MO"/><Run Text="Ž"/><Run Text="EMO PRIKAZATI NA BROJEVNOJ LINIJI TAKO DA ZAPIŠEMO SAMO DESETICE."/><Run Text=" "/><Run Text="OZNAKE/LINIJE IZMEĐU DESETICA PREDSTAVLJAJU JEDINICE."/></TextBlock>
+            <Image x:Name="image2" HorizontalAlignment="Left" Margin="173.376,355,0,0" VerticalAlignment="Top" Source="Images/bubble003.png" Height="125.294" Width="450.624"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="248.826,370.666,0,0" TextWrapping="Wrap" Text="ZA UPOREĐIVANJE VIŠEKRATNIKA BROJA 10, KAO ŠTO SMO NAUČILI, KORISTIMO ZNAKOVE &lt;,&gt;,=" VerticalAlignment="Top" Width="325" FontSize="18" TextAlignment="Center"/>
+            <Image x:Name="image3" HorizontalAlignment="Left" Margin="383,486.294,0,-6" VerticalAlignment="Top" Source="Images/vecemanje.png"/>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="89.334" Margin="672.5,373.666,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="590" FontSize="18"><Run Text="60 &gt; 30&#x9;&#x9;6D &gt; 3D&#x9;&#x9;ŠEZDESET JE VEĆE OD TRIDESET"/><LineBreak/><Run Text="30 &lt; 60&#x9;&#x9;3D &lt; 6D&#x9;&#x9;TRIDESET JE MANJE OD ŠEZDESET"/><LineBreak/><Run Text="60 = 60&#x9;&#x9;60 = 60&#x9;&#x9;ŠEZDESET JE JEDNAKO ŠEZDESET"/><LineBreak/><Run/><LineBreak/></TextBlock>
+            <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Height="133.706" Margin="694,495.294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="489.132" FontSize="24" TextAlignment="Center"><Run Text="AKO DVA BROJA IMAJU RAZLIČIT BROJ DESETICA, VEĆI JE ONAJ "/><Run Text="BROJ "/><Run Text="KOJI IMA VIŠE  DESETICA."/></TextBlock>
+            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Height="65" Margin="173,35,0,0" TextWrapping="Wrap" Text="JA SKAKUĆEM PO JEDNU JEDINICU." VerticalAlignment="Top" Width="515" FontSize="32" Opacity="0.995"/>
+            <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Height="95" Margin="719,15,0,0" TextWrapping="Wrap" Text="JA SKAKUĆEM PO DESET JEDINICA (1D)." VerticalAlignment="Top" Width="305" FontSize="32"/>
         </Grid>
 
     </Grid>

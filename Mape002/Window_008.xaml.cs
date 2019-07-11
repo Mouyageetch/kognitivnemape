@@ -130,7 +130,7 @@ namespace Mape002
 
         private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            hand.Opacity = 0.1;
+            hand.Opacity = 0.0;
             Grid.SetZIndex(hand, -5);
             TextBlock tb = sender as TextBlock;
             int broj = int.Parse(tb.Text);
@@ -149,7 +149,7 @@ namespace Mape002
             Border border = VisualTreeHelper.GetParent(tb) as Border;
             int red = int.Parse(border.GetValue(Grid.RowProperty).ToString());
 
-            if (tbBroj<12)
+            if (tbBroj < 12)
             {
                 if (generiraniParoviPlus[red].Item1 + generiraniParoviPlus[red].Item2 == odgovor)
                 {
@@ -159,14 +159,14 @@ namespace Mape002
             }
             else
             {
-                if(generiraniParoviMinus[red].Item1-generiraniParoviMinus[red].Item2 == odgovor)
+                if (generiraniParoviMinus[red].Item1 - generiraniParoviMinus[red].Item2 == odgovor)
                 {
                     tb.Text = odgovor.ToString() + "0";
                     brojRjesenih++;
                 }
 
             }
-            if(brojRjesenih==24)
+            if (brojRjesenih == 24)
             {
                 success.Visibility = Visibility.Visible;
                 soundPlayer = new SoundPlayer(Properties.Resources.successUke);
@@ -187,10 +187,9 @@ namespace Mape002
 
         private void NextWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Window_009 window_009 = new Window_009();
-            window_009.Show();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             this.Close();
-
         }
     }
 }

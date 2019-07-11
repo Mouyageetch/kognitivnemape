@@ -7,16 +7,174 @@
         mc:Ignorable="d"
         Title="Skup brojeva do 100" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
         Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Window.Resources>
+        <Storyboard x:Key="MainStory">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image7">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image8">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image9">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image10">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock7">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock8">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock9">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock10">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock11">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock12">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock13">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:23.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:24.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock14">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock15">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock16">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock17">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock18">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource MainStory}"/>
+        </EventTrigger>
+    </Window.Triggers>
 
     <Grid>
         <Grid>
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
                 <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
-                <TextBlock VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">SABIRANJE VIŠEKRATNIKA BROJA 10 U PRVOJ STOTINI</TextBlock>
+                <TextBlock x:Name="textBlock" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">SABIRANJE VIŠEKRATNIKA BROJA 10 U PRVOJ STOTINI</TextBlock>
                 <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
             </StackPanel>
-            <Image HorizontalAlignment="Left" Height="362" Margin="412,60,0,0" VerticalAlignment="Top" Width="442" Source="Images/djevojcica_djecak_olovke.tif"/>
-            <TextBlock HorizontalAlignment="Left" Height="42" Margin="434,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" TextAlignment="Center" FontSize="14" RenderTransformOrigin="0.5,0.5">
+            <Image x:Name="image" HorizontalAlignment="Left" Height="362" Margin="412,60,0,0" VerticalAlignment="Top" Width="442" Source="Images/djevojcica_djecak_olovke.tif"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="42" Margin="434,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" TextAlignment="Center" FontSize="14" RenderTransformOrigin="0.5,0.5">
                 <TextBlock.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -25,7 +183,7 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </TextBlock.RenderTransform><Run Text="JA SAM SLOŽILA BOJICE U 3 KUTIJ"/><Run Text="E"/><Run Text="."/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Height="42" Margin="674,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" TextAlignment="Center" FontSize="14" RenderTransformOrigin="0.5,0.5">
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="42" Margin="674,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" TextAlignment="Center" FontSize="14" RenderTransformOrigin="0.5,0.5">
                 <TextBlock.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -34,32 +192,32 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </TextBlock.RenderTransform><Run Text="JA SAM SLOŽIO BOJICE U DVIJE KUTIJ"/><Run Text="ICE"/><Run Text="."/></TextBlock>
-            <Image HorizontalAlignment="Left" Margin="52,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
-            <Image HorizontalAlignment="Left" Margin="137,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
-            <Image HorizontalAlignment="Left" Margin="222,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
-            <Image HorizontalAlignment="Left" Margin="419,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
-            <Image HorizontalAlignment="Left" Margin="504,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
-            <Image HorizontalAlignment="Left" Margin="749,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
-            <Image HorizontalAlignment="Left" Margin="834,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
-            <Image HorizontalAlignment="Left" Margin="919,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
-            <Image HorizontalAlignment="Left" Margin="999,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
-            <Image HorizontalAlignment="Left" Margin="1084,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
-            <TextBlock HorizontalAlignment="Left" Margin="114,514,0,0" TextWrapping="Wrap" Text="3D" VerticalAlignment="Top" FontSize="32"/>
-            <TextBlock HorizontalAlignment="Left" Margin="485.313,514,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32"><Run Text="2"/><Run Text="D"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="940.313,514,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32"><Run Text="5"/><Run Text="D"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="114,582.437,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" FontSize="32"/>
-            <TextBlock HorizontalAlignment="Left" Margin="485.313,580.937,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Text="20"/>
-            <TextBlock HorizontalAlignment="Left" Margin="945.499,585.437,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Text="50"/>
-            <TextBlock HorizontalAlignment="Left" Margin="307.5,514,0,0" TextWrapping="Wrap" Text="+" VerticalAlignment="Top" FontSize="32"/>
-            <TextBlock HorizontalAlignment="Left" Margin="710.61,517,0,0" TextWrapping="Wrap" Text="=" VerticalAlignment="Top" FontSize="32"/>
-            <TextBlock HorizontalAlignment="Left" Margin="307.5,581.5,0,0" TextWrapping="Wrap" Text="+" VerticalAlignment="Top" FontSize="32"/>
-            <TextBlock HorizontalAlignment="Left" Margin="710.61,584.5,0,0" TextWrapping="Wrap" Text="=" VerticalAlignment="Top" FontSize="32"/>
-            <TextBlock HorizontalAlignment="Center" Margin="14,0,20,21" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="32" Width="1240" TextAlignment="Center"><Run Text="LEJLA I MAK SU ZAJEDNO SLOŽILI 50 "/><Run Text="BOJICA"/><Run Text="."/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Height="29" Margin="510,168.333,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="30" Foreground="Black" FontSize="24"/>
-            <TextBlock HorizontalAlignment="Left" Height="29" Margin="568.667,168.333,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="30" Foreground="Black" FontSize="24"/>
-            <TextBlock HorizontalAlignment="Left" Height="29" Margin="623.497,166.169,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="30" Foreground="Black" FontSize="24"/>
-            <TextBlock HorizontalAlignment="Left" Height="29" Margin="626.747,234.333,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="30" Foreground="Black" FontSize="24"/>
-            <TextBlock HorizontalAlignment="Left" Height="29" Margin="680,232.083,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="30" Foreground="Black" FontSize="24"/>
+            <Image x:Name="image1" HorizontalAlignment="Left" Margin="52,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
+            <Image x:Name="image2" HorizontalAlignment="Left" Margin="137,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
+            <Image x:Name="image3" HorizontalAlignment="Left" Margin="222,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
+            <Image x:Name="image4" HorizontalAlignment="Left" Margin="419,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
+            <Image x:Name="image5" HorizontalAlignment="Left" Margin="504,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
+            <Image x:Name="image6" HorizontalAlignment="Left" Margin="749,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
+            <Image x:Name="image7" HorizontalAlignment="Left" Margin="834,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
+            <Image x:Name="image8" HorizontalAlignment="Left" Margin="919,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
+            <Image x:Name="image9" HorizontalAlignment="Left" Margin="999,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
+            <Image x:Name="image10" HorizontalAlignment="Left" Margin="1084,412,0,0" VerticalAlignment="Top" Source="Images/olovke_10.tif" Height="111" Width="80"/>
+            <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="114,514,0,0" TextWrapping="Wrap" Text="3D" VerticalAlignment="Top" FontSize="32"/>
+            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="485.313,514,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32"><Run Text="2"/><Run Text="D"/></TextBlock>
+            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="940.313,514,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32"><Run Text="5"/><Run Text="D"/></TextBlock>
+            <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="114,582.437,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" FontSize="32"/>
+            <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="485.313,580.937,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Text="20"/>
+            <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="945.499,585.437,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Text="50"/>
+            <TextBlock x:Name="textBlock9" HorizontalAlignment="Left" Margin="307.5,514,0,0" TextWrapping="Wrap" Text="+" VerticalAlignment="Top" FontSize="32"/>
+            <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="710.61,517,0,0" TextWrapping="Wrap" Text="=" VerticalAlignment="Top" FontSize="32"/>
+            <TextBlock x:Name="textBlock11" HorizontalAlignment="Left" Margin="307.5,581.5,0,0" TextWrapping="Wrap" Text="+" VerticalAlignment="Top" FontSize="32"/>
+            <TextBlock x:Name="textBlock12" HorizontalAlignment="Left" Margin="710.61,584.5,0,0" TextWrapping="Wrap" Text="=" VerticalAlignment="Top" FontSize="32"/>
+            <TextBlock x:Name="textBlock13" HorizontalAlignment="Center" Margin="14,0,20,21" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="32" Width="1240" TextAlignment="Center"><Run Text="LEJLA I MAK SU ZAJEDNO SLOŽILI 50 "/><Run Text="BOJICA"/><Run Text="."/></TextBlock>
+            <TextBlock x:Name="textBlock14" HorizontalAlignment="Left" Height="29" Margin="510,168.333,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="30" Foreground="Black" FontSize="24"/>
+            <TextBlock x:Name="textBlock15" HorizontalAlignment="Left" Height="29" Margin="568.667,168.333,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="30" Foreground="Black" FontSize="24"/>
+            <TextBlock x:Name="textBlock16" HorizontalAlignment="Left" Height="29" Margin="623.497,166.169,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="30" Foreground="Black" FontSize="24"/>
+            <TextBlock x:Name="textBlock17" HorizontalAlignment="Left" Height="29" Margin="626.747,234.333,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="30" Foreground="Black" FontSize="24"/>
+            <TextBlock x:Name="textBlock18" HorizontalAlignment="Left" Height="29" Margin="680,232.083,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="30" Foreground="Black" FontSize="24"/>
         </Grid>
     </Grid>
 </Window>

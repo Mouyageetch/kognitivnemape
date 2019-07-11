@@ -100,43 +100,43 @@
             <Image HorizontalAlignment="Left" Height="160" Margin="23.5,390,0,0" VerticalAlignment="Top" Width="1240.5" OpacityMask="Black" Source="Images/brojevnalinijatest.png"/>
 
 
-            <Border  HorizontalAlignment="Left" Height="70" Margin="129,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
+            <Border x:Name="b1"  HorizontalAlignment="Left" Height="70" Margin="129,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
                 <TextBlock x:Name="aTb1" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center">?</TextBlock>
             </Border>
 
-            <Border  HorizontalAlignment="Left" Height="70" Margin="234.5,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
+            <Border x:Name="b2"  HorizontalAlignment="Left" Height="70" Margin="234.5,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
                 <TextBlock x:Name="aTb2" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center">?</TextBlock>
             </Border>
 
-            <Border  HorizontalAlignment="Left" Height="70" Margin="335,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
+            <Border x:Name="b3"  HorizontalAlignment="Left" Height="70" Margin="335,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
                 <TextBlock x:Name="aTb3" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center">?</TextBlock>
             </Border>
 
-            <Border  HorizontalAlignment="Left" Height="70" Margin="444.5,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
+            <Border x:Name="b4"  HorizontalAlignment="Left" Height="70" Margin="444.5,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
                 <TextBlock x:Name="aTb4" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center">?</TextBlock>
             </Border>
 
-            <Border  HorizontalAlignment="Left" Height="70" Margin="550,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
+            <Border x:Name="b5"  HorizontalAlignment="Left" Height="70" Margin="550,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
                 <TextBlock x:Name="aTb5" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center">?</TextBlock>
             </Border>
 
-            <Border  HorizontalAlignment="Left" Height="70" Margin="655.5,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
+            <Border x:Name="b6"  HorizontalAlignment="Left" Height="70" Margin="655.5,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
                 <TextBlock x:Name="aTb6" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center">?</TextBlock>
             </Border>
 
-            <Border  HorizontalAlignment="Left" Height="70" Margin="761,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
+            <Border x:Name="b7"  HorizontalAlignment="Left" Height="70" Margin="761,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
                 <TextBlock x:Name="aTb7" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center">?</TextBlock>
             </Border>
 
-            <Border  HorizontalAlignment="Left" Height="70" Margin="861.5,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
+            <Border x:Name="b8"  HorizontalAlignment="Left" Height="70" Margin="861.5,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
                 <TextBlock x:Name="aTb8" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center">?</TextBlock>
             </Border>
 
-            <Border  HorizontalAlignment="Left" Height="70" Margin="973.5,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
+            <Border x:Name="b9"  HorizontalAlignment="Left" Height="70" Margin="973.5,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
                 <TextBlock x:Name="aTb9" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center">?</TextBlock>
             </Border>
 
-            <Border  HorizontalAlignment="Left" Height="70" Margin="1083.5,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
+            <Border x:Name="b10"  HorizontalAlignment="Left" Height="70" Margin="1083.5,440,0,0" VerticalAlignment="Top" Width="100.5" AllowDrop="True" Drop="Border_Drop">
                 <TextBlock x:Name="aTb10" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center">?</TextBlock>
             </Border>
             <Grid x:Name="success" Width="1280" Height="150"  Background="#FF4E87CB" Visibility="Hidden">

@@ -1,0 +1,90 @@
+﻿<Window x:Class="Mape002.Window_010"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape002"
+        Title="Skup brojeva do 100" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Window.Resources>
+        <Storyboard x:Key="MainStory">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.3" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:26.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:37.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:38.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.985"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource MainStory}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Grid>
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
+                <TextBlock x:Name="textBlock4" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">BROJEVNA LINIJA (CRTA) I UPOREĐIVANJE IZ PRVE STOTICE</TextBlock>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
+            </StackPanel>
+            <Image x:Name="image" HorizontalAlignment="Center" Margin="-4.5,210.55,4.5,370.5" VerticalAlignment="Center" Source="Images/brojevnaLinijaZadnja.png"/>
+            <Image x:Name="image1" HorizontalAlignment="Left" Height="150" Margin="355,61,0,0" VerticalAlignment="Top" Width="150" Source="Images/cvrcak.tif" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="image2" HorizontalAlignment="Left" Height="125" Margin="450,66,0,0" VerticalAlignment="Top" Width="360" Source="Images/bubble006.png" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="94.5" Margin="547,83.917,0,0" TextWrapping="Wrap" Text="SVAKI BROJ IMA SVOJ POLOŽAJ NA BROJEVNOJ LINIJI." VerticalAlignment="Top" Width="235" FontSize="20" TextAlignment="Center"/>
+            <Image x:Name="image3" HorizontalAlignment="Left" Height="366" Margin="13,317.5,0,0" VerticalAlignment="Top" Width="1254" Source="Images/bigone1.png"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="104.5" Margin="154,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410" FontSize="20" TextAlignment="Center"><Run Text="AKO DVA BROJA IMAJU RAZLIČIT BROJ DESETICA, VEĆI JE ONAJ BROJ ČIJA JE VEĆA CIFRA DESETICA."/><LineBreak/><Run Text="NPR. 31&gt;29"/></TextBlock>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="104.5" Margin="704.5,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410" FontSize="20" TextAlignment="Center"><Run Text="AKO DVA BROJA IMAJU "/><Run Text="ISTI "/><Run Text="BROJ DESETICA, VEĆI JE ONAJ BROJ "/><Run Text="KOJI IMA VEĆU CIFRU JEDINICA."/><LineBreak/><Run Text="NPR. 29&gt;28 I 28&lt;29"/></TextBlock>
+            <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="573.2,654.4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" TextAlignment="Center" Text="28&lt;29"/>
+
+
+        </Grid>
+    </Grid>
+</Window>
