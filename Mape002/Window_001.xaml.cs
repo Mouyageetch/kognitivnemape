@@ -37,8 +37,8 @@ namespace Mape002
 
         private void NextWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Window_002 window_002 = new Window_002();
-            window_002.Show();
+            MainWindow window = new MainWindow();
+            window.Show();
             this.Close();
         }
     }

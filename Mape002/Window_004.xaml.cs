@@ -51,8 +51,21 @@ namespace Mape002
             iskoristeniRandom = new List<int>();
             random = new Random();
             textBlocks = new List<TextBlock> { tb1, tb2, tb3, tb4, tb5, tb6 };
+            var atbs = new List<TextBlock> { aTb1, aTb2, aTb3, aTb4, aTb5, aTb6, aTb7, aTb8, aTb9, aTb10 };
 
             brojevi = new List<Tuple<string, string, string>> {
+                new Tuple<string, string, string>("10", "1D", "DESET"),
+                new Tuple<string, string, string>("20", "2D", "DVADESET"),
+                new Tuple<string, string, string>("30", "3D", "TRIDESET"),
+                new Tuple<string, string, string>("40", "4D", "ČETRDESET"),
+                new Tuple<string, string, string>("50", "5D", "PEDESET"),
+                new Tuple<string, string, string>("60", "6D", "ŠEZDESET"),
+                new Tuple<string, string, string>("70", "7D", "SEDAMDESET"),
+                new Tuple<string, string, string>("80", "8D", "OSAMDESET"),
+                new Tuple<string, string, string>("90", "9D", "DEVEDESET"),
+                new Tuple<string, string, string>("100", "10D", "STO") };
+
+            var ostaliBrojevi = new List<Tuple<string, string, string>> {
                 new Tuple<string, string, string>("10", "1D", "DESET"),
                 new Tuple<string, string, string>("20", "2D", "DVADESET"),
                 new Tuple<string, string, string>("30", "3D", "TRIDESET"),
@@ -82,8 +95,50 @@ namespace Mape002
                 {
                     textBlocks.ElementAt(i).Text = brojevi.ElementAt(r).Item2;
                 }
+
+                ostaliBrojevi.Remove(brojevi.ElementAt(r));
+            }
+
+
+            foreach (var item in ostaliBrojevi)
+            {
+                switch(item.Item1)
+                {
+                    case "10":
+                        aTb1.Text = "10";
+                        break;
+                    case "20":
+                        aTb2.Text = "20";
+                        break;
+                    case "30":
+                        aTb3.Text = "30";
+                        break;
+                    case "40":
+                        aTb4.Text = "40";
+                        break;
+                    case "50":
+                        aTb5.Text = "50";
+                        break;
+                    case "60":
+                        aTb6.Text = "60";
+                        break;
+                    case "70":
+                        aTb7.Text = "70";
+                        break;
+                    case "80":
+                        aTb8.Text = "80";
+                        break;
+                    case "90":
+                        aTb9.Text = "90";
+                        break;
+                    case "100":
+                        aTb10.Text = "100";
+                        break;
+                }
+
             }
         }
+
 
         private void PreviousWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {

@@ -187,7 +187,7 @@
     <Grid>
         <Grid Width="1274" Margin="1,0,-1,0">
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
-                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/home.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
                 <TextBlock x:Name="textBlock4" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center" TextWrapping="Wrap">BROJEVNA LINIJA (CRTA) I UPOREĐIVANJE VIŠEKRATNIKA BROJA 10 U PRVOJ STOTINI</TextBlock>
                 <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
             </StackPanel>

@@ -11,7 +11,164 @@
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="Background" Value="White"/>
         </Style>
+        <Storyboard x:Key="main">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="line001">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.99"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border001">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.99"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="line003">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="line004">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="line005">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="line006">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="line007">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="line008">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="line009">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="line010">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="sp1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.065"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="sp2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.02"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="sp3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="sp4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="sp5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="sp6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="sp7">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="sp8">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="line002">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.01"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:20" Value="0.035"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:21" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border002">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.01"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:20" Value="0.035"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:21" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bl">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:21" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:21.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tb10">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:23" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:24" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tb30">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:27" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:28" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tb30_Copy">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:26" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tb30_Copy1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:29" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:30" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tb30_Copy2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:31" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:32" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tb30_Copy3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:33" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:34" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tb30_Copy4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:35" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:36" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tb30_Copy5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:37" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:38" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="line011">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:21" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:21.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource main}"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid>
         <Grid Width="1274" Margin="1,0,-1,0">
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
@@ -174,8 +331,8 @@
 
             <Image x:Name="bl" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="35,511,29.89,63.62" Source="Images/brojevnalinijatest.png" Height="116.38" Width="1209.11"></Image>
             <TextBlock x:Name="tb10" HorizontalAlignment="Left" Margin="139,572,0,0" TextWrapping="Wrap" Text="1D" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>
-            <TextBlock x:Name="tb30" HorizontalAlignment="Left" Margin="349.747,572,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>
             <TextBlock x:Name="tb30_Copy" HorizontalAlignment="Left" Margin="239,572,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>
+            <TextBlock x:Name="tb30" HorizontalAlignment="Left" Margin="349.747,572,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>
             <TextBlock x:Name="tb30_Copy1" HorizontalAlignment="Left" Margin="448.247,572,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"><Run Text="4"/><Run Text="D"/></TextBlock>
             <TextBlock x:Name="tb30_Copy2" HorizontalAlignment="Left" Margin="649.5,572,0,0" TextWrapping="Wrap" Text="60" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>
             <TextBlock x:Name="tb30_Copy3" HorizontalAlignment="Left" Margin="754,572,0,0" TextWrapping="Wrap" Text="70" VerticalAlignment="Top" Width="89" FontSize="32" TextAlignment="Center" Height="42.563" Background="{x:Null}"/>

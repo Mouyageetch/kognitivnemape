@@ -42,19 +42,32 @@ namespace Mape002
 
             foreach (var item in first)
             {
-                item.Visibility = Visibility.Hidden;
+                item.Visibility = Visibility.Visible;
 
             }
             foreach (var item in up)
             {
-                item.Visibility = Visibility.Hidden;
+                item.Visibility = Visibility.Visible;
 
             }
             foreach (var item in down)
             {
-                item.Visibility = Visibility.Hidden;
+                item.Visibility = Visibility.Visible;
 
             }
+
+            /*Grid mainGrid = (Grid)this.Content;
+            UIElementCollection uIElementCollection = mainGrid.Children;
+            List<FrameworkElement> elements = uIElementCollection.Cast<FrameworkElement>().ToList();
+
+            foreach (var item in elements)
+            {
+                item.IsEnabled = false;
+            }
+
+            nextWindow.IsEnabled = true;
+            previousWindow.IsEnabled = true;
+            */
 
 
 

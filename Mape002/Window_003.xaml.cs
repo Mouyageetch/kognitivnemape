@@ -74,9 +74,17 @@ namespace Mape002
                 }
                 iskoristeniRandom.Add(r);
                 textBlocks.ElementAt(i).Text = brojevi.ElementAt(r).Item1;
+
+                if (i == 0)
+                {
+                    answerBlocks.ElementAt(i).Item1.Text = brojevi.ElementAt(r).Item3;
+                    answerBlocks.ElementAt(i).Item2.Text = brojevi.ElementAt(r).Item2;
+                }
             }
 
-            for (int i = 0; i < 6; i++)
+            iskoristeniRandom.RemoveAt(0);
+
+            for (int i = 1; i < 6; i++)
             {
                 int r = random.Next(iskoristeniRandom.Count - 1);
 
