@@ -1,0 +1,29 @@
+﻿<Window x:Class="Mape003.Window_002"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape003"
+        mc:Ignorable="d"
+         Title="Sabiranje i oduzimanje u skupu brojeva do 20" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Grid>
+
+        <Grid Width="1274">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/home.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
+                <TextBlock x:Name="textBlock5" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">ODUZIMANJE BROJEVA U DRUGOJ DESETICI OBLIKA 14-4</TextBlock>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
+            </StackPanel>
+        </Grid>
+
+            <Image HorizontalAlignment="Left" Height="110" Margin="80,534,0,0" VerticalAlignment="Top" Width="1094" Source="Images/brojevnaLinija001.png"/>
+            <Image HorizontalAlignment="Left" Height="100.2" Margin="131.499,467.664,0,0" VerticalAlignment="Top" Width="1136" Source="Images/14001.png"/>
+            <Image HorizontalAlignment="Left" Height="75" Margin="578.5,495,-426.5,0" VerticalAlignment="Top" Width="1122" Source="Images/minus4.png"/>
+            <TextBlock HorizontalAlignment="Center" Height="45" Margin="0,407,-2,0" TextWrapping="Wrap" Text="ZNAMO DA JE 10+4=14; PA JE 14-4=10" VerticalAlignment="Top" Width="420.5" FontSize="24"/>
+        <Image HorizontalAlignment="Left" Height="340" Margin="221.667,63,0,0" VerticalAlignment="Top" Width="753.333" Source="Images/kupus.png"/>
+        <TextBlock x:Name="tb1" HorizontalAlignment="Left" Height="80" Margin="423.5,72.5,0,0" TextWrapping="Wrap" Text="UBRALI SMO 14 GLAVICA KUPUSA." VerticalAlignment="Top" Width="125" FontSize="20" TextAlignment="Center"/>
+        <TextBlock x:Name="TB2" HorizontalAlignment="Left" Height="80" Margin="364,155,0,0" TextWrapping="Wrap" Text="ZEC JE POJEO 4 GLAVICE." VerticalAlignment="Top" Width="115" FontSize="20" TextAlignment="Center"/>
+        <TextBlock x:Name="tb1_Copy1" HorizontalAlignment="Left" Height="80" Margin="697.5,113,0,0" TextWrapping="Wrap" Text="KOLIKO JE MAKU I LEJLI OSTALO GLAVICA KUPUSA?" VerticalAlignment="Top" Width="170" FontSize="19" TextAlignment="Center"/>
+    </Grid>
+</Window>

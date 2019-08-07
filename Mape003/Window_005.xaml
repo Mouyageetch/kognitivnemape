@@ -1,0 +1,28 @@
+﻿<Window x:Class="Mape003.Window_005"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape003"
+        mc:Ignorable="d"
+         Title="Sabiranje i oduzimanje u skupu brojeva do 20" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Grid>
+
+        <Grid Width="1274">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/home.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
+                <TextBlock x:Name="textBlock5" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">ODUZIMANJE DVOCIFRENIH BROJEVA DO 20</TextBlock>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
+            </StackPanel>
+        </Grid>
+
+        <Image HorizontalAlignment="Left" Height="440" Margin="79.5,85,0,0" VerticalAlignment="Top" Width="1121.5" Source="Images/novac.png"/>
+        <TextBlock HorizontalAlignment="Left" Height="125" Margin="100,117.997,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextAlignment="Center" FontSize="18"><Run Text="U MOJOJ KASICI JE 6"/><Run Text=" "/><Run Text="KM."/><LineBreak/><Run Text="POTROŠIT ĆU 2 KM."/><LineBreak/><Run Text="KOLIKO ĆE MI OSTATI NOVCA U KASI?"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="125" Margin="980,117.997,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextAlignment="Center" FontSize="18"><Run Text="U MOJOJ KASICI JE 16 KM."/><LineBreak/><Run Text="JA ĆU POTROŠITI 12 KM."/></TextBlock>
+        <Image Margin="-2,582.118,47,-11" VerticalAlignment="Top" Source="Images/brojevnaLinija001.png"/>
+        <Image Margin="-123,461.441,119,81.559" Source="Images/minus13.png" Height="148.5"/>
+        <Image Margin="-43,539.691,39,69.309" Source="Images/minus10.png" Height="82"/>
+        <Image Margin="-388,548,384,59" Source="Images/minus3.png" Height="84"/>
+    </Grid>
+</Window>

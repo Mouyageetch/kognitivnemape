@@ -28,6 +28,7 @@ namespace Mape002
         public Window_008()
         {
             InitializeComponent();
+            soundPlayer = new SoundPlayer();
             soundPlayer.Stop();
             brojRjesenih = 0;
             generiraniParoviPlus = new List<Tuple<int, int>>();

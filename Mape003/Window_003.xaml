@@ -1,0 +1,30 @@
+﻿<Window x:Class="Mape003.Window_003"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape003"
+        mc:Ignorable="d"
+         Title="Sabiranje i oduzimanje u skupu brojeva do 20" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Grid>
+
+        <Grid Width="1274">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/home.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
+                <TextBlock x:Name="textBlock5" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">ODUZIMANJE BROJEVA U DRUGOJ DESETICI OBLIKA 17-4</TextBlock>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
+            </StackPanel>
+        </Grid>
+            <Image HorizontalAlignment="Left" Height="370" Margin="295,71,0,0" VerticalAlignment="Top" Width="595" Source="Images/bombone010.png"/>
+            <TextBlock HorizontalAlignment="Left" Height="60" Margin="550,85,0,0" TextWrapping="Wrap" Text="U KESICI IMAM 17 BOMBONA." VerticalAlignment="Top" Width="155" TextAlignment="Center" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Height="60" Margin="714.012,95.341,0,0" TextWrapping="Wrap" Text="JA SAM POJEO 4 BOMBONE." VerticalAlignment="Top" Width="155" TextAlignment="Center" FontSize="19"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,395,0,0" TextWrapping="Wrap" Text="7-4=3" VerticalAlignment="Top" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Center" Margin="599.159,424,620.824,0" TextWrapping="Wrap" Text="17-4=" VerticalAlignment="Top" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Center" Margin="540.135,469.918,540.135,0" Text="10+(7-4) = 10+3 = 13" VerticalAlignment="Top" FontSize="20"/>
+            <Image HorizontalAlignment="Left" Height="110" Margin="80,562.5,0,0" VerticalAlignment="Top" Width="1094" Source="Images/brojevnaLinija001.png"/>
+            <Image HorizontalAlignment="Left" Height="100.2" Margin="129.999,508.164,0,0" VerticalAlignment="Top" Width="835.001" Source="Images/17_001.png"/>
+            <Image HorizontalAlignment="Left" Height="75" Margin="733.906,534.922,0,0" VerticalAlignment="Top" Width="219.094" Source="Images/minu4_001.png"/>
+
+    </Grid>
+</Window>

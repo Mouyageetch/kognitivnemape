@@ -1,0 +1,33 @@
+﻿<Window x:Class="Mape003.Window_006"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape003"
+        mc:Ignorable="d"
+         Title="Sabiranje i oduzimanje u skupu brojeva do 20" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Grid>
+
+        <Grid Width="1274">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
+                <Image Cursor="Hand" x:Name="previousWindow" Source="Images/home.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
+                <TextBlock x:Name="textBlock5" VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center">SABIRANJE I ODUZIMANJE TRI I VIŠE BROJEVA</TextBlock>
+                <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
+            </StackPanel>
+        </Grid>
+        <Image Margin="316.333,40,380.667,213" Source="Images/tabla.tif"/>
+        <TextBlock HorizontalAlignment="Left" Height="60" Margin="325,95,0,0" TextWrapping="Wrap" Text="NACRTALA SAM 3 CVIJETA." VerticalAlignment="Top" Width="170" FontSize="20" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="60" Margin="554.5,105,0,0" TextWrapping="Wrap" Text="JA 5 CVJETOVA." VerticalAlignment="Top" Width="170" FontSize="20" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="60" Margin="723.333,90,0,0" TextWrapping="Wrap" Text="JA SAM NACRTAO 4 CVIJETA." VerticalAlignment="Top" Width="170" FontSize="20" TextAlignment="Center"/>
+        <Image Margin="85,335,134,-115" Source="Images/lejlaCvijece.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="253.14,424.3,0,0" TextWrapping="Wrap" Text="KAKO SU LEJLA, MAK I DARIO ZAJEDNO NACRTALI CVJETOVA?" VerticalAlignment="Top" FontSize="20" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="466.14,451.4,0,0" TextWrapping="Wrap" Text="3+5+4=8+4=12" VerticalAlignment="Top" FontSize="20" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="288.223,485.4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" TextAlignment="Center"><Run Text="LEJLA JE UBRALA 12 CVJETOVA. MAMI JE POKLONILA 7 CVJETOVA ,  A"/><Run Text=" "/><Run Text="P"/><Run Text="RIJATELJICI 2 CVIJETA."/><LineBreak/><Run Text="KOLIKO JOJ JE OSTALO CVJETOVA?"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="615,635.4,0,0" TextWrapping="Wrap" Text="12-7-2=5-2=3" VerticalAlignment="Top" FontSize="24" TextAlignment="Center"/>
+
+
+
+
+    </Grid>
+</Window>
