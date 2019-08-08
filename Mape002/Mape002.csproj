@@ -127,6 +127,12 @@
     <Compile Include="Window_011.xaml.cs">
       <DependentUpon>Window_011.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window_012.xaml.cs">
+      <DependentUpon>Window_012.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window_013.xaml.cs">
+      <DependentUpon>Window_013.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -184,6 +190,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window_011.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_012.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_013.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

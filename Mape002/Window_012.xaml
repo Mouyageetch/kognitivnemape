@@ -1,0 +1,39 @@
+﻿<Window x:Class="Mape002.Window_012"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mape002"
+        mc:Ignorable="d"
+        Title="Skup brojeva do 100" Height="720" Width="1280" WindowStartupLocation="CenterScreen"
+        Icon="Images/favicon-32x32.png" ResizeMode="NoResize">
+    <Grid x:Name="mainGrid">
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="80" Orientation="Horizontal">
+            <Image Cursor="Hand" x:Name="previousWindow" Source="Images/previous.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" MouseLeftButtonDown="PreviousWindow_MouseLeftButtonDown"></Image>
+            <TextBlock VerticalAlignment="Center"  Width="1047" Text="" FontSize="36" TextAlignment="Center"></TextBlock>
+            <Image Cursor="Hand" x:Name="nextWindow" Source="Images/next.png" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" MouseLeftButtonDown="NextWindow_MouseLeftButtonDown"></Image>
+        </StackPanel>
+
+
+        <TextBlock x:Name="tb00" HorizontalAlignment="Left" Margin="375,170,0,0" TextWrapping="Wrap" Text="6D i 7J" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" Cursor="Hand" MouseLeftButtonDown="Tb00_MouseLeftButtonDown"/>
+        <TextBlock x:Name="tb10" HorizontalAlignment="Left" Margin="805,170,0,0" TextWrapping="Wrap" Text="67" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" MouseLeftButtonDown="Tb10_MouseLeftButtonDown" Cursor="Hand"/>
+        <TextBlock x:Name="tb01" HorizontalAlignment="Left" Margin="375,215,0,0" TextWrapping="Wrap" Text="8D i 3J" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" Cursor="Hand" MouseLeftButtonDown="Tb00_MouseLeftButtonDown"/>
+        <TextBlock x:Name="tb11" HorizontalAlignment="Left" Margin="805,215,0,0" TextWrapping="Wrap" Text="83" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" MouseLeftButtonDown="Tb10_MouseLeftButtonDown" Cursor="Hand"/>
+        <TextBlock x:Name="tb02" HorizontalAlignment="Left" Margin="375,260,0,0" TextWrapping="Wrap" Text="10D i 0J" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" Cursor="Hand" MouseLeftButtonDown="Tb00_MouseLeftButtonDown"/>
+        <TextBlock x:Name="tb12" HorizontalAlignment="Left" Margin="805,260,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" MouseLeftButtonDown="Tb10_MouseLeftButtonDown" Cursor="Hand"/>
+        <TextBlock x:Name="tb03" HorizontalAlignment="Left" Margin="375,305,0,0" TextWrapping="Wrap" Text="7D i 5J" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" Cursor="Hand" MouseLeftButtonDown="Tb00_MouseLeftButtonDown"/>
+        <TextBlock x:Name="tb13" HorizontalAlignment="Left" Margin="805,305,0,0" TextWrapping="Wrap" Text="75" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" MouseLeftButtonDown="Tb10_MouseLeftButtonDown" Cursor="Hand"/>
+        <TextBlock x:Name="tb04" HorizontalAlignment="Left" Margin="375,350,0,0" TextWrapping="Wrap" Text="4D i 2J" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" Cursor="Hand" MouseLeftButtonDown="Tb00_MouseLeftButtonDown"/>
+        <TextBlock x:Name="tb14" HorizontalAlignment="Left" Margin="805,350,0,0" TextWrapping="Wrap" Text="42" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" MouseLeftButtonDown="Tb10_MouseLeftButtonDown" Cursor="Hand"/>
+        <TextBlock x:Name="tb05" HorizontalAlignment="Left" Margin="375,395,0,0" TextWrapping="Wrap" Text="5D i 5J" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" Cursor="Hand" MouseLeftButtonDown="Tb00_MouseLeftButtonDown"/>
+        <TextBlock x:Name="tb15" HorizontalAlignment="Left" Margin="805,395,0,0" TextWrapping="Wrap" Text="55" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" MouseLeftButtonDown="Tb10_MouseLeftButtonDown" Cursor="Hand"/>
+        <TextBlock x:Name="tb06" HorizontalAlignment="Left" Margin="375,440,0,0" TextWrapping="Wrap" Text="9D i 1J" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" Cursor="Hand" MouseLeftButtonDown="Tb00_MouseLeftButtonDown"/>
+        <TextBlock x:Name="tb16" HorizontalAlignment="Left" Margin="805,440,0,0" TextWrapping="Wrap" Text="91" VerticalAlignment="Top" FontSize="28" TextAlignment="Center" Background="#FFBFEDF7" Width="105" MouseLeftButtonDown="Tb10_MouseLeftButtonDown" Cursor="Hand"/>
+
+            <Grid x:Name="success" Width="1280" Height="150"  Background="#FF4E87CB" Visibility="Hidden">
+                <StackPanel VerticalAlignment="Center" Width="Auto" Height="Auto">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="72" Foreground="GhostWhite" Text="ISPRAVAN ODGOVOR!"></TextBlock>
+                </StackPanel>
+            </Grid>
+    </Grid>
+</Window>
